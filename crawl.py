@@ -1,98 +1,116 @@
 import json
 import os
+import time
+import requests
+from bs4 import BeautifulSoup
 
-def update_kbo_data():
-    # 데이터베이스에 선수 및 코치 정보 추가
-    players = [
-        {
-            "id": "1",
-            "name": "류현진",
-            "team": "한화",
-            "positionGroup": "투수",
-            "isCoach": False,
-            "draftInfo": "2006년 2차 1라운드 (한화 이글스)",
-            "firstSalary": 2000,
-            "history": [
-                {"period": "2006 ~ 2012", "team": "한화 이글스", "salary": "2,000만 ~ 4억 3,000만 원", "note": "KBO MVP 및 신인왕"},
-                {"period": "2013 ~ 2019", "team": "LA 다저스", "salary": "6년 총액 3,600만 달러", "note": "MLB 진출"},
-                {"period": "2020 ~ 2023", "team": "토론토 블루제이스", "salary": "4년 총액 8,000만 달러", "note": "FA 계약"},
-                {"period": "2024 ~ 현재", "team": "한화 이글스", "salary": "8년 총액 170억 원", "note": "KBO 리그 복귀"}
-            ]
-        },
-        {
-            "id": "2",
-            "name": "양의지",
-            "team": "두산",
-            "positionGroup": "포수",
-            "isCoach": False,
-            "draftInfo": "2006년 2차 8라운드 (두산 베어스)",
-            "firstSalary": 2000,
-            "history": [
-                {"period": "2006 ~ 2018", "team": "두산 베어스", "salary": "2,000만 ~ 6억 원", "note": "입단 및 주전 포수"},
-                {"period": "2019 ~ 2022", "team": "NC 다이노스", "salary": "125억 원 (4년 FA)", "note": "FA 이적 후 우승"},
-                {"period": "2023 ~ 현재", "team": "두산 베어스", "salary": "152억 원 (4+2년 FA)", "note": "FA 친정팀 복귀"}
-            ]
-        },
-        {
-            "id": "3",
-            "name": "김원중",
-            "team": "롯데",
-            "positionGroup": "투수",
-            "isCoach": False,
-            "draftInfo": "2012년 1라운드 5순위 (롯데 자이언츠)",
-            "firstSalary": 2400,
-            "history": [
-                {"period": "2012 ~ 2024", "team": "롯데 자이언츠", "salary": "2,400만 ~ 5억 원", "note": "롯데 마무리 투수"},
-                {"period": "2025 ~ 현재", "team": "롯데 자이언츠", "salary": "4년 총액 54억 원", "note": "FA 재계약"}
-            ]
-        },
-        {
-            "id": "4",
-            "name": "전민재",
-            "team": "두산",
-            "positionGroup": "내야수",
-            "isCoach": False,
-            "draftInfo": "2018년 2차 4라운드 (두산 베어스)",
-            "firstSalary": 2700,
-            "history": [
-                {"period": "2018 ~ 현재", "team": "두산 베어스", "salary": "2,700만 ~ 8,500만 원", "note": "두산 내야수"}
-            ]
-        },
-        {
-            "id": "5",
-            "name": "최정",
-            "team": "SSG",
-            "positionGroup": "내야수",
-            "isCoach": False,
-            "draftInfo": "2005년 1차 지명 (SK 와이번스)",
-            "firstSalary": 2000,
-            "history": [
-                {"period": "2005 ~ 2018", "team": "SK 와이번스", "salary": "2,000만 ~ 12억 원", "note": "SK 간판 타자"},
-                {"period": "2019 ~ 2024", "team": "SSG 랜더스", "salary": "106억 원 (6년 FA)", "note": "첫 번째 FA 계약"},
-                {"period": "2025 ~ 현재", "team": "SSG 랜더스", "salary": "4년 총액 110억 원", "note": "두 번째 FA 계약"}
-            ]
-        },
-        {
-            "id": "6",
-            "name": "구자욱",
-            "team": "삼성",
-            "positionGroup": "외야수",
-            "isCoach": False,
-            "draftInfo": "2012년 2차 2라운드 (삼성 라이온즈)",
-            "firstSalary": 2400,
-            "history": [
-                {"period": "2012 ~ 2021", "team": "삼성 라이온즈", "salary": "2,400만 ~ 3억 6,000만 원", "note": "삼성 간판 타자"},
-                {"period": "2022 ~ 현재", "team": "삼성 라이온즈", "salary": "5년 총액 120억 원", "note": "비FA 다년계약"}
-            ]
-        }
-    ]
+def crawl_kbo_all_members():
+    print("KBO 전 구단 선수 및 코치진 데이터 수집을 시작합니다...")
     
-    # data 폴더 자동 생성 및 파일 저장
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    }
+    
+    # 10개 구단 코드 (KBO / 포털 표준)
+    team_codes = ["HT", "OB", "LT", "SS", "SK", "NC", "HH", "KT", "WO", "LG"]
+    team_names = {
+        "HT": "KIA", "OB": "두산", "LT": "롯데", "SS": "삼성", "SK": "SSG",
+        "NC": "NC", "HH": "한화", "KT": "KT", "WO": "키움", "LG": "LG"
+    }
+
+    all_members = []
+    member_id = 1
+
+    for code in team_codes:
+        team_label = team_names.get(code, code)
+        print(f"[{team_label} 베어스/자이언츠 등] 구단 데이터 수집 중...")
+        
+        # Statiz 또는 야구 포털의 구단별 선수/코치진 명단 페이지
+        list_url = f"https://statiz.co.kr/player.php?m=list&team={code}"
+        
+        try:
+            res = requests.get(list_url, headers=headers, timeout=10)
+            if res.status_code != 200:
+                continue
+                
+            soup = BeautifulSoup(res.text, "html.parser")
+            rows = soup.select("table tr")
+
+            for row in rows:
+                cols = row.select("td")
+                if len(cols) < 3:
+                    continue
+
+                name = cols[0].text.strip()
+                pos = cols[1].text.strip()
+                
+                if not name or name == "선수명":
+                    continue
+
+                # 코치 여부 판별
+                is_coach = "코치" in pos or "감독" in pos
+
+                # 선수 상세 연봉 페이지 추적 (상세 링크가 있는 경우)
+                detail_link = cols[0].find("a")
+                history = []
+                draft_info = "-"
+
+                if detail_link and "href" in detail_link.attrs:
+                    player_url = "https://statiz.co.kr/" + detail_link["href"]
+                    try:
+                        p_res = requests.get(player_url, headers=headers, timeout=5)
+                        p_soup = BeautifulSoup(p_res.text, "html.parser")
+                        
+                        # 연봉 및 구단 이력 테이블 파싱
+                        salary_rows = p_soup.select(".salary_table tr, table.table_type01 tr")
+                        for s_row in salary_rows:
+                            s_cols = s_row.select("td")
+                            if len(s_cols) >= 3:
+                                year_period = s_cols[0].text.strip()
+                                p_team = s_cols[1].text.strip()
+                                p_salary = s_cols[2].text.strip()
+                                note = s_cols[3].text.strip() if len(s_cols) > 3 else ""
+
+                                if year_period.isdigit() or "~" in year_period:
+                                    history.append({
+                                        "period": year_period,
+                                        "team": p_team,
+                                        "salary": p_salary,
+                                        "note": note
+                                    })
+                        time.sleep(0.2) # 서버 부하 방지
+                    except Exception as e:
+                        pass
+
+                # 연봉 이력이 비어있을 경우 기본 구조 생성
+                if not history:
+                    history.append({
+                        "period": "현재",
+                        "team": team_label,
+                        "salary": "정보 업데이트 예정",
+                        "note": "기본 등록"
+                    })
+
+                all_members.append({
+                    "id": str(member_id),
+                    "name": name,
+                    "team": team_label,
+                    "positionGroup": pos,
+                    "isCoach": is_coach,
+                    "draftInfo": draft_info,
+                    "history": history
+                })
+                member_id += 1
+
+        except Exception as e:
+            print(f"{team_label} 수집 중 오류 발생:", e)
+
+    # data/players.json 저장
     os.makedirs('data', exist_ok=True)
     with open('data/players.json', 'w', encoding='utf-8') as f:
-        json.dump(players, f, ensure_ascii=False, indent=2)
+        json.dump(all_members, f, ensure_ascii=False, indent=2)
 
-    print(f"업데이트 완료: 총 {len(players)}명의 선수 데이터가 data/players.json에 반영되었습니다.")
+    print(f"작업 완료: 총 {len(all_members)}명의 선수/코치진 및 연봉 이력이 data/players.json에 저장되었습니다.")
 
 if __name__ == "__main__":
-    update_kbo_data()
+    crawl_kbo_all_members()
