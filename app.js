@@ -4,54 +4,63 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let allPlayers = [];
 
-  // JSON 데이터 불러오기 (상대 경로 적용)
+  // JSON 데이터 불러오기
   fetch("./data.json")
     .then((response) => {
-      if (!response.ok) {
-        throw new Error("네트워크 응답 오류");
-      }
+      if (!response.ok) throw new Error("HTTP error " + response.status);
       return response.json();
     })
     .then((data) => {
-      allPlayers = data;
-      // 초기에는 아무것도 출력하지 않고 안내 문구만 표시 (원할 경우 renderPlayers(allPlayers)로 전체 표시 가능)
+      allPlayers = Array.isArray(data) ? data : (data.players || []);
       playerList.innerHTML = "<p class='no-data'>검색어를 입력하시면 결과가 표시됩니다.</p>";
     })
     .catch((error) => {
       console.error("데이터 로드 실패:", error);
-      // 초기 진입 시 데이터 경로 문제가 있어도 사용자에게 자연스러운 안내 제공
-      playerList.innerHTML = "<p class='no-data'>검색어를 입력하시면 결과가 표시됩니다.</p>";
+      playerList.innerHTML = "<p class='no-data'>데이터를 불러오는 중 오류가 발생했습니다.</p>";
     });
+
+  // 다국어/다양한 JSON Key값을 유연하게 가져오는 함수
+  function getValue(obj, keys) {
+    if (!obj) return "";
+    for (let key of keys) {
+      if (obj[key] !== undefined && obj[key] !== null) {
+        return String(obj[key]);
+      }
+    }
+    return "";
+  }
 
   // 검색 처리 함수
   function handleSearch() {
     const keyword = searchInput.value.trim().toLowerCase();
 
-    // 검색어가 비어있을 때는 초기 안내 문구 출력
     if (!keyword) {
       playerList.innerHTML = "<p class='no-data'>검색어를 입력하시면 결과가 표시됩니다.</p>";
       return;
     }
 
     const filtered = allPlayers.filter((player) => {
-      const nameMatch = player.name && player.name.toLowerCase().includes(keyword);
-      const teamMatch = player.team && player.team.toLowerCase().includes(keyword);
-      const posMatch = player.position && player.position.toLowerCase().includes(keyword);
-      return nameMatch || teamMatch || posMatch;
+      const name = getValue(player, ["name", "Name", "선수명", "이름"]);
+      const team = getValue(player, ["team", "Team", "구단", "팀"]);
+      const pos = getValue(player, ["position", "Position", "포지션"]);
+
+      return (
+        name.toLowerCase().includes(keyword) ||
+        team.toLowerCase().includes(keyword) ||
+        pos.toLowerCase().includes(keyword)
+      );
     });
 
     renderPlayers(filtered);
   }
 
-  // 실시간 입력 및 엔터 키 이벤트 등록
+  // 실시간 및 엔터키 이벤트 listener
   searchInput.addEventListener("input", handleSearch);
   searchInput.addEventListener("keyup", (e) => {
-    if (e.key === "Enter") {
-      handleSearch();
-    }
+    if (e.key === "Enter") handleSearch();
   });
 
-  // 화면 카드 렌더링 함수
+  // 카드 렌더링 함수
   function renderPlayers(players) {
     playerList.innerHTML = "";
 
@@ -61,14 +70,19 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     players.forEach((player) => {
+      const name = getValue(player, ["name", "Name", "선수명", "이름"]) || "이름 없음";
+      const team = getValue(player, ["team", "Team", "구단", "팀"]) || "-";
+      const pos = getValue(player, ["position", "Position", "포지션"]) || "-";
+      const salary = getValue(player, ["salary", "Salary", "연봉"]) || "-";
+
       const card = document.createElement("div");
       card.className = "player-card";
 
       card.innerHTML = `
-        <h3>${player.name || "이름 없음"}</h3>
-        <p><strong>구단:</strong> ${player.team || "-"}</p>
-        <p><strong>포지션:</strong> ${player.position || "-"}</p>
-        <p><strong>연봉:</strong> ${player.salary || "-"}</p>
+        <h3>${name}</h3>
+        <p><strong>구단:</strong> ${team}</p>
+        <p><strong>포지션:</strong> ${pos}</p>
+        <p><strong>연봉:</strong> ${salary}</p>
       `;
 
       playerList.appendChild(card);
