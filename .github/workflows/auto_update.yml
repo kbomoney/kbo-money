@@ -1,0 +1,35 @@
+name: KBO Data Auto Crawler
+
+on:
+  schedule:
+    # 매주 월요일 새벽 3시(한국시간)에 자동 실행
+    - cron: '0 18 * * 0'
+  workflow_dispatch: # 필요할 때 버튼 눌러서 즉시 실행 가능
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 저장소 코드 불러오기
+        uses: actions/checkout@v3
+
+      - name: 파이썬 환경 설정
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: 필요한 라이브러리 설치
+        run: |
+          python -m pip install --upgrade pip
+          pip install beautifulsoup4 requests
+
+      - name: 데이터 크롤링 실행
+        run: python crawl.py
+
+      - name: 변경된 players.json 자동으로 GitHub에 저장
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action Bot"
+          git add data/players.json
+          git diff-index --quiet HEAD || git commit -m "Auto Update: KBO Players Data"
+          git push
