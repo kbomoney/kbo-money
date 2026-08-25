@@ -8,10 +8,30 @@
     "draftInfo": "2006년 2차 1라운드 (한화 이글스)",
     "firstSalary": 2000,
     "history": [
-      { "period": "2006 ~ 2012", "team": "한화 이글스", "salary": "2,000만 ~ 4억 3,000만 원", "note": "KBO MVP 및 신인왕 동시 석권" },
-      { "period": "2013 ~ 2019", "team": "LA 다저스", "salary": "6년 총액 3,600만 달러", "note": "포스팅 시스템을 통한 메이저리그 진출" },
-      { "period": "2020 ~ 2023", "team": "토론토 블루제이스", "salary": "4년 총액 8,000만 달러", "note": "FA 계약 및 에이스 활약" },
-      { "period": "2024 ~ 현재", "team": "한화 이글스", "salary": "8년 총액 170억 원", "note": "KBO 리그 복귀 (역대 최고액 계약)" }
+      {
+        "period": "2006 ~ 2012",
+        "team": "한화 이글스",
+        "salary": "2,000만 ~ 4억 3,000만 원",
+        "note": "KBO MVP 및 신인왕"
+      },
+      {
+        "period": "2013 ~ 2019",
+        "team": "LA 다저스",
+        "salary": "6년 총액 3,600만 달러",
+        "note": "MLB 진출"
+      },
+      {
+        "period": "2020 ~ 2023",
+        "team": "토론토 블루제이스",
+        "salary": "4년 총액 8,000만 달러",
+        "note": "FA 계약"
+      },
+      {
+        "period": "2024 ~ 현재",
+        "team": "한화 이글스",
+        "salary": "8년 총액 170억 원",
+        "note": "KBO 리그 복귀"
+      }
     ]
   },
   {
@@ -23,108 +43,24 @@
     "draftInfo": "2006년 2차 8라운드 (두산 베어스)",
     "firstSalary": 2000,
     "history": [
-      { "period": "2006 ~ 2018", "team": "두산 베어스", "salary": "2,000만 ~ 6억 원", "note": "입단 및 주전 포수 활약" },
-      { "period": "2019 ~ 2022", "team": "NC 다이노스", "salary": "125억 원 (4년 FA)", "note": "FA 이적 후 우승 견인" },
-      { "period": "2023 ~ 현재", "team": "두산 베어스", "salary": "152억 원 (4+2년 FA)", "note": "FA 친정팀 복귀" }
-    ]
-  },
-  {
-    "id": "3",
-    "name": "김도영",
-    "team": "KIA",
-    "positionGroup": "내야수",
-    "isCoach": false,
-    "draftInfo": "2022년 1차 지명 (KIA 타이거즈)",
-    "firstSalary": 3000,
-    "history": [
-      { "period": "2022 ~ 2023", "team": "KIA 타이거즈", "salary": "3,000만 ~ 5,000만 원", "note": "프로 입단 및 적응기" },
-      { "period": "2024 ~ 현재", "team": "KIA 타이거즈", "salary": "1억 원 이상", "note": "KBO 최연소 30-30 클럽 달성 및 MVP급 활약" }
-    ]
-  },
-  {
-    "id": "4",
-    "name": "이범호",
-    "team": "KIA",
-    "positionGroup": "코치진",
-    "role": "감독",
-    "isCoach": true,
-    "draftInfo": "2000년 2차 1라운드 (한화 이글스)",
-    "playerHistory": [
-      { "period": "2000 ~ 2009", "team": "한화 이글스", "note": "주전 3루수 및 국가대표 활약" },
-      { "period": "2010", "team": "소프트뱅크 호크스", "note": "일본 프로야구 진출" },
-      { "period": "2011 ~ 2019", "team": "KIA 타이거즈", "note": "FA 이적 후 2017 한국시리즈 우승 견인" }
-    ],
-    "coachHistory": [
-      { "period": "2021 ~ 2023", "team": "KIA 타이거즈", "note": "퓨처스 감독 및 1군 타격코치" },
-      { "period": "2024 ~ 현재", "team": "KIA 타이거즈", "note": "제11대 감독 선임 및 팀 우승 지도" }
-    ]
-  },
-  {
-    "id": "5",
-    "name": "최정",
-    "team": "SSG",
-    "positionGroup": "내야수",
-    "isCoach": false,
-    "draftInfo": "2005년 1차 지명 (SK 와이번스)",
-    "firstSalary": 2000,
-    "history": [
-      { "period": "2005 ~ 2014", "team": "SK 와이번스", "salary": "2,000만 ~ 7억 원", "note": "왕조 시절 핵심 거포" },
-      { "period": "2015 ~ 2018", "team": "SK 와이번스", "salary": "86억 원 (4년 FA)", "note": "첫 번째 FA 계약" },
-      { "period": "2019 ~ 현재", "team": "SSG 랜더스", "salary": "106억 원 (6년 FA)", "note": "통산 최다 홈런 대기록 달성" }
-    ]
-  },
-  {
-    "id": "6",
-    "name": "구자욱",
-    "team": "삼성",
-    "positionGroup": "외야수",
-    "isCoach": false,
-    "draftInfo": "2012년 2차 2라운드 (삼성 라이온즈)",
-    "firstSalary": 2400,
-    "history": [
-      { "period": "2012 ~ 2015", "team": "삼성 라이온즈", "salary": "2,400만 원", "note": "상무 입대 및 2015 신인왕" },
-      { "period": "2016 ~ 2021", "team": "삼성 라이온즈", "salary": "8,000만 ~ 4억 5,000만 원", "note": "삼성 외야의 핵심 간판" },
-      { "period": "2022 ~ 현재", "team": "삼성 라이온즈", "salary": "120억 원 (5년 비FA 계약)", "note": "구단 프랜차이즈 스타 대우" }
-    ]
-  },
-  {
-    "id": "7",
-    "name": "홍창기",
-    "team": "LG",
-    "positionGroup": "외야수",
-    "isCoach": false,
-    "draftInfo": "2016년 2차 3라운드 (LG 트윈스)",
-    "firstSalary": 2700,
-    "history": [
-      { "period": "2016 ~ 2020", "team": "LG 트윈스", "salary": "2,700만 ~ 3,800만 원", "note": "군 복무 및 주전 도약" },
-      { "period": "2021 ~ 현재", "team": "LG 트윈스", "salary": "3억 ~ 5억 원 대", "note": "출루왕 달성 및 최고 리드오프 정착" }
-    ]
-  },
-  {
-    "id": "8",
-    "name": "강백호",
-    "team": "KT",
-    "positionGroup": "포수",
-    "isCoach": false,
-    "draftInfo": "2018년 2차 1라운드 (kt wiz)",
-    "firstSalary": 2700,
-    "history": [
-      { "period": "2018", "team": "kt wiz", "salary": "2,700만 원", "note": "신인왕 수상" },
-      { "period": "2019 ~ 2022", "team": "kt wiz", "salary": "1억 2,000만 ~ 5억 5,000만 원", "note": "팀 중심 타자 및 2021 우승" },
-      { "period": "2023 ~ 현재", "team": "kt wiz", "salary": "2억 9,000만 ~ 6억 원 대", "note": "포수 겸업 및 지명타자 활약" }
-    ]
-  },
-  {
-    "id": "9",
-    "name": "김혜성",
-    "team": "키움",
-    "positionGroup": "내야수",
-    "isCoach": false,
-    "draftInfo": "2017년 2차 1라운드 (넥센 히어로즈)",
-    "firstSalary": 2700,
-    "history": [
-      { "period": "2017 ~ 2020", "team": "키움 히어로즈", "salary": "2,700만 ~ 1억 원", "note": "주전 내야수 정착" },
-      { "period": "2021 ~ 현재", "team": "키움 히어로즈", "salary": "1억 7,000만 ~ 6억 5,000만 원", "note": "골든글러브 수상 및 주전 활약" }
+      {
+        "period": "2006 ~ 2018",
+        "team": "두산 베어스",
+        "salary": "2,000만 ~ 6억 원",
+        "note": "입단 및 주전 포수"
+      },
+      {
+        "period": "2019 ~ 2022",
+        "team": "NC 다이노스",
+        "salary": "125억 원 (4년 FA)",
+        "note": "FA 이적 후 우승"
+      },
+      {
+        "period": "2023 ~ 현재",
+        "team": "두산 베어스",
+        "salary": "152억 원 (4+2년 FA)",
+        "note": "FA 친정팀 복귀"
+      }
     ]
   }
 ]
