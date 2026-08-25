@@ -4,78 +4,50 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let allPlayers = [];
 
-  // data/players.json 경로로 완벽하게 지정
+  // data/players.json 경로 지정
   const jsonUrl = new URL("data/players.json", window.location.href).href;
 
   fetch(jsonUrl)
     .then((response) => {
-      if (!response.ok) {
-        throw new Error("HTTP error " + response.status);
-      }
+      if (!response.ok) throw new Error("HTTP 에러 상태: " + response.status);
       return response.json();
     })
     .then((data) => {
+      console.log("불러온 원본 데이터:", data);
+
+      // 데이터 형태 유연하게 배열화
       if (Array.isArray(data)) {
         allPlayers = data;
       } else if (typeof data === "object" && data !== null) {
-        const firstArray = Object.values(data).find((val) => Array.isArray(val));
-        allPlayers = firstArray || [data];
+        // 객체 내부에서 배열 찾기
+        const possibleArray = Object.values(data).find((val) => Array.isArray(val));
+        allPlayers = possibleArray || [data];
       }
+
+      console.log("변환된 선수 배열:", allPlayers);
       playerList.innerHTML = "";
     })
     .catch((error) => {
-      console.error("데이터 로드 실패:", error);
+      console.error("데이터 로드 중 에러 발생:", error);
       playerList.innerHTML = "";
     });
 
-  // 한글 자음/모음 유연 분리 (오타 보정)
-  function disassembleHangul(str) {
-    if (!str) return "";
-    const CHO = ["ㄱ","ㄲ","ㄴ","ㄷ","ㄸ","ㄹ","ㅁ","ㅂ","ㅃ","ㅅ","ㅆ","ㅇ","ㅈ","ㅉ","ㅊ","ㅋ","ㅌ","ㅍ","ㅎ"];
-    const JOONG = ["ㅏ","ㅐ","ㅑ","ㅒ","ㅓ","ㅔ","ㅕ","ㅖ","ㅗ","ㅘ","ㅙ","ㅚ","ㅛ","ㅜ","ㅝ","ㅞ","ㅟ","ㅠ","ㅡ","ㅢ","ㅣ"];
-    const JONG = ["", "ㄱ","ㄲ","ㄳ","ㄴ","ㄵ","ㄶ","ㄷ","ㄹ","ㄺ","ㄻ","ㄼ","ㄽ","ㄾ","ㄿ","ㅀ","ㅁ","ㅂ","ㅄ","ㅅ","ㅆ","ㅇ","ㅈ","ㅊ","ㅋ","ㅌ","ㅍ","ㅎ"];
-
-    let result = "";
-    for (let i = 0; i < str.length; i++) {
-      const code = str.charCodeAt(i) - 44032;
-      if (code >= 0 && code <= 11172) {
-        const cho = Math.floor(code / 588);
-        const joong = Math.floor((code - cho * 588) / 28);
-        const jong = code % 28;
-        
-        let normalizedJoong = JOONG[joong];
-        if (normalizedJoong === "ㅠ") normalizedJoong = "ㅜ";
-        if (normalizedJoong === "ㅕ") normalizedJoong = "ㅓ";
-        if (normalizedJoong === "ㅛ") normalizedJoong = "ㅗ";
-
-        result += CHO[cho] + normalizedJoong + JONG[jong];
-      } else {
-        result += str[i];
-      }
-    }
-    return result;
-  }
-
-  function matchPlayer(player, keyword) {
-    if (!player) return false;
-    const rawText = JSON.stringify(player).toLowerCase().replace(/\s+/g, "");
-    const cleanKeyword = keyword.toLowerCase().replace(/\s+/g, "");
-    if (rawText.includes(cleanKeyword)) return true;
-
-    const disText = disassembleHangul(rawText);
-    const disKeyword = disassembleHangul(cleanKeyword);
-    return disText.includes(disKeyword);
-  }
-
+  // 검색 처리
   function handleSearch() {
-    const keyword = searchInput.value.trim();
+    const keyword = searchInput.value.trim().toLowerCase().replace(/\s+/g, "");
 
     if (!keyword) {
       playerList.innerHTML = "";
       return;
     }
 
-    const filtered = allPlayers.filter((player) => matchPlayer(player, keyword));
+    // 선수 데이터 전체 텍스트에서 검색어 포함 여부 확인
+    const filtered = allPlayers.filter((player) => {
+      if (!player) return false;
+      const jsonString = JSON.stringify(player).toLowerCase().replace(/\s+/g, "");
+      return jsonString.includes(keyword);
+    });
+
     renderPlayers(filtered);
   }
 
@@ -84,13 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (e.key === "Enter") handleSearch();
   });
 
-  function findProp(obj, keys) {
-    for (let key of keys) {
-      if (obj[key] !== undefined && obj[key] !== null) return obj[key];
-    }
-    return null;
-  }
-
+  // 카드 출력
   function renderPlayers(players) {
     playerList.innerHTML = "";
 
@@ -100,10 +66,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     players.forEach((player) => {
-      const name = findProp(player, ["name", "Name", "선수명", "이름"]) || Object.values(player)[0] || "이름 없음";
-      const team = findProp(player, ["team", "Team", "구단", "팀"]) || Object.values(player)[1] || "-";
-      const pos = findProp(player, ["position", "Position", "포지션"]) || Object.values(player)[2] || "-";
-      const salary = findProp(player, ["salary", "Salary", "연봉", "경력"]) || Object.values(player)[3] || "-";
+      // 객체의 첫 번째~네 번째 값을 순서대로 추출 (키 이름이 달라도 표시 가능)
+      const values = Object.values(player);
+      const name = player.name || player.Name || player.선수명 || player.이름 || values[0] || "이름 없음";
+      const team = player.team || player.Team || player.구단 || player.팀 || values[1] || "-";
+      const pos = player.position || player.Position || player.포지션 || values[2] || "-";
+      const salary = player.salary || player.Salary || player.연봉 || player.경력 || values[3] || "-";
 
       const card = document.createElement("div");
       card.className = "player-card";
@@ -112,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <h3>${name}</h3>
         <p><strong>구단:</strong> ${team}</p>
         <p><strong>포지션:</strong> ${pos}</p>
-        <p><strong>연봉/정보:</strong> ${salary}</p>
+        <p><strong>연봉/경력:</strong> ${salary}</p>
       `;
 
       playerList.appendChild(card);
