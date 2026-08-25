@@ -1,10 +1,8 @@
 import json
-import urllib.request
-from bs4 import BeautifulSoup
 
-# KBO 데이터 수집 기본 구조
-def get_kbo_players():
-    # 예시 수집 로직 (기존 저장소 규격에 맞춘 기본 구조)
+# KBO 선수 데이터 수집 실행 함수
+def update_kbo_data():
+    # 저장소 기본 선수 데이터 목록
     players = [
         {
             "id": "1",
@@ -16,14 +14,30 @@ def get_kbo_players():
             "firstSalary": 2000,
             "history": [
                 {"period": "2006 ~ 2012", "team": "한화 이글스", "salary": "2,000만 ~ 4억 3,000만 원", "note": "KBO MVP 및 신인왕"},
-                {"period": "2024 ~ 현재", "team": "한화 이글스", "salary": "8년 총액 170억 원", "note": "KBO 복귀"}
+                {"period": "2013 ~ 2019", "team": "LA 다저스", "salary": "6년 총액 3,600만 달러", "note": "MLB 진출"},
+                {"period": "2020 ~ 2023", "team": "토론토 블루제이스", "salary": "4년 총액 8,000만 달러", "note": "FA 계약"},
+                {"period": "2024 ~ 현재", "team": "한화 이글스", "salary": "8년 총액 170억 원", "note": "KBO 리그 복귀"}
+            ]
+        },
+        {
+            "id": "2",
+            "name": "양의지",
+            "team": "두산",
+            "positionGroup": "포수",
+            "isCoach": False,
+            "draftInfo": "2006년 2차 8라운드 (두산 베어스)",
+            "firstSalary": 2000,
+            "history": [
+                {"period": "2006 ~ 2018", "team": "두산 베어스", "salary": "2,000만 ~ 6억 원", "note": "입단 및 주전 포수"},
+                {"period": "2019 ~ 2022", "team": "NC 다이노스", "salary": "125억 원 (4년 FA)", "note": "FA 이적 후 우승"},
+                {"period": "2023 ~ 현재", "team": "두산 베어스", "salary": "152억 원 (4+2년 FA)", "note": "FA 친정팀 복귀"}
             ]
         }
-        # 크롤링 자동 확장 영역
     ]
-    return players
+    
+    # data/players.json 경로로 저장
+    with open('data/players.json', 'w', encoding='utf-8') as f:
+        json.dump(players, f, ensure_ascii=False, indent=2)
 
 if __name__ == "__main__":
-    data = get_kbo_players()
-    with open('data/players.json', 'w', encoding='utf-8') as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
+    update_kbo_data()
