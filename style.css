@@ -19,7 +19,7 @@ header {
   width: 100%;
   background-color: #1e293b;
   color: #ffffff;
-  padding: 2.5rem 1rem;
+  padding: 3rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,112 +29,52 @@ header {
 header h1 {
   font-size: 1.8rem;
   font-weight: 700;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
   text-align: center;
   white-space: nowrap;
 }
 
-/* 1. 검색창 너비를 상단 제목 폭에 고정 */
+/* 검색창 너비: 상단 제목 폭(420px)과 동일하게 고정 */
 header input {
   width: 100%;
-  max-width: 420px; /* 제목 너비와 동일 */
-  padding: 0.75rem 1.2rem;
+  max-width: 420px;
+  padding: 0.85rem 1.2rem;
   border-radius: 9999px;
   border: 2px solid #3b82f6;
-  font-size: 0.95rem;
+  font-size: 1rem;
   outline: none;
   text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in-out;
+}
+
+header input:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
 }
 
 /* 메인 컨테이너 */
 main {
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
   padding: 2rem 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* 2. 필터 전체 영역 너비를 상단 제목 폭과 동일하게 고정 (420px) */
-.filter-section {
-  width: 100%;
-  max-width: 420px; /* 제목 너비와 동일 */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-
-.filter-section h3 {
-  font-size: 1.1rem;
-  color: #0f172a;
-  margin-bottom: 0.2rem;
-}
-
-/* 구단 선택 (Grid 5열) */
-.team-group {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 0.4rem;
-  width: 100%;
-}
-
-/* 구단 '전체' 버튼만 가로 1줄 전체 독점 */
-.team-group .team-btn:first-child {
-  grid-column: 1 / -1;
-}
-
-/* 포지션 선택 (Flex 가로 1줄) */
-.position-group {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 0.4rem;
-  width: 100%;
-  margin-top: 0.4rem;
-}
-
-.position-group .pos-btn {
-  flex: 1;
-  padding: 0.6rem 0;
-}
-
-/* 버튼 공통 스타일 */
-button {
-  padding: 0.6rem 0.2rem;
-  border: 1px solid #cbd5e1;
-  background-color: #ffffff;
-  color: #475569;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 0.85rem;
-  text-align: center;
-  transition: all 0.2s;
-  white-space: nowrap;
-}
-
-button:hover {
-  background-color: #f1f5f9;
-}
-
-button.active {
-  background-color: #1e293b;
-  color: #ffffff;
-  border-color: #1e293b;
-}
-
-/* 카드 영역 */
+/* 카드 출력 영역 */
 .card-grid {
   width: 100%;
-  max-width: 420px;
-  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 /* 하단 안내 문구 */
 .info-text {
-  margin-top: 2rem;
+  margin-top: 3rem;
   text-align: center;
   color: #94a3b8;
   font-size: 0.85rem;
