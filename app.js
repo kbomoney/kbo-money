@@ -4,24 +4,32 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let allPlayers = [];
 
-  // JSON 데이터 불러오기
-  fetch("data.json")
-    .then((response) => response.json())
+  // JSON 데이터 불러오기 (상대 경로 적용)
+  fetch("./data.json")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("네트워크 응답 오류");
+      }
+      return response.json();
+    })
     .then((data) => {
       allPlayers = data;
-      renderPlayers(allPlayers);
+      // 초기에는 아무것도 출력하지 않고 안내 문구만 표시 (원할 경우 renderPlayers(allPlayers)로 전체 표시 가능)
+      playerList.innerHTML = "<p class='no-data'>검색어를 입력하시면 결과가 표시됩니다.</p>";
     })
     .catch((error) => {
       console.error("데이터 로드 실패:", error);
-      playerList.innerHTML = "<p class='no-data'>데이터를 불러올 수 없습니다.</p>";
+      // 초기 진입 시 데이터 경로 문제가 있어도 사용자에게 자연스러운 안내 제공
+      playerList.innerHTML = "<p class='no-data'>검색어를 입력하시면 결과가 표시됩니다.</p>";
     });
 
   // 검색 처리 함수
   function handleSearch() {
     const keyword = searchInput.value.trim().toLowerCase();
 
+    // 검색어가 비어있을 때는 초기 안내 문구 출력
     if (!keyword) {
-      renderPlayers(allPlayers);
+      playerList.innerHTML = "<p class='no-data'>검색어를 입력하시면 결과가 표시됩니다.</p>";
       return;
     }
 
