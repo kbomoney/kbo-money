@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KBO 프로야구 연봉 & 경력 정보관</title>
+  <title>KBO 연봉 & 경력 정보관</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
     <h1>⚾ KBO 연봉 & 경력 정보관</h1>
-    <div class="search-container">
-      <input type="text" id="searchInput" placeholder="선수 또는 코치 이름을 입력하세요...">
-    </div>
+    <input type="text" id="search-input" placeholder="선수 또는 코치 이름을 입력하세요...">
   </header>
 
   <main>
-    <!-- 10개 구단 선택 버튼 -->
-    <section class="team-selector">
+    <div class="filter-section">
       <h3>구단 선택</h3>
-      <div class="team-buttons" id="teamButtons">
-        <button class="team-btn active" data-team="ALL">전체</button>
+      
+      <!-- 구단 선택 영역: 전체(1줄) + 10개 구단(5개씩 2줄) -->
+      <div class="team-group">
+        <button class="team-btn active" data-team="all">전체</button>
         <button class="team-btn" data-team="KIA">KIA</button>
         <button class="team-btn" data-team="삼성">삼성</button>
         <button class="team-btn" data-team="LG">LG</button>
@@ -31,39 +31,23 @@
         <button class="team-btn" data-team="한화">한화</button>
         <button class="team-btn" data-team="키움">키움</button>
       </div>
-    </section>
 
-    <!-- 포지션 그룹 선택 -->
-    <section class="group-selector">
-      <div class="group-tabs" id="groupTabs">
-        <button class="tab-btn active" data-group="ALL">전체</button>
-        <button class="tab-btn" data-group="코치진">코치진</button>
-        <button class="tab-btn" data-group="투수">투수</button>
-        <button class="tab-btn" data-group="포수">포수</button>
-        <button class="tab-btn" data-group="내야수">내야수</button>
-        <button class="tab-btn" data-group="외야수">외야수</button>
-      </div>
-    </section>
-
-    <!-- 선수/코치 카드 목록 -->
-    <section class="card-grid" id="cardGrid">
-      <!-- JavaScript에서 동적으로 카드가 추가됩니다 -->
-    </section>
-  </main>
-
-  <!-- 상세 정보 모달 (팝업창) -->
-  <div class="modal" id="detailModal">
-    <div class="modal-content">
-      <span class="close-btn" id="closeModal">&times;</span>
-      <div id="modalBody">
-        <!-- 동적 모달 내용 -->
+      <!-- 포지션 선택 영역: 가로 한 줄 정렬 -->
+      <div class="position-group">
+        <button class="pos-btn active" data-pos="all">전체</button>
+        <button class="pos-btn" data-pos="코치진">코치진</button>
+        <button class="pos-btn" data-pos="투수">투수</button>
+        <button class="pos-btn" data-pos="포수">포수</button>
+        <button class="pos-btn" data-pos="내야수">내야수</button>
+        <button class="pos-btn" data-pos="외야수">외야수</button>
       </div>
     </div>
-  </div>
 
-  <footer>
-    <p>본 정보는 KBO 공식 발표 및 언론 보도 자료를 기반으로 제공됩니다.</p>
-  </footer>
+    <!-- 카드 목록 영역 -->
+    <div id="player-list" class="card-grid"></div>
+
+    <p class="info-text">본 정보는 KBO 공식 발표 및 언론 보도 자료를 기반으로 제공됩니다.</p>
+  </main>
 
   <script src="app.js"></script>
 </body>
