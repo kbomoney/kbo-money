@@ -4,10 +4,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let allPlayers = [];
 
-  // JSON 데이터 불러오기
-  fetch("./data.json")
+  // data/players.json 경로로 완벽하게 지정
+  const jsonUrl = new URL("data/players.json", window.location.href).href;
+
+  fetch(jsonUrl)
     .then((response) => {
-      if (!response.ok) throw new Error("HTTP error " + response.status);
+      if (!response.ok) {
+        throw new Error("HTTP error " + response.status);
+      }
       return response.json();
     })
     .then((data) => {
@@ -24,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
       playerList.innerHTML = "";
     });
 
-  // 한글 자음/모음 분리 함수 (유사 오타 및 초성 검색용)
+  // 한글 자음/모음 유연 분리 (오타 보정)
   function disassembleHangul(str) {
     if (!str) return "";
     const CHO = ["ㄱ","ㄲ","ㄴ","ㄷ","ㄸ","ㄹ","ㅁ","ㅂ","ㅃ","ㅅ","ㅆ","ㅇ","ㅈ","ㅉ","ㅊ","ㅋ","ㅌ","ㅍ","ㅎ"];
@@ -38,12 +42,11 @@ document.addEventListener("DOMContentLoaded", () => {
         const cho = Math.floor(code / 588);
         const joong = Math.floor((code - cho * 588) / 28);
         const jong = code % 28;
-        // 유사 모음 보정 (ㅠ -> ㅜ, ㅕ -> ㅓ 등 오타 흡수)
+        
         let normalizedJoong = JOONG[joong];
         if (normalizedJoong === "ㅠ") normalizedJoong = "ㅜ";
         if (normalizedJoong === "ㅕ") normalizedJoong = "ㅓ";
         if (normalizedJoong === "ㅛ") normalizedJoong = "ㅗ";
-        if (normalizedJoong === "ㅑ") normalizedJoong = "ㅏ";
 
         result += CHO[cho] + normalizedJoong + JONG[jong];
       } else {
@@ -53,22 +56,17 @@ document.addEventListener("DOMContentLoaded", () => {
     return result;
   }
 
-  // 검색어 매칭 함수
   function matchPlayer(player, keyword) {
     if (!player) return false;
-    
-    // 1. 일반 텍스트 비교 (공백 제거)
     const rawText = JSON.stringify(player).toLowerCase().replace(/\s+/g, "");
     const cleanKeyword = keyword.toLowerCase().replace(/\s+/g, "");
     if (rawText.includes(cleanKeyword)) return true;
 
-    // 2. 한글 오타 분리 비교 (중/즁 등 유연 검색)
     const disText = disassembleHangul(rawText);
     const disKeyword = disassembleHangul(cleanKeyword);
     return disText.includes(disKeyword);
   }
 
-  // 검색 처리 함수
   function handleSearch() {
     const keyword = searchInput.value.trim();
 
@@ -81,13 +79,11 @@ document.addEventListener("DOMContentLoaded", () => {
     renderPlayers(filtered);
   }
 
-  // 실시간 입력 및 엔터키 이벤트
   searchInput.addEventListener("input", handleSearch);
   searchInput.addEventListener("keyup", (e) => {
     if (e.key === "Enter") handleSearch();
   });
 
-  // Property 찾기 헬퍼
   function findProp(obj, keys) {
     for (let key of keys) {
       if (obj[key] !== undefined && obj[key] !== null) return obj[key];
@@ -95,7 +91,6 @@ document.addEventListener("DOMContentLoaded", () => {
     return null;
   }
 
-  // 카드 렌더링 함수
   function renderPlayers(players) {
     playerList.innerHTML = "";
 
