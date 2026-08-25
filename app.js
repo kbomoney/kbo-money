@@ -33,10 +33,14 @@ function renderCards() {
     const card = document.createElement('div');
     card.className = 'player-card';
     card.onclick = () => openModal(p);
+    
+    // 카드 하단 텍스트 수정: '팀명 + 선수/코치 직책' 표기
+    const teamSubText = p.isCoach ? `${p.team} (${p.role || '코치'})` : `${p.team} 베어스/이글스 등`.includes('/') ? `${p.team}` : p.team;
+    
     card.innerHTML = `
       <span class="card-badge">${p.positionGroup} ${p.role ? `- ${p.role}` : ''}</span>
       <div class="card-name">${p.name}</div>
-      <div class="card-team">${p.team} 베어스/이글스 등</div>
+      <div class="card-team">${p.isCoach ? `${p.team} ${p.role || '코치'}` : `${p.team} 소속`}</div>
     `;
     grid.appendChild(card);
   });
@@ -73,12 +77,12 @@ function openModal(data) {
   if (data.isCoach) {
     // 코치진 (선수 경력 + 지도자 경력)
     timelineHtml = `
-      <h2>${data.name} (${data.team} ${data.role})</h2>
-      <p style="font-size: 0.85rem; color: #666; margin-top: 4px;">입단: ${data.draftInfo}</p>
+      <h2>${data.name} (${data.team} ${data.role || '코치'})</h2>
+      <p style="font-size: 0.85rem; color: #666; margin-top: 4px;">입단: ${data.draftInfo || '정보 없음'}</p>
       
       <h4 style="margin-top: 16px;">⚾ 선수 시절 경력</h4>
       <div class="timeline">
-        ${data.playerHistory.map(h => `
+        ${(data.playerHistory || []).map(h => `
           <div class="timeline-item">
             <div class="timeline-period">${h.period}</div>
             <div class="timeline-title">${h.team}</div>
@@ -89,7 +93,7 @@ function openModal(data) {
 
       <h4 style="margin-top: 16px;">📋 지도자 경력</h4>
       <div class="timeline">
-        ${data.coachHistory.map(h => `
+        ${(data.coachHistory || []).map(h => `
           <div class="timeline-item">
             <div class="timeline-period">${h.period}</div>
             <div class="timeline-title">${h.team}</div>
@@ -102,12 +106,12 @@ function openModal(data) {
     // 일반 선수 (입단 연봉 + 연봉 이적 타임라인)
     timelineHtml = `
       <h2>${data.name} (${data.team} / ${data.positionGroup})</h2>
-      <p style="font-size: 0.85rem; color: #666; margin-top: 4px;">입단 정보: ${data.draftInfo}</p>
-      <p style="font-size: 0.85rem; color: #666;">신인 첫 연봉: ${data.firstSalary.toLocaleString()}만 원</p>
+      <p style="font-size: 0.85rem; color: #666; margin-top: 4px;">입단 정보: ${data.draftInfo || '정보 없음'}</p>
+      <p style="font-size: 0.85rem; color: #666;">신인 첫 연봉: ${data.firstSalary ? data.firstSalary.toLocaleString() + '만 원' : '정보 없음'}</p>
       
       <h4 style="margin-top: 16px;">💰 연봉 및 구단 이력 히스토리</h4>
       <div class="timeline">
-        ${data.history.map(h => `
+        ${(data.history || []).map(h => `
           <div class="timeline-item">
             <div class="timeline-period">${h.period}</div>
             <div class="timeline-title">${h.team}</div>
