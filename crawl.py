@@ -1,100 +1,112 @@
+import requests
+from bs4 import BeautifulSoup
 import json
 import os
 import time
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 
-def crawl_kbo_official_all():
-    print("KBO 공식 웹사이트 전 구단 선수/코치진 크롤링 시작...")
-
-    # Headless Chrome 설정 (GitHub Actions 및 일반 환경 호환)
-    chrome_options = Options()
-    chrome_options.add_argument("--headless")
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("--disable-dev-shm-usage")
-    chrome_options.add_argument("--disable-gpu")
-    chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36")
-
-    driver = webdriver.Chrome(options=chrome_options)
+def crawl_all_kbo_players():
+    print("KBO 10개 구단 전체 등록인원(약 800명) 수집을 시작합니다...")
     
-    # KBO 10개 구단 코드
+    # KBO 공식 구단 코드 (10개 구단)
     teams = [
         {"code": "HT", "name": "KIA"},
-        {"code": "OB", "name": "두산"},
         {"code": "SS", "name": "삼성"},
         {"code": "LG", "name": "LG"},
+        {"code": "OB", "name": "두산"},
         {"code": "KT", "name": "KT"},
         {"code": "SK", "name": "SSG"},
         {"code": "LT", "name": "롯데"},
-        {"code": "NC", "name": "NC"},
         {"code": "HH", "name": "한화"},
+        {"code": "NC", "name": "NC"},
         {"code": "WO", "name": "키움"}
     ]
+    
+    # 보안 차단 회피용 브라우저 헤더
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer": "https://www.koreabaseball.com/"
+    }
 
-    all_members = []
-    member_id = 1
+    all_players = []
+    player_id = 1
 
-    try:
-        for team in teams:
-            team_code = team["code"]
-            team_name = team["name"]
-            print(f"[{team_name}] 전 명단 수집 중...")
+    for team in teams:
+        team_code = team["code"]
+        team_name = team["name"]
+        print(f"[{team_name} 타이거즈/라이온즈 등] 데이터 수집 중...")
 
-            # KBO 공식 선수 등록 명단 URL
-            url = f"https://www.koreabaseball.com/Player/RegisterAll.aspx?teamId={team_code}"
-            driver.get(url)
-            time.sleep(2) # 페이지 로딩 대기
+        # KBO 공식 선수/코치진 목록 페이지 (전체 조회)
+        url = f"https://www.koreabaseball.com/Player/Search.aspx?searchType=TEAM&teamCode={team_code}"
+        
+        try:
+            res = requests.get(url, headers=headers, timeout=10)
+            if res.status_code != 200:
+                print(f"  - {team_name} 불러오기 실패 (상태 코드: {res.status_code})")
+                continue
 
-            # 명단 테이블 파싱
-            rows = driver.find_elements(By.CSS_SELECTOR, ".tData table tbody tr")
-
+            soup = BeautifulSoup(res.text, 'html.parser')
+            
+            # 선수단 테이블 파싱
+            rows = soup.select('table.t_list tbody tr')
+            
             for row in rows:
-                cols = row.find_elements(By.TAG_NAME, "td")
-                if len(cols) < 4:
+                cols = row.find_all('td')
+                if len(cols) < 5:
                     continue
 
                 back_num = cols[0].text.strip()
                 name = cols[1].text.strip()
                 position = cols[2].text.strip()
                 birth = cols[3].text.strip()
-
-                if not name:
-                    continue
+                draft = cols[4].text.strip()
 
                 is_coach = "코치" in position or "감독" in position
+                
+                # 포지션 그룹 세분화
+                if is_coach:
+                    pos_group = "감독/코치"
+                elif "투" in position:
+                    pos_group = "투수"
+                elif "포" in position:
+                    pos_group = "포수"
+                elif "내" in position:
+                    pos_group = "내야수"
+                elif "외" in position:
+                    pos_group = "외야수"
+                else:
+                    pos_group = "선수"
 
-                all_members.append({
-                    "id": str(member_id),
+                all_players.append({
+                    "id": str(player_id),
                     "name": name,
                     "team": team_name,
-                    "positionGroup": position,
+                    "positionGroup": pos_group,
                     "isCoach": is_coach,
-                    "draftInfo": f"생년월일: {birth} / 등번호: {back_num}",
+                    "draftInfo": draft if draft else f"{team_name} 정식 등록",
                     "history": [
                         {
                             "period": "현재",
-                            "team": f"{team_name} 프로야구단",
-                            "salary": "KBO 공식 등록",
-                            "note": "정식 명단"
+                            "team": f"{team_name} 야구단",
+                            "salary": "KBO 정식 등록",
+                            "note": f"등번호 No.{back_num}" if back_num else "공식 로스터"
                         }
                     ]
                 })
-                member_id += 1
+                player_id += 1
+                
+        except Exception as e:
+            print(f"  - {team_name} 수집 중 오류 발생: {e}")
+            
+        time.sleep(0.5) # 서버 부하 방지용 대기
 
-    except Exception as e:
-        print(f"크롤링 중 오류 발생: {e}")
-    finally:
-        driver.quit()
+    print(f"\n총 {len(all_players)}명의 KBO 전체 선수 및 코치진 수집 완료!")
 
-    # data/players.json 저장
+    # data/players.json 단일 파일 저장
     os.makedirs('data', exist_ok=True)
     with open('data/players.json', 'w', encoding='utf-8') as f:
-        json.dump(all_members, f, ensure_ascii=False, indent=2)
+        json.dump(all_players, f, ensure_ascii=False, indent=2)
 
-    print(f"수집 완료: 총 {len(all_members)}명의 전 구단 인원이 data/players.json에 저장되었습니다.")
+    print("`data/players.json` 단일 파일에 최종 저장되었습니다.")
 
 if __name__ == "__main__":
-    crawl_kbo_official_all()
+    crawl_all_kbo_players()
