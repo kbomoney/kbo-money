@@ -1,1 +1,7682 @@
-[]
+[
+  {
+    "id": "1",
+    "name": "이범호",
+    "team": "KIA",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "KIA감독2",
+    "team": "KIA",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "KIA감독3",
+    "team": "KIA",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "KIA감독4",
+    "team": "KIA",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "KIA감독5",
+    "team": "KIA",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "KIA감독6",
+    "team": "KIA",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "name": "KIA감독7",
+    "team": "KIA",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "name": "KIA감독8",
+    "team": "KIA",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "name": "KIA코치1",
+    "team": "KIA",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "name": "KIA코치2",
+    "team": "KIA",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "name": "KIA코치3",
+    "team": "KIA",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "name": "KIA코치4",
+    "team": "KIA",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "name": "KIA코치5",
+    "team": "KIA",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "14",
+    "name": "KIA코치6",
+    "team": "KIA",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "15",
+    "name": "KIA코치7",
+    "team": "KIA",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "16",
+    "name": "KIA코치8",
+    "team": "KIA",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "17",
+    "name": "양현종",
+    "team": "KIA",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "18",
+    "name": "KIA투수2",
+    "team": "KIA",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "19",
+    "name": "KIA투수3",
+    "team": "KIA",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "20",
+    "name": "KIA투수4",
+    "team": "KIA",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "21",
+    "name": "KIA투수5",
+    "team": "KIA",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "name": "KIA투수6",
+    "team": "KIA",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "name": "KIA투수7",
+    "team": "KIA",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "24",
+    "name": "KIA투수8",
+    "team": "KIA",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "25",
+    "name": "KIA포수1",
+    "team": "KIA",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "26",
+    "name": "KIA포수2",
+    "team": "KIA",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "27",
+    "name": "KIA포수3",
+    "team": "KIA",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "28",
+    "name": "KIA포수4",
+    "team": "KIA",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "29",
+    "name": "KIA포수5",
+    "team": "KIA",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "30",
+    "name": "KIA포수6",
+    "team": "KIA",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "31",
+    "name": "KIA포수7",
+    "team": "KIA",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "32",
+    "name": "KIA포수8",
+    "team": "KIA",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "33",
+    "name": "김도영",
+    "team": "KIA",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "34",
+    "name": "KIA내야수2",
+    "team": "KIA",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "35",
+    "name": "KIA내야수3",
+    "team": "KIA",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "36",
+    "name": "KIA내야수4",
+    "team": "KIA",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "37",
+    "name": "KIA내야수5",
+    "team": "KIA",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "38",
+    "name": "KIA내야수6",
+    "team": "KIA",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "39",
+    "name": "KIA내야수7",
+    "team": "KIA",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "40",
+    "name": "KIA내야수8",
+    "team": "KIA",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "41",
+    "name": "KIA외야수1",
+    "team": "KIA",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "42",
+    "name": "KIA외야수2",
+    "team": "KIA",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "43",
+    "name": "KIA외야수3",
+    "team": "KIA",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "44",
+    "name": "KIA외야수4",
+    "team": "KIA",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "45",
+    "name": "KIA외야수5",
+    "team": "KIA",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "46",
+    "name": "KIA외야수6",
+    "team": "KIA",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "47",
+    "name": "KIA외야수7",
+    "team": "KIA",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "48",
+    "name": "KIA외야수8",
+    "team": "KIA",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "KIA 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KIA 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "49",
+    "name": "삼성감독1",
+    "team": "삼성",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "50",
+    "name": "삼성감독2",
+    "team": "삼성",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "51",
+    "name": "삼성감독3",
+    "team": "삼성",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "52",
+    "name": "삼성감독4",
+    "team": "삼성",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "53",
+    "name": "삼성감독5",
+    "team": "삼성",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "54",
+    "name": "삼성감독6",
+    "team": "삼성",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "55",
+    "name": "삼성감독7",
+    "team": "삼성",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "56",
+    "name": "삼성감독8",
+    "team": "삼성",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "57",
+    "name": "삼성코치1",
+    "team": "삼성",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "58",
+    "name": "삼성코치2",
+    "team": "삼성",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "59",
+    "name": "삼성코치3",
+    "team": "삼성",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "60",
+    "name": "삼성코치4",
+    "team": "삼성",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "61",
+    "name": "삼성코치5",
+    "team": "삼성",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "62",
+    "name": "삼성코치6",
+    "team": "삼성",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "63",
+    "name": "삼성코치7",
+    "team": "삼성",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "64",
+    "name": "삼성코치8",
+    "team": "삼성",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "65",
+    "name": "원태인",
+    "team": "삼성",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "66",
+    "name": "삼성투수2",
+    "team": "삼성",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "67",
+    "name": "삼성투수3",
+    "team": "삼성",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "68",
+    "name": "삼성투수4",
+    "team": "삼성",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "69",
+    "name": "삼성투수5",
+    "team": "삼성",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "70",
+    "name": "삼성투수6",
+    "team": "삼성",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "71",
+    "name": "삼성투수7",
+    "team": "삼성",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "72",
+    "name": "삼성투수8",
+    "team": "삼성",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "73",
+    "name": "삼성포수1",
+    "team": "삼성",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "74",
+    "name": "삼성포수2",
+    "team": "삼성",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "75",
+    "name": "삼성포수3",
+    "team": "삼성",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "76",
+    "name": "삼성포수4",
+    "team": "삼성",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "77",
+    "name": "삼성포수5",
+    "team": "삼성",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "78",
+    "name": "삼성포수6",
+    "team": "삼성",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "79",
+    "name": "삼성포수7",
+    "team": "삼성",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "80",
+    "name": "삼성포수8",
+    "team": "삼성",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "81",
+    "name": "삼성내야수1",
+    "team": "삼성",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "82",
+    "name": "삼성내야수2",
+    "team": "삼성",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "83",
+    "name": "삼성내야수3",
+    "team": "삼성",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "84",
+    "name": "삼성내야수4",
+    "team": "삼성",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "85",
+    "name": "삼성내야수5",
+    "team": "삼성",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "86",
+    "name": "삼성내야수6",
+    "team": "삼성",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "87",
+    "name": "삼성내야수7",
+    "team": "삼성",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "88",
+    "name": "삼성내야수8",
+    "team": "삼성",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "89",
+    "name": "구자욱",
+    "team": "삼성",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "90",
+    "name": "삼성외야수2",
+    "team": "삼성",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "91",
+    "name": "삼성외야수3",
+    "team": "삼성",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "92",
+    "name": "삼성외야수4",
+    "team": "삼성",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "93",
+    "name": "삼성외야수5",
+    "team": "삼성",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "94",
+    "name": "삼성외야수6",
+    "team": "삼성",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "95",
+    "name": "삼성외야수7",
+    "team": "삼성",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "96",
+    "name": "삼성외야수8",
+    "team": "삼성",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "삼성 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "삼성 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "97",
+    "name": "LG감독1",
+    "team": "LG",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "98",
+    "name": "LG감독2",
+    "team": "LG",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "99",
+    "name": "LG감독3",
+    "team": "LG",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "100",
+    "name": "LG감독4",
+    "team": "LG",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "101",
+    "name": "LG감독5",
+    "team": "LG",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "102",
+    "name": "LG감독6",
+    "team": "LG",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "103",
+    "name": "LG감독7",
+    "team": "LG",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "104",
+    "name": "LG감독8",
+    "team": "LG",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "105",
+    "name": "LG코치1",
+    "team": "LG",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "106",
+    "name": "LG코치2",
+    "team": "LG",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "107",
+    "name": "LG코치3",
+    "team": "LG",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "108",
+    "name": "LG코치4",
+    "team": "LG",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "109",
+    "name": "LG코치5",
+    "team": "LG",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "110",
+    "name": "LG코치6",
+    "team": "LG",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "111",
+    "name": "LG코치7",
+    "team": "LG",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "112",
+    "name": "LG코치8",
+    "team": "LG",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "113",
+    "name": "LG투수1",
+    "team": "LG",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "114",
+    "name": "LG투수2",
+    "team": "LG",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "115",
+    "name": "LG투수3",
+    "team": "LG",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "116",
+    "name": "LG투수4",
+    "team": "LG",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "117",
+    "name": "LG투수5",
+    "team": "LG",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "118",
+    "name": "LG투수6",
+    "team": "LG",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "119",
+    "name": "LG투수7",
+    "team": "LG",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "120",
+    "name": "LG투수8",
+    "team": "LG",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "121",
+    "name": "LG포수1",
+    "team": "LG",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "122",
+    "name": "LG포수2",
+    "team": "LG",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "123",
+    "name": "LG포수3",
+    "team": "LG",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "124",
+    "name": "LG포수4",
+    "team": "LG",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "125",
+    "name": "LG포수5",
+    "team": "LG",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "126",
+    "name": "LG포수6",
+    "team": "LG",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "127",
+    "name": "LG포수7",
+    "team": "LG",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "128",
+    "name": "LG포수8",
+    "team": "LG",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "129",
+    "name": "오지환",
+    "team": "LG",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "130",
+    "name": "LG내야수2",
+    "team": "LG",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "131",
+    "name": "LG내야수3",
+    "team": "LG",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "132",
+    "name": "LG내야수4",
+    "team": "LG",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "133",
+    "name": "LG내야수5",
+    "team": "LG",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "134",
+    "name": "LG내야수6",
+    "team": "LG",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "135",
+    "name": "LG내야수7",
+    "team": "LG",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "136",
+    "name": "LG내야수8",
+    "team": "LG",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "137",
+    "name": "LG외야수1",
+    "team": "LG",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "138",
+    "name": "LG외야수2",
+    "team": "LG",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "139",
+    "name": "LG외야수3",
+    "team": "LG",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "140",
+    "name": "LG외야수4",
+    "team": "LG",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "141",
+    "name": "LG외야수5",
+    "team": "LG",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "142",
+    "name": "LG외야수6",
+    "team": "LG",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "143",
+    "name": "LG외야수7",
+    "team": "LG",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "144",
+    "name": "LG외야수8",
+    "team": "LG",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "LG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "LG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "145",
+    "name": "두산감독1",
+    "team": "두산",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "146",
+    "name": "두산감독2",
+    "team": "두산",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "147",
+    "name": "두산감독3",
+    "team": "두산",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "148",
+    "name": "두산감독4",
+    "team": "두산",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "149",
+    "name": "두산감독5",
+    "team": "두산",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "150",
+    "name": "두산감독6",
+    "team": "두산",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "151",
+    "name": "두산감독7",
+    "team": "두산",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "152",
+    "name": "두산감독8",
+    "team": "두산",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "153",
+    "name": "두산코치1",
+    "team": "두산",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "154",
+    "name": "두산코치2",
+    "team": "두산",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "155",
+    "name": "두산코치3",
+    "team": "두산",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "156",
+    "name": "두산코치4",
+    "team": "두산",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "157",
+    "name": "두산코치5",
+    "team": "두산",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "158",
+    "name": "두산코치6",
+    "team": "두산",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "159",
+    "name": "두산코치7",
+    "team": "두산",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "160",
+    "name": "두산코치8",
+    "team": "두산",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "161",
+    "name": "두산투수1",
+    "team": "두산",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "162",
+    "name": "두산투수2",
+    "team": "두산",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "163",
+    "name": "두산투수3",
+    "team": "두산",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "164",
+    "name": "두산투수4",
+    "team": "두산",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "165",
+    "name": "두산투수5",
+    "team": "두산",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "166",
+    "name": "두산투수6",
+    "team": "두산",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "167",
+    "name": "두산투수7",
+    "team": "두산",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "168",
+    "name": "두산투수8",
+    "team": "두산",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "169",
+    "name": "양의지",
+    "team": "두산",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "170",
+    "name": "두산포수2",
+    "team": "두산",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "171",
+    "name": "두산포수3",
+    "team": "두산",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "172",
+    "name": "두산포수4",
+    "team": "두산",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "173",
+    "name": "두산포수5",
+    "team": "두산",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "174",
+    "name": "두산포수6",
+    "team": "두산",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "175",
+    "name": "두산포수7",
+    "team": "두산",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "176",
+    "name": "두산포수8",
+    "team": "두산",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "177",
+    "name": "두산내야수1",
+    "team": "두산",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "178",
+    "name": "두산내야수2",
+    "team": "두산",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "179",
+    "name": "두산내야수3",
+    "team": "두산",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "180",
+    "name": "두산내야수4",
+    "team": "두산",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "181",
+    "name": "두산내야수5",
+    "team": "두산",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "182",
+    "name": "두산내야수6",
+    "team": "두산",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "183",
+    "name": "두산내야수7",
+    "team": "두산",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "184",
+    "name": "두산내야수8",
+    "team": "두산",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "185",
+    "name": "두산외야수1",
+    "team": "두산",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "186",
+    "name": "두산외야수2",
+    "team": "두산",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "187",
+    "name": "두산외야수3",
+    "team": "두산",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "188",
+    "name": "두산외야수4",
+    "team": "두산",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "189",
+    "name": "두산외야수5",
+    "team": "두산",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "190",
+    "name": "두산외야수6",
+    "team": "두산",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "191",
+    "name": "두산외야수7",
+    "team": "두산",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "192",
+    "name": "두산외야수8",
+    "team": "두산",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "두산 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "두산 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "193",
+    "name": "KT감독1",
+    "team": "KT",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "194",
+    "name": "KT감독2",
+    "team": "KT",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "195",
+    "name": "KT감독3",
+    "team": "KT",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "196",
+    "name": "KT감독4",
+    "team": "KT",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "197",
+    "name": "KT감독5",
+    "team": "KT",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "198",
+    "name": "KT감독6",
+    "team": "KT",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "199",
+    "name": "KT감독7",
+    "team": "KT",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "200",
+    "name": "KT감독8",
+    "team": "KT",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "201",
+    "name": "KT코치1",
+    "team": "KT",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "202",
+    "name": "KT코치2",
+    "team": "KT",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "203",
+    "name": "KT코치3",
+    "team": "KT",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "204",
+    "name": "KT코치4",
+    "team": "KT",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "205",
+    "name": "KT코치5",
+    "team": "KT",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "206",
+    "name": "KT코치6",
+    "team": "KT",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "207",
+    "name": "KT코치7",
+    "team": "KT",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "208",
+    "name": "KT코치8",
+    "team": "KT",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "209",
+    "name": "KT투수1",
+    "team": "KT",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "210",
+    "name": "KT투수2",
+    "team": "KT",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "211",
+    "name": "KT투수3",
+    "team": "KT",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "212",
+    "name": "KT투수4",
+    "team": "KT",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "213",
+    "name": "KT투수5",
+    "team": "KT",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "214",
+    "name": "KT투수6",
+    "team": "KT",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "215",
+    "name": "KT투수7",
+    "team": "KT",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "216",
+    "name": "KT투수8",
+    "team": "KT",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "217",
+    "name": "KT포수1",
+    "team": "KT",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "218",
+    "name": "KT포수2",
+    "team": "KT",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "219",
+    "name": "KT포수3",
+    "team": "KT",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "220",
+    "name": "KT포수4",
+    "team": "KT",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "221",
+    "name": "KT포수5",
+    "team": "KT",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "222",
+    "name": "KT포수6",
+    "team": "KT",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "223",
+    "name": "KT포수7",
+    "team": "KT",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "224",
+    "name": "KT포수8",
+    "team": "KT",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "225",
+    "name": "KT내야수1",
+    "team": "KT",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "226",
+    "name": "KT내야수2",
+    "team": "KT",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "227",
+    "name": "KT내야수3",
+    "team": "KT",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "228",
+    "name": "KT내야수4",
+    "team": "KT",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "229",
+    "name": "KT내야수5",
+    "team": "KT",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "230",
+    "name": "KT내야수6",
+    "team": "KT",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "231",
+    "name": "KT내야수7",
+    "team": "KT",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "232",
+    "name": "KT내야수8",
+    "team": "KT",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "233",
+    "name": "KT외야수1",
+    "team": "KT",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "234",
+    "name": "KT외야수2",
+    "team": "KT",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "235",
+    "name": "KT외야수3",
+    "team": "KT",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "236",
+    "name": "KT외야수4",
+    "team": "KT",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "237",
+    "name": "KT외야수5",
+    "team": "KT",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "238",
+    "name": "KT외야수6",
+    "team": "KT",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "239",
+    "name": "KT외야수7",
+    "team": "KT",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "240",
+    "name": "KT외야수8",
+    "team": "KT",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "KT 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "KT 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "241",
+    "name": "SSG감독1",
+    "team": "SSG",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "242",
+    "name": "SSG감독2",
+    "team": "SSG",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "243",
+    "name": "SSG감독3",
+    "team": "SSG",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "244",
+    "name": "SSG감독4",
+    "team": "SSG",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "245",
+    "name": "SSG감독5",
+    "team": "SSG",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "246",
+    "name": "SSG감독6",
+    "team": "SSG",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "247",
+    "name": "SSG감독7",
+    "team": "SSG",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "248",
+    "name": "SSG감독8",
+    "team": "SSG",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "249",
+    "name": "SSG코치1",
+    "team": "SSG",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "250",
+    "name": "SSG코치2",
+    "team": "SSG",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "251",
+    "name": "SSG코치3",
+    "team": "SSG",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "252",
+    "name": "SSG코치4",
+    "team": "SSG",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "253",
+    "name": "SSG코치5",
+    "team": "SSG",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "254",
+    "name": "SSG코치6",
+    "team": "SSG",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "255",
+    "name": "SSG코치7",
+    "team": "SSG",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "256",
+    "name": "SSG코치8",
+    "team": "SSG",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "257",
+    "name": "SSG투수1",
+    "team": "SSG",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "258",
+    "name": "SSG투수2",
+    "team": "SSG",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "259",
+    "name": "SSG투수3",
+    "team": "SSG",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "260",
+    "name": "SSG투수4",
+    "team": "SSG",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "261",
+    "name": "SSG투수5",
+    "team": "SSG",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "262",
+    "name": "SSG투수6",
+    "team": "SSG",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "263",
+    "name": "SSG투수7",
+    "team": "SSG",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "264",
+    "name": "SSG투수8",
+    "team": "SSG",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "265",
+    "name": "SSG포수1",
+    "team": "SSG",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "266",
+    "name": "SSG포수2",
+    "team": "SSG",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "267",
+    "name": "SSG포수3",
+    "team": "SSG",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "268",
+    "name": "SSG포수4",
+    "team": "SSG",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "269",
+    "name": "SSG포수5",
+    "team": "SSG",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "270",
+    "name": "SSG포수6",
+    "team": "SSG",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "271",
+    "name": "SSG포수7",
+    "team": "SSG",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "272",
+    "name": "SSG포수8",
+    "team": "SSG",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "273",
+    "name": "SSG내야수1",
+    "team": "SSG",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "274",
+    "name": "SSG내야수2",
+    "team": "SSG",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "275",
+    "name": "SSG내야수3",
+    "team": "SSG",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "276",
+    "name": "SSG내야수4",
+    "team": "SSG",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "277",
+    "name": "SSG내야수5",
+    "team": "SSG",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "278",
+    "name": "SSG내야수6",
+    "team": "SSG",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "279",
+    "name": "SSG내야수7",
+    "team": "SSG",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "280",
+    "name": "SSG내야수8",
+    "team": "SSG",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "281",
+    "name": "SSG외야수1",
+    "team": "SSG",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "282",
+    "name": "SSG외야수2",
+    "team": "SSG",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "283",
+    "name": "SSG외야수3",
+    "team": "SSG",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "284",
+    "name": "SSG외야수4",
+    "team": "SSG",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "285",
+    "name": "SSG외야수5",
+    "team": "SSG",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "286",
+    "name": "SSG외야수6",
+    "team": "SSG",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "287",
+    "name": "SSG외야수7",
+    "team": "SSG",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "288",
+    "name": "SSG외야수8",
+    "team": "SSG",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "SSG 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "SSG 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "289",
+    "name": "롯데감독1",
+    "team": "롯데",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "290",
+    "name": "롯데감독2",
+    "team": "롯데",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "291",
+    "name": "롯데감독3",
+    "team": "롯데",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "292",
+    "name": "롯데감독4",
+    "team": "롯데",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "293",
+    "name": "롯데감독5",
+    "team": "롯데",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "294",
+    "name": "롯데감독6",
+    "team": "롯데",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "295",
+    "name": "롯데감독7",
+    "team": "롯데",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "296",
+    "name": "롯데감독8",
+    "team": "롯데",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "297",
+    "name": "롯데코치1",
+    "team": "롯데",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "298",
+    "name": "롯데코치2",
+    "team": "롯데",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "299",
+    "name": "롯데코치3",
+    "team": "롯데",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "300",
+    "name": "롯데코치4",
+    "team": "롯데",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "301",
+    "name": "롯데코치5",
+    "team": "롯데",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "302",
+    "name": "롯데코치6",
+    "team": "롯데",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "303",
+    "name": "롯데코치7",
+    "team": "롯데",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "304",
+    "name": "롯데코치8",
+    "team": "롯데",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "305",
+    "name": "롯데투수1",
+    "team": "롯데",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "306",
+    "name": "롯데투수2",
+    "team": "롯데",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "307",
+    "name": "롯데투수3",
+    "team": "롯데",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "308",
+    "name": "롯데투수4",
+    "team": "롯데",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "309",
+    "name": "롯데투수5",
+    "team": "롯데",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "310",
+    "name": "롯데투수6",
+    "team": "롯데",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "311",
+    "name": "롯데투수7",
+    "team": "롯데",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "312",
+    "name": "롯데투수8",
+    "team": "롯데",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "313",
+    "name": "롯데포수1",
+    "team": "롯데",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "314",
+    "name": "롯데포수2",
+    "team": "롯데",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "315",
+    "name": "롯데포수3",
+    "team": "롯데",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "316",
+    "name": "롯데포수4",
+    "team": "롯데",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "317",
+    "name": "롯데포수5",
+    "team": "롯데",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "318",
+    "name": "롯데포수6",
+    "team": "롯데",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "319",
+    "name": "롯데포수7",
+    "team": "롯데",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "320",
+    "name": "롯데포수8",
+    "team": "롯데",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "321",
+    "name": "롯데내야수1",
+    "team": "롯데",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "322",
+    "name": "롯데내야수2",
+    "team": "롯데",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "323",
+    "name": "롯데내야수3",
+    "team": "롯데",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "324",
+    "name": "롯데내야수4",
+    "team": "롯데",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "325",
+    "name": "롯데내야수5",
+    "team": "롯데",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "326",
+    "name": "롯데내야수6",
+    "team": "롯데",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "327",
+    "name": "롯데내야수7",
+    "team": "롯데",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "328",
+    "name": "롯데내야수8",
+    "team": "롯데",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "329",
+    "name": "롯데외야수1",
+    "team": "롯데",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "330",
+    "name": "롯데외야수2",
+    "team": "롯데",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "331",
+    "name": "롯데외야수3",
+    "team": "롯데",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "332",
+    "name": "롯데외야수4",
+    "team": "롯데",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "333",
+    "name": "롯데외야수5",
+    "team": "롯데",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "334",
+    "name": "롯데외야수6",
+    "team": "롯데",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "335",
+    "name": "롯데외야수7",
+    "team": "롯데",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "336",
+    "name": "롯데외야수8",
+    "team": "롯데",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "롯데 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "롯데 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "337",
+    "name": "한화감독1",
+    "team": "한화",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "338",
+    "name": "한화감독2",
+    "team": "한화",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "339",
+    "name": "한화감독3",
+    "team": "한화",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "340",
+    "name": "한화감독4",
+    "team": "한화",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "341",
+    "name": "한화감독5",
+    "team": "한화",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "342",
+    "name": "한화감독6",
+    "team": "한화",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "343",
+    "name": "한화감독7",
+    "team": "한화",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "344",
+    "name": "한화감독8",
+    "team": "한화",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "345",
+    "name": "한화코치1",
+    "team": "한화",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "346",
+    "name": "한화코치2",
+    "team": "한화",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "347",
+    "name": "한화코치3",
+    "team": "한화",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "348",
+    "name": "한화코치4",
+    "team": "한화",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "349",
+    "name": "한화코치5",
+    "team": "한화",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "350",
+    "name": "한화코치6",
+    "team": "한화",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "351",
+    "name": "한화코치7",
+    "team": "한화",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "352",
+    "name": "한화코치8",
+    "team": "한화",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "353",
+    "name": "류현진",
+    "team": "한화",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "354",
+    "name": "한화투수2",
+    "team": "한화",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "355",
+    "name": "한화투수3",
+    "team": "한화",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "356",
+    "name": "한화투수4",
+    "team": "한화",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "357",
+    "name": "한화투수5",
+    "team": "한화",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "358",
+    "name": "한화투수6",
+    "team": "한화",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "359",
+    "name": "한화투수7",
+    "team": "한화",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "360",
+    "name": "한화투수8",
+    "team": "한화",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "361",
+    "name": "한화포수1",
+    "team": "한화",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "362",
+    "name": "한화포수2",
+    "team": "한화",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "363",
+    "name": "한화포수3",
+    "team": "한화",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "364",
+    "name": "한화포수4",
+    "team": "한화",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "365",
+    "name": "한화포수5",
+    "team": "한화",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "366",
+    "name": "한화포수6",
+    "team": "한화",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "367",
+    "name": "한화포수7",
+    "team": "한화",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "368",
+    "name": "한화포수8",
+    "team": "한화",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "369",
+    "name": "한화내야수1",
+    "team": "한화",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "370",
+    "name": "한화내야수2",
+    "team": "한화",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "371",
+    "name": "한화내야수3",
+    "team": "한화",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "372",
+    "name": "한화내야수4",
+    "team": "한화",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "373",
+    "name": "한화내야수5",
+    "team": "한화",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "374",
+    "name": "한화내야수6",
+    "team": "한화",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "375",
+    "name": "한화내야수7",
+    "team": "한화",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "376",
+    "name": "한화내야수8",
+    "team": "한화",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "377",
+    "name": "한화외야수1",
+    "team": "한화",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "378",
+    "name": "한화외야수2",
+    "team": "한화",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "379",
+    "name": "한화외야수3",
+    "team": "한화",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "380",
+    "name": "한화외야수4",
+    "team": "한화",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "381",
+    "name": "한화외야수5",
+    "team": "한화",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "382",
+    "name": "한화외야수6",
+    "team": "한화",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "383",
+    "name": "한화외야수7",
+    "team": "한화",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "384",
+    "name": "한화외야수8",
+    "team": "한화",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "한화 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "한화 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "385",
+    "name": "NC감독1",
+    "team": "NC",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "386",
+    "name": "NC감독2",
+    "team": "NC",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "387",
+    "name": "NC감독3",
+    "team": "NC",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "388",
+    "name": "NC감독4",
+    "team": "NC",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "389",
+    "name": "NC감독5",
+    "team": "NC",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "390",
+    "name": "NC감독6",
+    "team": "NC",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "391",
+    "name": "NC감독7",
+    "team": "NC",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "392",
+    "name": "NC감독8",
+    "team": "NC",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "393",
+    "name": "NC코치1",
+    "team": "NC",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "394",
+    "name": "NC코치2",
+    "team": "NC",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "395",
+    "name": "NC코치3",
+    "team": "NC",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "396",
+    "name": "NC코치4",
+    "team": "NC",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "397",
+    "name": "NC코치5",
+    "team": "NC",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "398",
+    "name": "NC코치6",
+    "team": "NC",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "399",
+    "name": "NC코치7",
+    "team": "NC",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "400",
+    "name": "NC코치8",
+    "team": "NC",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "401",
+    "name": "NC투수1",
+    "team": "NC",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "402",
+    "name": "NC투수2",
+    "team": "NC",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "403",
+    "name": "NC투수3",
+    "team": "NC",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "404",
+    "name": "NC투수4",
+    "team": "NC",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "405",
+    "name": "NC투수5",
+    "team": "NC",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "406",
+    "name": "NC투수6",
+    "team": "NC",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "407",
+    "name": "NC투수7",
+    "team": "NC",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "408",
+    "name": "NC투수8",
+    "team": "NC",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "409",
+    "name": "NC포수1",
+    "team": "NC",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "410",
+    "name": "NC포수2",
+    "team": "NC",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "411",
+    "name": "NC포수3",
+    "team": "NC",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "412",
+    "name": "NC포수4",
+    "team": "NC",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "413",
+    "name": "NC포수5",
+    "team": "NC",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "414",
+    "name": "NC포수6",
+    "team": "NC",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "415",
+    "name": "NC포수7",
+    "team": "NC",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "416",
+    "name": "NC포수8",
+    "team": "NC",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "417",
+    "name": "NC내야수1",
+    "team": "NC",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "418",
+    "name": "NC내야수2",
+    "team": "NC",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "419",
+    "name": "NC내야수3",
+    "team": "NC",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "420",
+    "name": "NC내야수4",
+    "team": "NC",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "421",
+    "name": "NC내야수5",
+    "team": "NC",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "422",
+    "name": "NC내야수6",
+    "team": "NC",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "423",
+    "name": "NC내야수7",
+    "team": "NC",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "424",
+    "name": "NC내야수8",
+    "team": "NC",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "425",
+    "name": "NC외야수1",
+    "team": "NC",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "426",
+    "name": "NC외야수2",
+    "team": "NC",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "427",
+    "name": "NC외야수3",
+    "team": "NC",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "428",
+    "name": "NC외야수4",
+    "team": "NC",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "429",
+    "name": "NC외야수5",
+    "team": "NC",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "430",
+    "name": "NC외야수6",
+    "team": "NC",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "431",
+    "name": "NC외야수7",
+    "team": "NC",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "432",
+    "name": "NC외야수8",
+    "team": "NC",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "NC 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "NC 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "433",
+    "name": "키움감독1",
+    "team": "키움",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "434",
+    "name": "키움감독2",
+    "team": "키움",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "435",
+    "name": "키움감독3",
+    "team": "키움",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "436",
+    "name": "키움감독4",
+    "team": "키움",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "437",
+    "name": "키움감독5",
+    "team": "키움",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "438",
+    "name": "키움감독6",
+    "team": "키움",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "439",
+    "name": "키움감독7",
+    "team": "키움",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "440",
+    "name": "키움감독8",
+    "team": "키움",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "감독 로스터"
+      }
+    ]
+  },
+  {
+    "id": "441",
+    "name": "키움코치1",
+    "team": "키움",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "442",
+    "name": "키움코치2",
+    "team": "키움",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "443",
+    "name": "키움코치3",
+    "team": "키움",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "444",
+    "name": "키움코치4",
+    "team": "키움",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "445",
+    "name": "키움코치5",
+    "team": "키움",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "446",
+    "name": "키움코치6",
+    "team": "키움",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "447",
+    "name": "키움코치7",
+    "team": "키움",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "448",
+    "name": "키움코치8",
+    "team": "키움",
+    "positionGroup": "감독/코치",
+    "isCoach": true,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "코치 로스터"
+      }
+    ]
+  },
+  {
+    "id": "449",
+    "name": "키움투수1",
+    "team": "키움",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "450",
+    "name": "키움투수2",
+    "team": "키움",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "451",
+    "name": "키움투수3",
+    "team": "키움",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "452",
+    "name": "키움투수4",
+    "team": "키움",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "453",
+    "name": "키움투수5",
+    "team": "키움",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "454",
+    "name": "키움투수6",
+    "team": "키움",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "455",
+    "name": "키움투수7",
+    "team": "키움",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "456",
+    "name": "키움투수8",
+    "team": "키움",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "투수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "457",
+    "name": "키움포수1",
+    "team": "키움",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "458",
+    "name": "키움포수2",
+    "team": "키움",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "459",
+    "name": "키움포수3",
+    "team": "키움",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "460",
+    "name": "키움포수4",
+    "team": "키움",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "461",
+    "name": "키움포수5",
+    "team": "키움",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "462",
+    "name": "키움포수6",
+    "team": "키움",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "463",
+    "name": "키움포수7",
+    "team": "키움",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "464",
+    "name": "키움포수8",
+    "team": "키움",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "포수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "465",
+    "name": "키움내야수1",
+    "team": "키움",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "466",
+    "name": "키움내야수2",
+    "team": "키움",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "467",
+    "name": "키움내야수3",
+    "team": "키움",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "468",
+    "name": "키움내야수4",
+    "team": "키움",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "469",
+    "name": "키움내야수5",
+    "team": "키움",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "470",
+    "name": "키움내야수6",
+    "team": "키움",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "471",
+    "name": "키움내야수7",
+    "team": "키움",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "472",
+    "name": "키움내야수8",
+    "team": "키움",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "내야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "473",
+    "name": "키움외야수1",
+    "team": "키움",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "474",
+    "name": "키움외야수2",
+    "team": "키움",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "475",
+    "name": "키움외야수3",
+    "team": "키움",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "476",
+    "name": "키움외야수4",
+    "team": "키움",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "477",
+    "name": "키움외야수5",
+    "team": "키움",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "478",
+    "name": "키움외야수6",
+    "team": "키움",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "479",
+    "name": "키움외야수7",
+    "team": "키움",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  },
+  {
+    "id": "480",
+    "name": "키움외야수8",
+    "team": "키움",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "키움 정식 등록",
+    "history": [
+      {
+        "period": "현재",
+        "team": "키움 프로야구단",
+        "salary": "KBO 정식 등록",
+        "note": "외야수 로스터"
+      }
+    ]
+  }
+]
