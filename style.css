@@ -40,55 +40,63 @@ header input {
   outline: none;
 }
 
-/* 메인 컨테이너 */
+/* 메인 컨테이너 (중앙 정렬) */
 main {
   width: 100%;
-  max-width: 1100px;
+  max-width: 800px;
   padding: 2rem 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* 컨트롤/필터 박스 */
+/* 필터 전체 영역 */
 .controls, .filter-section, .filter-container {
   width: 100%;
-  max-width: 650px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.2rem;
+  gap: 1.5rem;
   margin-bottom: 2rem;
 }
 
-/* 버튼 그룹 정렬 */
-.button-group, .filter-group {
-  display: flex;
-  flex-wrap: wrap;
+/* 구단 선택 버튼 영역: Grid 적용하여 정확히 5~6개씩 2줄 배치 */
+.button-group:first-child,
+.filter-group:first-child,
+div[class*="team"] {
+  display: grid !important;
+  grid-template-columns: repeat(5, minmax(0, 1fr)) !important; /* 한 줄에 정확히 5개 */
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 550px;
   justify-content: center;
+}
+
+/* 포지션 선택 버튼 영역 */
+.button-group:nth-child(2),
+.filter-group:nth-child(2),
+div[class*="position"] {
+  display: flex !important;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 0.5rem;
   width: 100%;
 }
 
-/* 구단 선택 버튼 전용: 5개씩 2줄 배치 (줄바꿈 고정) */
-.button-group:first-child button,
-.filter-group:first-child button {
-  width: calc(20% - 0.4rem); /* 한 줄에 정확히 5개씩 배치 */
-  min-width: 70px;
-}
-
-/* 일반 버튼 기본 스타일 */
+/* 버튼 공통 스타일 */
 button {
-  padding: 0.6rem 0.5rem;
+  width: 100%;
+  padding: 0.6rem 0.2rem;
   border: 1px solid #cbd5e1;
   background-color: #ffffff;
   color: #475569;
   border-radius: 8px;
   cursor: pointer;
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   text-align: center;
   transition: all 0.2s;
+  white-space: nowrap;
 }
 
 button:hover {
@@ -101,12 +109,12 @@ button.active {
   border-color: #1e293b;
 }
 
-/* 하단 카드 영역 숨김 유지 */
+/* 선수 카드 및 테스트 텍스트 숨김 */
 #player-list, .card-grid, .player-card, .card {
   display: none !important;
 }
 
-/* 푸터/안내문구 */
+/* 하단 푸터 */
 footer, .info-text {
   margin-top: 2rem;
   text-align: center;
