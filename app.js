@@ -17,27 +17,61 @@ document.addEventListener("DOMContentLoaded", () => {
         const firstArray = Object.values(data).find((val) => Array.isArray(val));
         allPlayers = firstArray || [data];
       }
-      // 초기 진입 시 아무 문구도 표시하지 않음
       playerList.innerHTML = "";
     })
     .catch((error) => {
       console.error("데이터 로드 실패:", error);
-      // 데이터 로드 실패 시에도 초기 화면에는 문구를 띄우지 않음
       playerList.innerHTML = "";
     });
 
-  // 객체 내 검색어 매칭 함수
+  // 한글 자음/모음 분리 함수 (유사 오타 및 초성 검색용)
+  function disassembleHangul(str) {
+    if (!str) return "";
+    const CHO = ["ㄱ","ㄲ","ㄴ","ㄷ","ㄸ","ㄹ","ㅁ","ㅂ","ㅃ","ㅅ","ㅆ","ㅇ","ㅈ","ㅉ","ㅊ","ㅋ","ㅌ","ㅍ","ㅎ"];
+    const JOONG = ["ㅏ","ㅐ","ㅑ","ㅒ","ㅓ","ㅔ","ㅕ","ㅖ","ㅗ","ㅘ","ㅙ","ㅚ","ㅛ","ㅜ","ㅝ","ㅞ","ㅟ","ㅠ","ㅡ","ㅢ","ㅣ"];
+    const JONG = ["", "ㄱ","ㄲ","ㄳ","ㄴ","ㄵ","ㄶ","ㄷ","ㄹ","ㄺ","ㄻ","ㄼ","ㄽ","ㄾ","ㄿ","ㅀ","ㅁ","ㅂ","ㅄ","ㅅ","ㅆ","ㅇ","ㅈ","ㅊ","ㅋ","ㅌ","ㅍ","ㅎ"];
+
+    let result = "";
+    for (let i = 0; i < str.length; i++) {
+      const code = str.charCodeAt(i) - 44032;
+      if (code >= 0 && code <= 11172) {
+        const cho = Math.floor(code / 588);
+        const joong = Math.floor((code - cho * 588) / 28);
+        const jong = code % 28;
+        // 유사 모음 보정 (ㅠ -> ㅜ, ㅕ -> ㅓ 등 오타 흡수)
+        let normalizedJoong = JOONG[joong];
+        if (normalizedJoong === "ㅠ") normalizedJoong = "ㅜ";
+        if (normalizedJoong === "ㅕ") normalizedJoong = "ㅓ";
+        if (normalizedJoong === "ㅛ") normalizedJoong = "ㅗ";
+        if (normalizedJoong === "ㅑ") normalizedJoong = "ㅏ";
+
+        result += CHO[cho] + normalizedJoong + JONG[jong];
+      } else {
+        result += str[i];
+      }
+    }
+    return result;
+  }
+
+  // 검색어 매칭 함수
   function matchPlayer(player, keyword) {
     if (!player) return false;
-    const searchableText = JSON.stringify(player).toLowerCase();
-    return searchableText.includes(keyword.toLowerCase());
+    
+    // 1. 일반 텍스트 비교 (공백 제거)
+    const rawText = JSON.stringify(player).toLowerCase().replace(/\s+/g, "");
+    const cleanKeyword = keyword.toLowerCase().replace(/\s+/g, "");
+    if (rawText.includes(cleanKeyword)) return true;
+
+    // 2. 한글 오타 분리 비교 (중/즁 등 유연 검색)
+    const disText = disassembleHangul(rawText);
+    const disKeyword = disassembleHangul(cleanKeyword);
+    return disText.includes(disKeyword);
   }
 
   // 검색 처리 함수
   function handleSearch() {
     const keyword = searchInput.value.trim();
 
-    // 검색어가 없으면 화면을 깨끗하게 비움
     if (!keyword) {
       playerList.innerHTML = "";
       return;
@@ -65,7 +99,6 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderPlayers(players) {
     playerList.innerHTML = "";
 
-    // 검색창에 글자를 쳤는데 결과가 없을 때만 중앙에 문구 출력
     if (!players || players.length === 0) {
       playerList.innerHTML = "<p class='no-data'>검색 결과가 없습니다.</p>";
       return;
