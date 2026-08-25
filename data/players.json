@@ -1,1 +1,402 @@
-[]
+[
+  {
+    "id": "101",
+    "name": "류현진",
+    "team": "한화",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "2006년 2차 1라운드",
+    "history": [
+      {
+        "period": "2024~현재",
+        "team": "한화 이글스",
+        "salary": "8년 170억 원",
+        "note": "KBO 복귀"
+      }
+    ]
+  },
+  {
+    "id": "102",
+    "name": "문동주",
+    "team": "한화",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "2022년 1차 지명",
+    "history": [
+      {
+        "period": "2024",
+        "team": "한화 이글스",
+        "salary": "1억 원",
+        "note": "주전 투수"
+      }
+    ]
+  },
+  {
+    "id": "103",
+    "name": "채은성",
+    "team": "한화",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "2009년 육성선수",
+    "history": [
+      {
+        "period": "2023~현재",
+        "team": "한화 이글스",
+        "salary": "6년 90억 원",
+        "note": "FA 이적"
+      }
+    ]
+  },
+  {
+    "id": "104",
+    "name": "김경문",
+    "team": "한화",
+    "positionGroup": "감독",
+    "isCoach": true,
+    "draftInfo": "-",
+    "history": [
+      {
+        "period": "2024~현재",
+        "team": "한화 이글스",
+        "salary": "3년 20억 원",
+        "note": "감독 선임"
+      }
+    ]
+  },
+  {
+    "id": "201",
+    "name": "박해민",
+    "team": "LG",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "2012년 육성선수",
+    "history": [
+      {
+        "period": "2022~현재",
+        "team": "LG 트윈스",
+        "salary": "4년 60억 원",
+        "note": "FA 이적"
+      }
+    ]
+  },
+  {
+    "id": "202",
+    "name": "김현수",
+    "team": "LG",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "2006년 육성선수",
+    "history": [
+      {
+        "period": "2022~현재",
+        "team": "LG 트윈스",
+        "salary": "4+2년 115억 원",
+        "note": "FA 재계약"
+      }
+    ]
+  },
+  {
+    "id": "203",
+    "name": "오지환",
+    "team": "LG",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "2009년 1차 지명",
+    "history": [
+      {
+        "period": "2024~현재",
+        "team": "LG 트윈스",
+        "salary": "6년 124억 원",
+        "note": "다년 계약"
+      }
+    ]
+  },
+  {
+    "id": "301",
+    "name": "김도영",
+    "team": "KIA",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "2022년 1차 지명",
+    "history": [
+      {
+        "period": "2024",
+        "team": "KIA 타이거즈",
+        "salary": "1억 1,000만 원",
+        "note": "주전 내야수"
+      }
+    ]
+  },
+  {
+    "id": "302",
+    "name": "양현종",
+    "team": "KIA",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "2007년 2차 1라운드",
+    "history": [
+      {
+        "period": "2022~현재",
+        "team": "KIA 타이거즈",
+        "salary": "4년 103억 원",
+        "note": "KBO 복귀"
+      }
+    ]
+  },
+  {
+    "id": "303",
+    "name": "나성범",
+    "team": "KIA",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "2012년 2라운드",
+    "history": [
+      {
+        "period": "2022~현재",
+        "team": "KIA 타이거즈",
+        "salary": "6년 150억 원",
+        "note": "FA 이적"
+      }
+    ]
+  },
+  {
+    "id": "401",
+    "name": "구자욱",
+    "team": "삼성",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "2012년 2차 2라운드",
+    "history": [
+      {
+        "period": "2022~현재",
+        "team": "삼성 라이온즈",
+        "salary": "5년 120억 원",
+        "note": "다년 계약"
+      }
+    ]
+  },
+  {
+    "id": "402",
+    "name": "원태인",
+    "team": "삼성",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "2019년 1차 지명",
+    "history": [
+      {
+        "period": "2024",
+        "team": "삼성 라이온즈",
+        "salary": "4억 3,000만 원",
+        "note": "선발 투수"
+      }
+    ]
+  },
+  {
+    "id": "403",
+    "name": "강민호",
+    "team": "삼성",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "2004년 2차 3라운드",
+    "history": [
+      {
+        "period": "2022~현재",
+        "team": "삼성 라이온즈",
+        "salary": "4년 36억 원",
+        "note": "FA 재계약"
+      }
+    ]
+  },
+  {
+    "id": "501",
+    "name": "양의지",
+    "team": "두산",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "2006년 2차 8라운드",
+    "history": [
+      {
+        "period": "2023~현재",
+        "team": "두산 베어스",
+        "salary": "4+2년 152억 원",
+        "note": "FA 복귀"
+      }
+    ]
+  },
+  {
+    "id": "502",
+    "name": "전민재",
+    "team": "두산",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "2018년 2차 4라운드",
+    "history": [
+      {
+        "period": "2024",
+        "team": "두산 베어스",
+        "salary": "8,500만 원",
+        "note": "내야수"
+      }
+    ]
+  },
+  {
+    "id": "503",
+    "name": "정수빈",
+    "team": "두산",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "2009년 2차 5라운드",
+    "history": [
+      {
+        "period": "2021~현재",
+        "team": "두산 베어스",
+        "salary": "6년 56억 원",
+        "note": "FA 재계약"
+      }
+    ]
+  },
+  {
+    "id": "601",
+    "name": "최정",
+    "team": "SSG",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "2005년 1차 지명",
+    "history": [
+      {
+        "period": "2025~현재",
+        "team": "SSG 랜더스",
+        "salary": "4년 110억 원",
+        "note": "FA 재계약"
+      }
+    ]
+  },
+  {
+    "id": "602",
+    "name": "김광현",
+    "team": "SSG",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "2007년 1차 지명",
+    "history": [
+      {
+        "period": "2022~현재",
+        "team": "SSG 랜더스",
+        "salary": "4년 151억 원",
+        "note": "KBO 복귀"
+      }
+    ]
+  },
+  {
+    "id": "701",
+    "name": "김원중",
+    "team": "롯데",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "2012년 1라운드",
+    "history": [
+      {
+        "period": "2025~현재",
+        "team": "롯데 자이언츠",
+        "salary": "4년 54억 원",
+        "note": "FA 재계약"
+      }
+    ]
+  },
+  {
+    "id": "702",
+    "name": "전준우",
+    "team": "롯데",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "2008년 2차 2라운드",
+    "history": [
+      {
+        "period": "2024~현재",
+        "team": "롯데 자이언츠",
+        "salary": "4년 47억 원",
+        "note": "FA 재계약"
+      }
+    ]
+  },
+  {
+    "id": "801",
+    "name": "손아섭",
+    "team": "NC",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "2007년 2차 2라운드",
+    "history": [
+      {
+        "period": "2022~현재",
+        "team": "NC 다이노스",
+        "salary": "4년 64억 원",
+        "note": "FA 이적"
+      }
+    ]
+  },
+  {
+    "id": "802",
+    "name": "박민우",
+    "team": "NC",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "2012년 1라운드",
+    "history": [
+      {
+        "period": "2023~현재",
+        "team": "NC 다이노스",
+        "salary": "5+3년 140억 원",
+        "note": "FA 재계약"
+      }
+    ]
+  },
+  {
+    "id": "901",
+    "name": "고영표",
+    "team": "KT",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "2014년 2차 10라운드",
+    "history": [
+      {
+        "period": "2024~현재",
+        "team": "KT 위즈",
+        "salary": "5년 107억 원",
+        "note": "다년 계약"
+      }
+    ]
+  },
+  {
+    "id": "902",
+    "name": "강백호",
+    "team": "KT",
+    "positionGroup": "포수/외야수",
+    "isCoach": false,
+    "draftInfo": "2018년 2차 1라운드",
+    "history": [
+      {
+        "period": "2024",
+        "team": "KT 위즈",
+        "salary": "2억 9,000만 원",
+        "note": "주전 타자"
+      }
+    ]
+  },
+  {
+    "id": "1001",
+    "name": "이주형",
+    "team": "키움",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "2020년 2차 2라운드",
+    "history": [
+      {
+        "period": "2024",
+        "team": "키움 히어로즈",
+        "salary": "6,600만 원",
+        "note": "주전 외야수"
+      }
+    ]
+  }
+]
