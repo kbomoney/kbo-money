@@ -20,7 +20,9 @@ header {
   background-color: #1e293b;
   color: #ffffff;
   padding: 2.5rem 1rem;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
@@ -28,86 +30,102 @@ header h1 {
   font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 1.2rem;
+  text-align: center;
 }
 
-header input {
+/* 1. 검색창 너비를 상단 제목 길이와 비슷하게 슬림하게 조정 */
+header input, .search-container input {
   width: 100%;
-  max-width: 500px;
-  padding: 0.8rem 1.2rem;
+  max-width: 320px; /* 제목 길이에 맞춰 너비 축소 */
+  padding: 0.6rem 1rem;
   border-radius: 9999px;
   border: 2px solid #3b82f6;
-  font-size: 1rem;
+  font-size: 0.95rem;
   outline: none;
+  text-align: center;
 }
 
 /* 메인 컨테이너 */
 main {
   width: 100%;
-  max-width: 800px;
+  max-width: 600px;
   padding: 2rem 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* 필터 전체 컨테이너 */
+/* 필터 전체 영역 */
 .controls, .filter-section, .filter-container {
   width: 100%;
-  max-width: 550px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.2rem;
+  gap: 1.5rem;
   margin-bottom: 2rem;
 }
 
-/* 구단 선택 버튼 그룹 (Grid 설정) */
+/* HTML의 모든 div 컨테이너를 가로 flex/grid로 강제 전환 */
+.controls > div, .filter-section > div, .filter-container > div {
+  width: 100%;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* 구단 선택 그룹 (Grid 설정): 첫 줄 전체, 아래 5개씩 2줄 */
 .button-group:first-child,
 .filter-group:first-child,
 div[class*="team"] {
   display: grid !important;
-  grid-template-columns: repeat(5, 1fr) !important; /* 5열 고정 */
+  grid-template-columns: repeat(5, 1fr) !important;
   gap: 0.5rem;
   width: 100%;
 }
 
-/* '전체' 버튼: 첫 번째 줄 전체(5칸)를 차지 */
+/* 구단 '전체' 버튼: 가로 전체 독점 */
 .button-group:first-child button:first-child,
 .filter-group:first-child button:first-child,
 div[class*="team"] button:first-child {
-  grid-column: 1 / -1 !important; /* 가로 전체(1줄) 독점 */
+  grid-column: 1 / -1 !important;
 }
 
-/* 포지션 선택 버튼 그룹: 가로 한 줄 정렬 */
+/* 2. 포지션 선택 그룹: 무조건 가로 한 줄 정렬 */
 .button-group:nth-child(2),
 .filter-group:nth-child(2),
-div[class*="position"] {
+div[class*="position"],
+main > div:nth-of-type(2),
+main section:nth-of-type(2) {
   display: flex !important;
-  flex-direction: row !important; /* 가로 방향 정렬 */
+  flex-direction: row !important;
+  flex-wrap: nowrap !important; /* 줄바꿈 안 함 */
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.4rem;
   width: 100%;
 }
 
-/* 포지션 버튼 너비 균등 분배 */
+/* 포지션 버튼 크기 가로 균등 배치 */
 .button-group:nth-child(2) button,
 .filter-group:nth-child(2) button,
 div[class*="position"] button {
-  flex: 1; /* 가로 한 줄에 균등하게 채움 */
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  padding: 0.6rem 0.2rem !important;
 }
 
-/* 공통 버튼 스타일 */
+/* 버튼 공통 디자인 */
 button {
-  width: 100%;
-  padding: 0.6rem 0.2rem;
+  padding: 0.6rem 0.4rem;
   border: 1px solid #cbd5e1;
   background-color: #ffffff;
   color: #475569;
   border-radius: 8px;
   cursor: pointer;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   text-align: center;
   transition: all 0.2s;
   white-space: nowrap;
@@ -123,7 +141,7 @@ button.active {
   border-color: #1e293b;
 }
 
-/* 하단 선수 카드 숨김 유지 */
+/* 선수 카드 숨김 유지 */
 #player-list, .card-grid, .player-card, .card {
   display: none !important;
 }
@@ -133,5 +151,5 @@ footer, .info-text {
   margin-top: 2rem;
   text-align: center;
   color: #94a3b8;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
