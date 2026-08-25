@@ -34,10 +34,10 @@ header h1 {
   white-space: nowrap;
 }
 
-/* 1. 검색창 가로 길이를 상단 제목 폭과 동일하게 설정 */
-header input, .search-container input {
+/* 1. 검색창 가로 길이를 상단 제목 폭과 완벽히 동일하게 설정 */
+header input {
   width: 100%;
-  max-width: 440px; /* 제목 텍스트 크기와 동일한 가로 폭 */
+  max-width: 440px; /* 제목 폭 크기 */
   padding: 0.75rem 1.2rem;
   border-radius: 9999px;
   border: 2px solid #3b82f6;
@@ -57,57 +57,50 @@ main {
 }
 
 /* 필터 전체 영역 */
-.controls, .filter-section, .filter-container {
+.filter-section {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
-  margin-bottom: 1rem;
+  gap: 1.2rem;
 }
 
-/* 구단 선택 그룹 (Grid): 첫 줄 '전체', 아래 5개씩 2줄 */
-.button-group:first-child,
-.filter-group:first-child,
-div[class*="team"] {
-  display: grid !important;
-  grid-template-columns: repeat(5, 1fr) !important;
+.filter-section h3 {
+  font-size: 1.1rem;
+  color: #0f172a;
+  margin-bottom: 0.2rem;
+}
+
+/* 구단 선택 (Grid) */
+.team-group {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   gap: 0.5rem;
   width: 100%;
 }
 
-/* 구단 '전체' 버튼 가로 독점 */
-.button-group:first-child button:first-child,
-.filter-group:first-child button:first-child,
-div[class*="team"] button:first-child {
-  grid-column: 1 / -1 !important;
+/* '전체' 버튼만 가로 1줄 전체 차지 */
+.team-group .team-btn:first-child {
+  grid-column: 1 / -1;
 }
 
-/* 포지션 선택 그룹 가로 한 줄 유지 */
-.button-group:nth-child(2),
-.filter-group:nth-child(2),
-div[class*="position"],
-main > div:nth-of-type(2) {
-  display: flex !important;
-  flex-direction: row !important;
-  flex-wrap: nowrap !important;
+/* 포지션 선택 (Flex 가로 한 줄) */
+.position-group {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
   gap: 0.4rem;
   width: 100%;
+  margin-top: 0.5rem;
 }
 
-.button-group:nth-child(2) button,
-.filter-group:nth-child(2) button,
-div[class*="position"] button {
-  flex: 1 1 auto !important;
-  min-width: 0 !important;
-  padding: 0.6rem 0.2rem !important;
+.position-group .pos-btn {
+  flex: 1;
 }
 
-/* 공통 버튼 스타일 */
+/* 버튼 기본 스타일 */
 button {
-  padding: 0.6rem 0.4rem;
+  padding: 0.6rem 0.2rem;
   border: 1px solid #cbd5e1;
   background-color: #ffffff;
   color: #475569;
@@ -130,19 +123,14 @@ button.active {
   border-color: #1e293b;
 }
 
-/* 선수 카드 숨김 */
-#player-list, .card-grid, .player-card, .card {
-  display: none !important;
+/* 선수 카드 hidden/display 처리 */
+.card-grid {
+  width: 100%;
+  margin-top: 1.5rem;
 }
 
-/* 2. 화면 중앙의 불필요한 '×' 표시 삭제(숨김) */
-main > *:not(.controls):not(.filter-section):not(.filter-container):not(.info-text):not(footer),
-.close-btn, .clear-btn, span:contains("×") {
-  display: none !important;
-}
-
-/* 하단 푸터 및 안내문구 */
-footer, .info-text {
+/* 하단 안내문구 */
+.info-text {
   margin-top: 2rem;
   text-align: center;
   color: #94a3b8;
