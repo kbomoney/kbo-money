@@ -1,8 +1,6 @@
 name: Auto Update KBO Data
 
 on:
-  schedule:
-    - cron: '0 0 * * 1'
   workflow_dispatch:
 
 jobs:
@@ -10,28 +8,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.10'
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
 
-    - name: Install Chrome & Selenium Dependencies
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y google-chrome-stable
-        python -m pip install --upgrade pip
-        pip install selenium
+      - name: Run data generator
+        run: python crawl.py
 
-    - name: Run Crawler
-      run: python crawl.py
-
-    - name: Commit & Push Changes
-      run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.io"
-        git add data/players.json
-        git commit -m "Auto-update full KBO players roster" || exit 0
-        git push
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/players.json
+          git commit -m "Auto update KBO players data" || exit 0
+          git push
