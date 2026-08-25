@@ -1,0 +1,183 @@
+:root {
+  --primary-color: #071d49;
+  --accent-color: #d92525;
+  --bg-color: #f4f6f9;
+  --card-bg: #ffffff;
+  --text-color: #333333;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Pretendard', sans-serif, Arial;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding-bottom: 40px;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 24px 16px;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.search-container input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 16px;
+  border-radius: 20px;
+  border: none;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+.team-selector {
+  margin-bottom: 16px;
+}
+
+.team-selector h3 {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.team-buttons, .group-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.team-btn, .tab-btn {
+  padding: 8px 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.2s;
+}
+
+.team-btn.active, .tab-btn.active {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+  font-weight: bold;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.player-card {
+  background: var(--card-bg);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.player-card:hover {
+  transform: translateY(-3px);
+}
+
+.card-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  font-size: 0.75rem;
+  background-color: #eee;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.card-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.card-team {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Modal Style */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.modal-content {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px; right: 16px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.timeline {
+  margin-top: 16px;
+  border-left: 2px solid var(--primary-color);
+  padding-left: 16px;
+}
+
+.timeline-item {
+  margin-bottom: 12px;
+}
+
+.timeline-period {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.timeline-title {
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.timeline-sub {
+  font-size: 0.85rem;
+  color: var(--accent-color);
+}
+
+footer {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #888;
+  margin-top: 40px;
+}
