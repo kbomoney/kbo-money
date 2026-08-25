@@ -34,7 +34,7 @@ header h1 {
   white-space: nowrap;
 }
 
-/* 검색창 너비: 상단 제목 폭(420px)과 동일하게 고정 */
+/* 검색창 너비: 상단 제목 폭과 동일 */
 header input {
   width: 100%;
   max-width: 420px;
@@ -53,7 +53,7 @@ header input:focus {
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
 }
 
-/* 메인 컨테이너 */
+/* 메인 영 컨테이너 - 중앙 정렬 강제 */
 main {
   width: 100%;
   max-width: 800px;
@@ -61,18 +61,57 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-/* 카드 출력 영역 */
-.card-grid {
+/* 카드 및 결과 출력 영역 - 중앙 정렬 */
+.card-grid, #player-list {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-top: 1rem;
 }
 
-/* 하단 안내 문구 */
+/* 안내 및 결과 없음 메시지 중앙 정렬 */
+.no-data, p.no-data {
+  width: 100% !important;
+  text-align: center !important;
+  color: #94a3b8;
+  padding: 3rem 0;
+  font-size: 0.95rem;
+  display: block !important;
+  margin: 0 auto !important;
+}
+
+/* 검색 결과 카드 그리드 */
+.player-card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.player-card h3 {
+  font-size: 1.15rem;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+}
+
+.player-card p {
+  color: #475569;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+/* 하단 푸터 문구 */
 .info-text {
   margin-top: 3rem;
   text-align: center;
