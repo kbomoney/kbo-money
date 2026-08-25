@@ -34,10 +34,10 @@ header h1 {
   white-space: nowrap;
 }
 
-/* 1. 검색창 가로 길이를 상단 제목 폭과 완벽히 동일하게 설정 */
+/* 1. 검색창 너비를 상단 제목 폭에 고정 */
 header input {
   width: 100%;
-  max-width: 440px; /* 제목 폭 크기 */
+  max-width: 420px; /* 제목 너비와 동일 */
   padding: 0.75rem 1.2rem;
   border-radius: 9999px;
   border: 2px solid #3b82f6;
@@ -56,13 +56,14 @@ main {
   align-items: center;
 }
 
-/* 필터 전체 영역 */
+/* 2. 필터 전체 영역 너비를 상단 제목 폭과 동일하게 고정 (420px) */
 .filter-section {
   width: 100%;
+  max-width: 420px; /* 제목 너비와 동일 */
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.2rem;
+  gap: 1rem;
 }
 
 .filter-section h3 {
@@ -71,34 +72,35 @@ main {
   margin-bottom: 0.2rem;
 }
 
-/* 구단 선택 (Grid) */
+/* 구단 선택 (Grid 5열) */
 .team-group {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 0.5rem;
+  gap: 0.4rem;
   width: 100%;
 }
 
-/* '전체' 버튼만 가로 1줄 전체 차지 */
+/* 구단 '전체' 버튼만 가로 1줄 전체 독점 */
 .team-group .team-btn:first-child {
   grid-column: 1 / -1;
 }
 
-/* 포지션 선택 (Flex 가로 한 줄) */
+/* 포지션 선택 (Flex 가로 1줄) */
 .position-group {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   gap: 0.4rem;
   width: 100%;
-  margin-top: 0.5rem;
+  margin-top: 0.4rem;
 }
 
 .position-group .pos-btn {
   flex: 1;
+  padding: 0.6rem 0;
 }
 
-/* 버튼 기본 스타일 */
+/* 버튼 공통 스타일 */
 button {
   padding: 0.6rem 0.2rem;
   border: 1px solid #cbd5e1;
@@ -123,13 +125,14 @@ button.active {
   border-color: #1e293b;
 }
 
-/* 선수 카드 hidden/display 처리 */
+/* 카드 영역 */
 .card-grid {
   width: 100%;
+  max-width: 420px;
   margin-top: 1.5rem;
 }
 
-/* 하단 안내문구 */
+/* 하단 안내 문구 */
 .info-text {
   margin-top: 2rem;
   text-align: center;
