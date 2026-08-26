@@ -148,8 +148,9 @@ def enrich_one(person):
 
     # 현역/지도자에 따라 시도 순서를 조정해 요청 수를 줄임
     paths = list(CANDIDATE_PATHS)
-    if person.get("isRetiredRecord"):
+    if person.get("role") == "coach" or person.get("isRetiredRecord"):
         paths = CANDIDATE_PATHS[4:] + CANDIDATE_PATHS[:4]
+
     elif "투수" in (person.get("job") or ""):
         pass  # 투수 경로가 이미 먼저임
     else:
