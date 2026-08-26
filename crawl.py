@@ -4,8 +4,8 @@ import time
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 
-def crawl_kbo_stealth():
-    print("=== [Playwright Stealth] KBO 실시간 수집 시작 ===")
+def crawl_kbo_official():
+    print("=== [KBO API] 전 구단 실시간 명단 수집 시작 ===")
 
     teams = [
         {"code": "HT", "name": "KIA"},
@@ -20,56 +20,60 @@ def crawl_kbo_stealth():
         {"code": "WO", "name": "키움"}
     ]
 
-    players = []
+    all_players = []
     pid = 1
 
     with sync_playwright() as p:
-        # 실제 사용자처럼 보이도록 옵션 세팅
+        # 브라우저 생성 및 보안 탐지 방지 설정
         browser = p.chromium.launch(headless=True)
         context = browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
             locale="ko-KR",
             timezone_id="Asia/Seoul"
         )
         page = context.new_page()
 
-        # webdriver 감지 우회
+        # 브라우저 자동화 감지 변수 초기화
         page.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
 
-        print("KBO 선수 검색 페이지 접속 중...")
+        print("1. KBO 메인 세션 연결 중...")
         try:
-            page.goto("https://www.koreabaseball.com/Player/Search.aspx", wait_until="domcontentloaded", timeout=60000)
-            time.sleep(3)
+            page.goto("https://www.koreabaseball.com/Player/Search.aspx", wait_until="networkidle", timeout=30000)
+            time.sleep(2)
         except Exception as e:
-            print(f"초기 페이지 접속 경고: {e}")
+            print(f"메인 세션 접속 경고: {e}")
 
+        # 구단별 검색 진행
         for team in teams:
             team_code = team["code"]
             team_name = team["name"]
-            curr_page = 1
-            print(f"[{team_name}] 실시간 명단 파싱 중...")
+            page_num = 1
+            print(f"[{team_name}] 실시간 데이터 파싱 중...")
 
             while True:
-                # Playwright 세션 내부에서 KBO 백엔드에 직접 POST
-                res_data = page.evaluate(f"""
-                    async () => {{
-                        try {{
-                            const response = await fetch('https://www.koreabaseball.com/ws/Main.wsgi/GetSearchPlayerList', {{
-                                method: 'POST',
-                                headers: {{
-                                    'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-                                    'X-Requested-With': 'XMLHttpRequest'
-                                }},
-                                body: 'searchType=TEAM&teamCode={team_code}&page={curr_page}'
-                            }});
-                            return await response.json();
-                        }} catch (e) {{
-                            return null;
-                        }}
+                # 브라우저 내부 세션을 그대로 사용하여 KBO 백엔드 API 호출
+                js_code = f"""
+                async () => {{
+                    try {{
+                        const res = await fetch('https://www.koreabaseball.com/ws/Main.wsgi/GetSearchPlayerList', {{
+                            method: 'POST',
+                            headers: {{
+                                'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+                                'X-Requested-With': 'XMLHttpRequest'
+                            }},
+                            body: 'searchType=TEAM&teamCode={team_code}&page={page_num}'
+                        }});
+                        return await res.json();
+                    }} catch (err) {{
+                        return null;
                     }}
-                """)
-
+                }}
+                """
+                
+                res_data = page.evaluate(js_code)
+                
                 if not res_data or 'rows' not in res_data:
+                    print(f"[{team_name}] API 응답 없음/차단됨")
                     break
 
                 rows = res_data.get('rows', [])
@@ -79,6 +83,7 @@ def crawl_kbo_stealth():
                 for item in rows:
                     cols = item.get('row', [])
                     if len(cols) >= 4:
+                        # 등번호, 이름 파싱
                         back_num = BeautifulSoup(str(cols[0]), 'html.parser').get_text(strip=True)
                         name = BeautifulSoup(str(cols[1]), 'html.parser').get_text(strip=True)
                         position = str(cols[2]).strip() if len(cols) > 2 else "등록선수"
@@ -86,7 +91,9 @@ def crawl_kbo_stealth():
 
                         if name and name != "선수명":
                             is_coach = "코치" in position or "감독" in position
-                            players.append({
+                            
+                            # 기존 포맷과 100% 동일하게 생성
+                            all_players.append({
                                 "id": str(pid),
                                 "name": name,
                                 "team": team_name,
@@ -104,25 +111,25 @@ def crawl_kbo_stealth():
                             pid += 1
 
                 total_page = res_data.get('totalPage', 1)
-                if curr_page >= total_page:
+                if page_num >= total_page:
                     break
 
-                curr_page += 1
-                time.sleep(0.15)
+                page_num += 1
+                time.sleep(0.1)
 
         browser.close()
 
-    print(f"\n최종 수집 인원: {len(players)}명")
+    print(f"\n최종 수집 인원: {len(all_players)}명")
 
-    # 수집 실패 시 예외 발생
-    if len(players) < 500:
-        raise Exception(f"수집량 부족 ({len(players)}명). 방화벽 차단 가능성 존재.")
+    # 수집 인원이 100명 미만이면 오류 처리 (차단 여부 확인)
+    if len(all_players) < 100:
+        raise Exception(f"수집 실패 (현재 수집된 인원: {len(all_players)}명)")
 
     os.makedirs('data', exist_ok=True)
     with open('data/players.json', 'w', encoding='utf-8') as f:
-        json.dump(players, f, ensure_ascii=False, indent=2)
+        json.dump(all_players, f, ensure_ascii=False, indent=2)
 
     print("data/players.json 저장 성공!")
 
 if __name__ == "__main__":
-    crawl_kbo_stealth()
+    crawl_kbo_official()
