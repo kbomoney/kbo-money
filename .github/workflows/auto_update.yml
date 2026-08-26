@@ -16,7 +16,7 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Run data generator
+      - name: Run KBO Crawler
         run: python crawl.py
 
       - name: Commit and Push changes
