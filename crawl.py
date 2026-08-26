@@ -94,7 +94,7 @@ def crawl_kbo_api(teams):
             api_url = "https://www.koreabaseball.com/ws/Main.wsgi/GetSearchPlayerList"
             payload = urlencode({'searchType': 'TEAM', 'teamCode': team_code, 'page': page}).encode('utf-8')
             req = Request(api_url, data=payload, headers={
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
                 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
                 'X-Requested-With': 'XMLHttpRequest',
                 'Referer': 'https://www.koreabaseball.com/Player/Search.aspx'
@@ -162,18 +162,18 @@ def main():
         {"code": "WO", "name": "키움"}
     ]
 
-    # 1. HTML 직접 수집
+    # 1차 HTML 직접 수집
     players = crawl_kbo_html(teams)
 
-    # 2. 실패 시 API 수집 시도
+    # 2차 실패 시 API 수집
     if not players:
-        print("HTML 수집 실패. API 수집 방식으로 전환합니다.")
+        print("HTML 수집 실패/차단. API 전환 방식 시도 중...")
         players = crawl_kbo_api(teams)
 
-    print(f"\n최종 수집 결과: 총 {len(players)}명 수집 완료")
+    print(f"\n최종 수집 결과: 총 {len(players)}명 완료")
 
     if not players:
-        raise Exception("크롤링 데이터 수집에 전면 실패했습니다. KBO 차단 상태를 확인해주세요.")
+        raise Exception("크롤링 데이터 수집 실패: KBO 서버 접속 및 데이터 파싱 실패")
 
     os.makedirs('data', exist_ok=True)
     with open('data/players.json', 'w', encoding='utf-8') as f:
