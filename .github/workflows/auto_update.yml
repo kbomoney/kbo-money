@@ -3,14 +3,11 @@ name: Auto Update KBO Data
 on:
   workflow_dispatch:
   schedule:
-    # UTC 기준입니다. 23:00 UTC = 08:00 KST (매일 아침)
     - cron: '0 23 * * *'
 
-# 기본 GITHUB_TOKEN에 푸시 권한 부여
 permissions:
   contents: write
 
-# 동시 실행 방지 (스케줄과 수동 실행이 겹쳐 push 충돌 나는 것 방지)
 concurrency:
   group: auto-update-kbo
   cancel-in-progress: false
@@ -27,7 +24,6 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          cache: 'pip'
 
       - name: Install Dependencies
         run: |
@@ -51,6 +47,5 @@ jobs:
 
           git commit -m "Auto update KBO players data ($(date -u '+%Y-%m-%d %H:%M UTC'))"
 
-          # 원격에 다른 커밋이 있을 경우를 대비해 rebase 후 push
           git pull --rebase --autostash origin main
           git push origin main
