@@ -1,13 +1,17 @@
+import base64
 import json
 import os
 import re
 import sys
 import time
+
 import requests
 from bs4 import BeautifulSoup
 
 BASE = "https://web1.koreabaseball.com"
-REGISTER_ALL = f"{BASE}/Player/RegisterAll.aspx"
+KBO_REGISTER = f"{BASE}/Player/Register.aspx"
+KBO_REGISTER_ALL = f"{BASE}/Player/RegisterAll.aspx"
+FUTURES_REGISTER = f"{BASE}/Futures/Player/Register.aspx"
 
 HEADERS = {
     "User-Agent": (
@@ -15,36 +19,100 @@ HEADERS = {
         "(KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
     ),
     "Accept-Language": "ko-KR,ko;q=0.9",
+    "Referer": BASE + "/",
 }
 
-TEAM_FULL = {
-    "KT": "KT 위즈", "삼성": "삼성 라이온즈", "LG": "LG 트윈스",
-    "KIA": "KIA 타이거즈", "두산": "두산 베어스", "롯데": "롯데 자이언츠",
-    "한화": "한화 이글스", "NC": "NC 다이노스", "SSG": "SSG 랜더스",
-    "키움": "키움 히어로즈",
+# VIEWSTATE 안에서 확인된 1군 구단 코드
+TEAM_CODE_NAME = {
+    "KT": "KT", "SS": "삼성", "LG": "LG", "HT": "KIA", "OB": "두산",
+    "LT": "롯데", "HH": "한화", "NC": "NC", "SK": "SSG", "WO": "키움",
 }
 
-# 코치진으로 취급할 보직 키워드
+JOB_KEYWORDS = ("감독", "코치", "투수", "포수", "내야수", "외야수")
 STAFF_KEYWORDS = ("감독", "코치")
 
+session = requests.Session()
+session.headers.update(HEADERS)
 
-def fetch(url, retries=3):
-    last_err = None
+
+def get(url, retries=3):
+    last = None
     for i in range(retries):
         try:
-            res = requests.get(url, headers=HEADERS, timeout=20)
-            res.raise_for_status()
-            res.encoding = res.apparent_encoding or "utf-8"
-            return res.text
+            r = session.get(url, timeout=25)
+            r.raise_for_status()
+            r.encoding = "utf-8"
+            return r.text
         except Exception as e:
-            last_err = e
-            print(f"  요청 실패({i + 1}/{retries}): {e}")
+            last = e
+            print(f"  GET 실패({i + 1}/{retries}): {e}")
             time.sleep(2 * (i + 1))
-    raise RuntimeError(f"요청 최종 실패: {url} ({last_err})")
+    raise RuntimeError(f"GET 최종 실패: {url} ({last})")
 
 
-def parse_player_id(cell):
-    """이름 셀의 링크에서 playerId와 상세 URL을 추출."""
+def post(url, data, retries=3):
+    last = None
+    for i in range(retries):
+        try:
+            r = session.post(url, data=data, timeout=25)
+            r.raise_for_status()
+            r.encoding = "utf-8"
+            return r.text
+        except Exception as e:
+            last = e
+            print(f"  POST 실패({i + 1}/{retries}): {e}")
+            time.sleep(2 * (i + 1))
+    print(f"  POST 최종 실패: {url} ({last})")
+    return None
+
+
+def hidden_fields(html):
+    """__VIEWSTATE 등 폼 hidden 값 전부 수집."""
+    soup = BeautifulSoup(html, "html.parser")
+    data = {}
+    for inp in soup.find_all("input", {"type": "hidden"}):
+        name = inp.get("name")
+        if name:
+            data[name] = inp.get("value", "")
+    return data
+
+
+def find_team_buttons(html):
+    """페이지 HTML에서 구단 버튼의 __doPostBack 대상을 자동으로 찾아낸다."""
+    soup = BeautifulSoup(html, "html.parser")
+    found, seen = [], set()
+
+    for a in soup.find_all("a"):
+        m = re.search(r"__doPostBack\('([^']+)'\s*,\s*'([^']*)'\)", str(a))
+        if not m:
+            continue
+        target, arg = m.group(1), m.group(2)
+
+        code, label = None, a.get_text(strip=True)
+        img = a.find("img")
+        if img:
+            mm = re.search(r"emblem_([A-Za-z0-9]+)\.png", img.get("src", ""))
+            if mm:
+                code = mm.group(1).upper()
+            if not label:
+                label = (img.get("alt") or "").strip()
+        if not code:
+            continue  # 구단 버튼이 아니면 무시
+
+        key = (target, arg)
+        if key in seen:
+            continue
+        seen.add(key)
+        found.append({
+            "code": code,
+            "name": TEAM_CODE_NAME.get(code, label or code),
+            "target": target,
+            "arg": arg,
+        })
+    return found
+
+
+def parse_player_link(cell):
     a = cell.find("a")
     if not a:
         return None, None, False
@@ -52,123 +120,188 @@ def parse_player_id(cell):
     m = re.search(r"playerId=(\d+)", href)
     pid = m.group(1) if m else None
     detail = href if href.startswith("http") else BASE + href
-    # 은퇴 선수 경로면 지도자(코치진)로 판단
-    is_retired_path = "/Record/Retire/" in href
-    return pid, detail, is_retired_path
+    return pid, detail, "/Record/Retire/" in href
 
 
-def parse_register_all(html):
-    """전체 등록 현황 페이지에서 구단별 감독/코치/선수를 파싱."""
+def parse_roster(html, team_name, league):
+    """구단 페이지의 명단 표를 파싱. 등/말소 표는 자동으로 제외된다."""
     soup = BeautifulSoup(html, "html.parser")
     people = []
 
     for table in soup.find_all("table"):
-        # 헤더에서 보직(감독/코치/투수/포수/내야수/외야수) 확인
-        head = table.find("thead")
-        if not head:
+        headers = [th.get_text(strip=True) for th in table.find_all("th")]
+        if len(headers) < 2 or headers[0] != "등번호":
             continue
-        head_cols = [th.get_text(strip=True) for th in head.find_all("th")]
-        if len(head_cols) < 2 or head_cols[0] != "등번호":
-            continue
-        job = head_cols[1]  # 감독, 코치, 투수, 포수, 내야수, 외야수
-
-        # 이 테이블이 속한 구단명 찾기 (직전 제목 요소 탐색)
-        team = None
-        for prev in table.find_all_previous(["h4", "h5", "h6", "caption", "strong"]):
-            text = prev.get_text(strip=True)
-            m = re.search(r"(KT|삼성|LG|KIA|두산|롯데|한화|NC|SSG|키움)", text)
-            if m:
-                team = m.group(1)
-                break
-        if not team:
-            continue
+        job = headers[1]
+        if not any(k in job for k in JOB_KEYWORDS):
+            continue  # '선수명' 헤더인 등/말소 표는 건너뜀
 
         body = table.find("tbody") or table
         for tr in body.find_all("tr"):
             tds = tr.find_all("td")
             if len(tds) < 2:
                 continue
-
-            back_no = tds[0].get_text(strip=True)
-            name_cell = tds[1]
-            name = name_cell.get_text(strip=True)
-            if not name or name == job:
+            name = tds[1].get_text(strip=True)
+            if not name:
                 continue
 
-            pid, detail, retired_path = parse_player_id(name_cell)
-            throw_bat = tds[2].get_text(strip=True) if len(tds) > 2 else ""
-            birth = tds[3].get_text(strip=True) if len(tds) > 3 else ""
-            physique = tds[4].get_text(strip=True) if len(tds) > 4 else ""
-
+            pid, detail, retired = parse_player_link(tds[1])
             is_staff = any(k in job for k in STAFF_KEYWORDS)
 
             people.append({
                 "playerId": pid,
                 "name": name,
-                "team": team,
-                "teamFull": TEAM_FULL.get(team, team),
-                "league": "1군",
+                "team": team_name,
+                "league": league,
                 "job": job,
                 "role": "coach" if is_staff else "player",
-                "backNo": back_no,
-                "throwBat": throw_bat,
-                "birth": birth,
-                "physique": physique,
+                "backNo": tds[0].get_text(strip=True),
+                "throwBat": tds[2].get_text(strip=True) if len(tds) > 2 else "",
+                "birth": tds[3].get_text(strip=True) if len(tds) > 3 else "",
+                "physique": tds[4].get_text(strip=True) if len(tds) > 4 else "",
                 "detailUrl": detail,
-                "isRetiredRecord": retired_path,
-                # 연봉은 별도 파일(data/salary.json)에서 병합. 여기서는 상태만 표기.
+                "isRetiredRecord": retired,
                 "salary": {
                     "amount": None,
                     "status": "비공개" if is_staff else "미확인",
                     "season": None,
                     "source": None,
                 },
-                # 이적 이력은 다음 단계에서 상세 페이지로 채움.
                 "history": [],
             })
+    return people
+
+
+def collect(page_url, league):
+    """한 페이지(1군 또는 퓨처스)의 모든 구단을 순회 수집."""
+    print(f"\n--- {league} 수집 시작 ---")
+    html = get(page_url)
+    teams = find_team_buttons(html)
+    if not teams:
+        print(f"  구단 버튼을 찾지 못했습니다: {page_url}")
+        return []
+    print(f"  구단 버튼 {len(teams)}개 발견: {[t['code'] for t in teams]}")
+
+    people = []
+    # 첫 화면에 이미 표시된 구단은 그대로 파싱
+    first = parse_roster(html, teams[0]["name"], league)
+    print(f"  {teams[0]['name']}: {len(first)}명")
+    people += first
+
+    for t in teams[1:]:
+        base_html = get(page_url)          # 매번 새 VIEWSTATE 확보
+        form = hidden_fields(base_html)
+        form["__EVENTTARGET"] = t["target"]
+        form["__EVENTARGUMENT"] = t["arg"]
+        res = post(page_url, form)
+        if not res:
+            continue
+        got = parse_roster(res, t["name"], league)
+        print(f"  {t['name']}: {len(got)}명")
+        people += got
+        time.sleep(0.5)
 
     return people
 
 
+def fallback_from_viewstate():
+    """POST가 막힐 경우를 위한 예비 경로.
+    RegisterAll.aspx의 VIEWSTATE 안에 들어있는 전체 명단 데이터를 직접 읽는다."""
+    print("\n--- 예비 경로: RegisterAll VIEWSTATE 파싱 ---")
+    html = get(KBO_REGISTER_ALL)
+    m = re.search(r'id="__VIEWSTATE"\s+value="([^"]+)"', html)
+    if not m:
+        return []
+    try:
+        blob = base64.b64decode(m.group(1)).decode("utf-8", errors="ignore")
+    except Exception as e:
+        print(f"  디코딩 실패: {e}")
+        return []
+
+    people = []
+    for chunk in re.findall(r"<Table\s[^>]*>(.*?)</Table>", blob, re.S):
+        def val(tag):
+            mm = re.search(rf"<{tag}>(.*?)</{tag}>", chunk, re.S)
+            return mm.group(1).strip() if mm else ""
+
+        name, code, job = val("P_NM"), val("T_ID"), val("JOB_SC")
+        if not name or not code:
+            continue
+        is_staff = any(k in job for k in STAFF_KEYWORDS)
+        people.append({
+            "playerId": val("P_ID") or None,
+            "name": name,
+            "team": TEAM_CODE_NAME.get(code.upper(), code),
+            "league": "1군",
+            "job": job,
+            "role": "coach" if is_staff else "player",
+            "backNo": val("BACK_NO"),
+            "throwBat": "",
+            "birth": "",
+            "physique": "",
+            "detailUrl": None,
+            "isRetiredRecord": False,
+            "salary": {
+                "amount": None,
+                "status": "비공개" if is_staff else "미확인",
+                "season": None,
+                "source": None,
+            },
+            "history": [],
+        })
+    print(f"  {len(people)}명 확보")
+    return people
+
+
 def dedupe(people):
-    """playerId 기준 중복 제거(등/말소 표에 중복 등장하는 경우 대비)."""
-    seen = {}
+    seen, out = set(), []
     for p in people:
-        key = p["playerId"] or f'{p["team"]}|{p["name"]}|{p["backNo"]}'
-        if key not in seen:
-            seen[key] = p
-    return list(seen.values())
+        key = (p["league"], p["playerId"] or f'{p["team"]}|{p["name"]}|{p["backNo"]}')
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(p)
+    return out
 
 
 def main():
-    print("=== KBO 1군 등록 현황 수집 시작 ===")
-    html = fetch(REGISTER_ALL)
-    people = dedupe(parse_register_all(html))
+    print("=== KBO 선수·코치 명단 수집 시작 ===")
 
+    people = collect(KBO_REGISTER, "1군")
+    teams_found = {p["team"] for p in people}
+    if len(teams_found) < 8:
+        print(f"1군 수집이 부족합니다(구단 {len(teams_found)}개). 예비 경로로 전환합니다.")
+        people += fallback_from_viewstate()
+
+    try:
+        people += collect(FUTURES_REGISTER, "퓨처스")
+    except Exception as e:
+        print(f"퓨처스 수집 실패(1군 데이터는 유지): {e}")
+
+    people = dedupe(people)
     if not people:
-        raise RuntimeError("파싱 결과가 0건입니다. 페이지 구조가 변경된 것으로 보입니다.")
-
-    # 절대 인원수 대신 '구단이 모두 수집됐는지'를 구조적으로 검증
-    teams_found = sorted({p["team"] for p in people})
-    missing = [t for t in TEAM_FULL if t not in teams_found]
-    if missing:
-        raise RuntimeError(f"누락된 구단이 있습니다: {missing} (수집된 구단: {teams_found})")
+        raise RuntimeError("수집 결과가 0건입니다. 페이지 구조를 다시 확인해야 합니다.")
 
     players = [p for p in people if p["role"] == "player"]
     coaches = [p for p in people if p["role"] == "coach"]
+    with_id = [p for p in people if p["playerId"]]
 
-    print(f"구단 수: {len(teams_found)}")
-    print(f"선수: {len(players)}명 / 감독·코치: {len(coaches)}명 / 합계: {len(people)}명")
-    for t in teams_found:
-        cnt = sum(1 for p in people if p["team"] == t)
-        print(f"  - {t}: {cnt}명")
+    print("\n=== 수집 결과 ===")
+    print(f"총 인원: {len(people)}명 (선수 {len(players)} / 감독·코치 {len(coaches)})")
+    print(f"playerId 확보: {len(with_id)}명")
+    for lg in ("1군", "퓨처스"):
+        sub = [p for p in people if p["league"] == lg]
+        if sub:
+            print(f"  {lg}: {len(sub)}명, 구단 {len(set(p['team'] for p in sub))}개")
 
     os.makedirs("data", exist_ok=True)
     out = {
-        "updatedAt": time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()),
-        "source": REGISTER_ALL,
-        "note": "1군 등록 현황 기준. 연봉은 data/salary.json에서 병합됩니다.",
+        "updatedAt": time.strftime("%Y-%m-%d %H:%M:%S"),
+        "source": [KBO_REGISTER, FUTURES_REGISTER],
+        "note": "연봉·이력은 enrich.py가 상세 페이지에서 채웁니다.",
         "totalCount": len(people),
+        "playerCount": len(players),
+        "coachCount": len(coaches),
         "people": people,
     }
     with open("data/players.json", "w", encoding="utf-8") as f:
