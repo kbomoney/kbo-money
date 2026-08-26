@@ -1,1 +1,172 @@
-[]
+[
+  {
+    "id": "1",
+    "name": "손아섭",
+    "team": "NC",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "2007 롯데 2차 2라운드",
+    "salary": "KBO 공시 연봉",
+    "history": [
+      {
+        "period": "2026",
+        "team": "NC 다이노스",
+        "salary": "정식 계약",
+        "note": "등번호 No.31"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "류현진",
+    "team": "한화",
+    "positionGroup": "투수",
+    "isCoach": false,
+    "draftInfo": "2006 한화 2차 1라운드",
+    "salary": "KBO 공시 연봉",
+    "history": [
+      {
+        "period": "2026",
+        "team": "한화 이글스",
+        "salary": "정식 계약",
+        "note": "등번호 No.99"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "김도영",
+    "team": "KIA",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "2022 KIA 1차지명",
+    "salary": "KBO 공시 연봉",
+    "history": [
+      {
+        "period": "2026",
+        "team": "KIA 타이거즈",
+        "salary": "정식 계약",
+        "note": "등번호 No.5"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "구자욱",
+    "team": "삼성",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "2012 삼성 2라운드",
+    "salary": "KBO 공시 연봉",
+    "history": [
+      {
+        "period": "2026",
+        "team": "삼성 라이온즈",
+        "salary": "정식 계약",
+        "note": "등번호 No.5"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "홍창기",
+    "team": "LG",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "2016 LG 2차 3라운드",
+    "salary": "KBO 공시 연봉",
+    "history": [
+      {
+        "period": "2026",
+        "team": "LG 트윈스",
+        "salary": "정식 계약",
+        "note": "등번호 No.51"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "양의지",
+    "team": "두산",
+    "positionGroup": "포수",
+    "isCoach": false,
+    "draftInfo": "2006 두산 2차 8라운드",
+    "salary": "KBO 공시 연봉",
+    "history": [
+      {
+        "period": "2026",
+        "team": "두산 베어스",
+        "salary": "정식 계약",
+        "note": "등번호 No.25"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "name": "강백호",
+    "team": "KT",
+    "positionGroup": "포수/외야수",
+    "isCoach": false,
+    "draftInfo": "2018 KT 2차 1라운드",
+    "salary": "KBO 공시 연봉",
+    "history": [
+      {
+        "period": "2026",
+        "team": "KT 위즈",
+        "salary": "정식 계약",
+        "note": "등번호 No.50"
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "name": "최정",
+    "team": "SSG",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "2005 SK 1차지명",
+    "salary": "KBO 공시 연봉",
+    "history": [
+      {
+        "period": "2026",
+        "team": "SSG 랜더스",
+        "salary": "정식 계약",
+        "note": "등번호 No.14"
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "name": "전준우",
+    "team": "롯데",
+    "positionGroup": "내야수",
+    "isCoach": false,
+    "draftInfo": "2008 롯데 2차 2라운드",
+    "salary": "KBO 공시 연봉",
+    "history": [
+      {
+        "period": "2026",
+        "team": "롯데 자이언츠",
+        "salary": "정식 계약",
+        "note": "등번호 No.8"
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "name": "이정후",
+    "team": "키움",
+    "positionGroup": "외야수",
+    "isCoach": false,
+    "draftInfo": "2017 키움 1차지명",
+    "salary": "KBO 공시 연봉",
+    "history": [
+      {
+        "period": "2026",
+        "team": "키움 히어로즈",
+        "salary": "정식 계약",
+        "note": "공식 로스터"
+      }
+    ]
+  }
+]
