@@ -2,13 +2,25 @@ import json
 import os
 import re
 import time
-from urllib.request import Request, urlopen
+from urllib.request import Request, build_opener, HTTPCookieProcessor
 from urllib.parse import urlencode
 
-def fetch_kbo_official_data():
-    print("=== KBO 공식 API를 통한 전체 선수 수집 시작 ===")
+def fetch_all_kbo_players():
+    print("=== KBO 공식 로스터 완전 수집 시작 ===")
 
-    # KBO 공식 팀 코드 및 팀명 매핑
+    # 쿠키 처리를 위한 opener 생성
+    opener = build_opener(HTTPCookieProcessor())
+    
+    # 1. 초기 쿠키 세션 획득
+    init_url = "https://www.koreabaseball.com/Player/Search.aspx"
+    init_req = Request(init_url, headers={
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    })
+    try:
+        opener.open(init_req)
+    except Exception as e:
+        print(f"초기 세션 연결 실패: {e}")
+
     teams = [
         {"code": "HT", "name": "KIA"},
         {"code": "SS", "name": "삼성"},
@@ -29,41 +41,45 @@ def fetch_kbo_official_data():
         team_code = team["code"]
         team_name = team["name"]
         page = 1
-        print(f"[{team_name}] 데이터 수집 중...")
+        print(f"[{team_name}] 데이터 크롤링 진행 중...")
 
         while True:
-            # KBO 내부 Search API 호출
-            url = f"https://www.koreabaseball.com/ws/Main.wsgi/GetSearchPlayerList"
-            params = urlencode({
-                'searchType': 'TEAM',
-                'teamCode': team_code,
-                'page': page
-            }).encode('utf-8')
-
-            req = Request(url, data=params, headers={
+            # KBO 실제 검색 요청 주소
+            url = f"https://www.koreabaseball.com/Player/Search.aspx?searchType=TEAM&teamCode={team_code}&page={page}"
+            
+            req = Request(url, headers={
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-                'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-                'X-Requested-With': 'XMLHttpRequest'
+                'Referer': 'https://www.koreabaseball.com/Player/Search.aspx',
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
             })
 
             try:
-                with urlopen(req, timeout=10) as response:
-                    res_json = json.loads(response.read().decode('utf-8'))
+                with opener.open(req, timeout=15) as res:
+                    html = res.read().decode('utf-8')
 
-                rows = res_json.get('rows', [])
-                if not rows:
+                # 선수 목록 테이블 행 파싱
+                rows = re.findall(r'<tr>(.*?)</tr>', html, re.DOTALL)
+                
+                valid_rows = []
+                for row in rows:
+                    if 'cDetail' in row or 'Search.aspx' in row or 'href' in row:
+                        valid_rows.append(row)
+
+                if not valid_rows:
                     break
 
-                for item in rows:
-                    # JSON 응답 항목 데이터 파싱
-                    cols = item.get('row', [])
+                added = 0
+                for row in valid_rows:
+                    cols = re.findall(r'<td.*?>(.*?)</td>', row, re.DOTALL)
                     if len(cols) >= 4:
-                        back_num = re.sub(r'<.*?>', '', str(cols[0])).strip()
-                        name = re.sub(r'<.*?>', '', str(cols[1])).strip()
-                        position = re.sub(r'<.*?>', '', str(cols[2])).strip()
-                        draft = re.sub(r'<.*?>', '', str(cols[4])).strip() if len(cols) >= 5 else ""
+                        clean = [re.sub(r'<.*?>', '', c).strip() for c in cols]
+                        back_num = clean[0]
+                        name = clean[1]
+                        team_str = clean[2]
+                        position = clean[3]
+                        draft = clean[4] if len(clean) > 4 else ""
 
-                        if name:
+                        if name and name != "선수명":
                             is_coach = "코치" in position or "감독" in position
                             
                             all_players.append({
@@ -84,26 +100,24 @@ def fetch_kbo_official_data():
                                 ]
                             })
                             pid += 1
+                            added += 1
 
-                # 다음 페이지 확인
-                total_page = res_json.get('totalPage', 1)
-                if page >= total_page:
+                if added == 0:
                     break
 
                 page += 1
-                time.sleep(0.1)
+                time.sleep(0.3)
 
             except Exception as e:
-                print(f"[{team_name}] {page}페이지 요청 실패: {e}")
+                print(f"[{team_name}] {page}페이지 파싱 중 오류: {e}")
                 break
 
-    print(f"\n수집 완료: 총 {len(all_players)}명의 선수 데이터가 정상 수집되었습니다.")
+    print(f"\n최종 수집 인원: {len(all_players)}명")
 
+    # 결과 저장
     os.makedirs('data', exist_ok=True)
     with open('data/players.json', 'w', encoding='utf-8') as f:
         json.dump(all_players, f, ensure_ascii=False, indent=2)
 
-    print("data/players.json 저장 완료!")
-
 if __name__ == "__main__":
-    fetch_kbo_official_data()
+    fetch_all_kbo_players()
