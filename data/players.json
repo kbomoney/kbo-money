@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-08-26 13:28:28",
+  "updatedAt": "2026-08-28 06:07:34",
   "source": [
     "https://web1.koreabaseball.com/Player/Register.aspx",
     "https://web1.koreabaseball.com/Futures/Player/Register.aspx"
   ],
   "note": "연봉·이력은 enrich.py가 상세 페이지에서 채웁니다.",
-  "totalCount": 442,
-  "playerCount": 336,
+  "totalCount": 443,
+  "playerCount": 337,
   "coachCount": 106,
   "people": [
     {
@@ -248,27 +248,6 @@
       "job": "선수",
       "role": "player",
       "backNo": "1",
-      "throwBat": "",
-      "birth": "",
-      "physique": "",
-      "detailUrl": null,
-      "isRetiredRecord": false,
-      "salary": {
-        "amount": null,
-        "status": "미확인",
-        "season": null,
-        "source": null
-      },
-      "history": []
-    },
-    {
-      "playerId": "51111",
-      "name": "송승기",
-      "team": "LG",
-      "league": "1군",
-      "job": "선수",
-      "role": "player",
-      "backNo": "13",
       "throwBat": "",
       "birth": "",
       "physique": "",
@@ -4021,6 +4000,27 @@
       "history": []
     },
     {
+      "playerId": "52992",
+      "name": "이준혁",
+      "team": "NC",
+      "league": "1군",
+      "job": "선수",
+      "role": "player",
+      "backNo": "40",
+      "throwBat": "",
+      "birth": "",
+      "physique": "",
+      "detailUrl": null,
+      "isRetiredRecord": false,
+      "salary": {
+        "amount": null,
+        "status": "미확인",
+        "season": null,
+        "source": null
+      },
+      "history": []
+    },
+    {
       "playerId": "65949",
       "name": "류진욱",
       "team": "NC",
@@ -4252,27 +4252,6 @@
       "history": []
     },
     {
-      "playerId": "56967",
-      "name": "최요한",
-      "team": "NC",
-      "league": "1군",
-      "job": "선수",
-      "role": "player",
-      "backNo": "67",
-      "throwBat": "",
-      "birth": "",
-      "physique": "",
-      "detailUrl": null,
-      "isRetiredRecord": false,
-      "salary": {
-        "amount": null,
-        "status": "미확인",
-        "season": null,
-        "source": null
-      },
-      "history": []
-    },
-    {
       "playerId": "55995",
       "name": "김태훈",
       "team": "NC",
@@ -4441,6 +4420,27 @@
       "history": []
     },
     {
+      "playerId": "50903",
+      "name": "한재환",
+      "team": "NC",
+      "league": "1군",
+      "job": "선수",
+      "role": "player",
+      "backNo": "35",
+      "throwBat": "",
+      "birth": "",
+      "physique": "",
+      "detailUrl": null,
+      "isRetiredRecord": false,
+      "salary": {
+        "amount": null,
+        "status": "미확인",
+        "season": null,
+        "source": null
+      },
+      "history": []
+    },
+    {
       "playerId": "56904",
       "name": "허윤",
       "team": "NC",
@@ -4553,27 +4553,6 @@
       "job": "선수",
       "role": "player",
       "backNo": "7",
-      "throwBat": "",
-      "birth": "",
-      "physique": "",
-      "detailUrl": null,
-      "isRetiredRecord": false,
-      "salary": {
-        "amount": null,
-        "status": "미확인",
-        "season": null,
-        "source": null
-      },
-      "history": []
-    },
-    {
-      "playerId": "56909",
-      "name": "신재인",
-      "team": "NC",
-      "league": "1군",
-      "job": "선수",
-      "role": "player",
-      "backNo": "9",
       "throwBat": "",
       "birth": "",
       "physique": "",
@@ -5323,13 +5302,13 @@
       "history": []
     },
     {
-      "playerId": "56034",
-      "name": "힐리어드",
+      "playerId": "64007",
+      "name": "문상철",
       "team": "KT",
       "league": "1군",
       "job": "선수",
       "role": "player",
-      "backNo": "34",
+      "backNo": "24",
       "throwBat": "",
       "birth": "",
       "physique": "",
@@ -6016,27 +5995,6 @@
       "history": []
     },
     {
-      "playerId": "52530",
-      "name": "이민석",
-      "team": "롯데",
-      "league": "1군",
-      "job": "선수",
-      "role": "player",
-      "backNo": "37",
-      "throwBat": "",
-      "birth": "",
-      "physique": "",
-      "detailUrl": null,
-      "isRetiredRecord": false,
-      "salary": {
-        "amount": null,
-        "status": "미확인",
-        "season": null,
-        "source": null
-      },
-      "history": []
-    },
-    {
       "playerId": "56503",
       "name": "이이무라",
       "team": "롯데",
@@ -6107,6 +6065,27 @@
       "job": "선수",
       "role": "player",
       "backNo": "45",
+      "throwBat": "",
+      "birth": "",
+      "physique": "",
+      "detailUrl": null,
+      "isRetiredRecord": false,
+      "salary": {
+        "amount": null,
+        "status": "미확인",
+        "season": null,
+        "source": null
+      },
+      "history": []
+    },
+    {
+      "playerId": "68529",
+      "name": "이승헌",
+      "team": "롯데",
+      "league": "1군",
+      "job": "선수",
+      "role": "player",
+      "backNo": "46",
       "throwBat": "",
       "birth": "",
       "physique": "",
@@ -8893,6 +8872,27 @@
       "history": []
     },
     {
+      "playerId": "54368",
+      "name": "김연주",
+      "team": "키움",
+      "league": "1군",
+      "job": "선수",
+      "role": "player",
+      "backNo": "68",
+      "throwBat": "",
+      "birth": "",
+      "physique": "",
+      "detailUrl": null,
+      "isRetiredRecord": false,
+      "salary": {
+        "amount": null,
+        "status": "미확인",
+        "season": null,
+        "source": null
+      },
+      "history": []
+    },
+    {
       "playerId": "52395",
       "name": "윤석원",
       "team": "키움",
@@ -9173,6 +9173,27 @@
       "job": "선수",
       "role": "player",
       "backNo": "93",
+      "throwBat": "",
+      "birth": "",
+      "physique": "",
+      "detailUrl": null,
+      "isRetiredRecord": false,
+      "salary": {
+        "amount": null,
+        "status": "미확인",
+        "season": null,
+        "source": null
+      },
+      "history": []
+    },
+    {
+      "playerId": "68362",
+      "name": "추재현",
+      "team": "키움",
+      "league": "1군",
+      "job": "선수",
+      "role": "player",
+      "backNo": "27",
       "throwBat": "",
       "birth": "",
       "physique": "",
