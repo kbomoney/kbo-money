@@ -139,7 +139,7 @@ const historyMap = new Map(); // playerId -> 연도별 연봉
             if (v && v.salaries && v.salaries.length) historyMap.set(String(pid), v.salaries);
           });
         }
-
+        const manual = await loadJson('data/salary.json', true);
         if (manual) {
           const list = Array.isArray(manual) ? manual : (manual.items || []);
           list.forEach(m => overrideMap.set(String(m.playerId), m));
