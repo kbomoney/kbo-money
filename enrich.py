@@ -250,12 +250,26 @@ def save(results):
 
 
 def main():
-    if not os.path.exists("data/players.json"):
-        raise RuntimeError("data/players.json이 없습니다. crawl.py를 먼저 실행하세요.")
+    people = []
+    seen = set()
 
-    with open("data/players.json", encoding="utf-8") as f:
-        base = json.load(f)
-    people = base["people"] if isinstance(base, dict) else base
+    for path in ("data/players_all.json", "data/players.json"):
+        if not os.path.exists(path):
+            continue
+        with open(path, encoding="utf-8") as f:
+            base = json.load(f)
+        rows = base["people"] if isinstance(base, dict) else base
+        for p in rows:
+            pid = p.get("playerId")
+            if not pid or pid in seen:
+                continue
+            seen.add(pid)
+            people.append(p)
+        print(f"{path} 반영 후 누적 {len(people)}명")
+
+    if not people:
+        raise RuntimeError("명단 파일이 없습니다. collect_all.py를 먼저 실행하세요.")
+
 
     # 이전 수집분은 같은 스키마 버전일 때만 재사용
     results = {}
