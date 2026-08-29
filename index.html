@@ -17,18 +17,52 @@
       width: 100%; padding: 0.75rem 5.5rem 0.75rem 1rem; border-radius: 24px;
       border: 2px solid #3b82f6; font-size: 1rem; outline: none;
     }
+    .search-box input::placeholder { font-size: 0.85rem; color: #94a3b8; }
     .search-box button {
       position: absolute; top: 5px; right: 5px; bottom: 5px;
       padding: 0 1.1rem; border-radius: 20px; border: none;
       background-color: #3b82f6; color: #fff; font-weight: bold; cursor: pointer;
     }
-
     .search-box button:hover { background-color: #2563eb; }
     .stat-line { margin-top: 0.75rem; font-size: 0.8rem; color: #94a3b8; }
     main { max-width: 400px; margin: 2rem auto; padding: 0 1rem; }
     .info-text { text-align: center; color: #64748b; font-size: 0.8rem; margin-top: 2rem; line-height: 1.6; }
-    .empty-msg { text-align: center; color: #94a3b8; margin-top: 3rem; }
-    .result-count { color: #64748b; font-size: 0.85rem; margin-bottom: 0.75rem; }
+    .empty-msg { text-align: center; color: #94a3b8; margin-top: 2rem; }
+
+    /* 구단 선택 */
+    .team-grid {
+      display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; margin-bottom: 1rem;
+    }
+    .team-btn {
+      padding: 0.55rem 0.2rem; border: 1px solid #e2e8f0; border-radius: 8px;
+      background: #fff; font-size: 0.85rem; font-weight: bold; color: #475569; cursor: pointer;
+    }
+    .team-btn:hover { border-color: #93c5fd; }
+    .team-btn.active { background: #3b82f6; border-color: #3b82f6; color: #fff; }
+
+    /* 보직 탭 */
+    .pos-tabs {
+      display: flex; gap: 4px; margin-bottom: 0.75rem;
+      overflow-x: auto; padding-bottom: 2px;
+    }
+    .pos-tab {
+      flex: 0 0 auto; padding: 0.4rem 0.7rem; border: none; border-radius: 16px;
+      background: #e2e8f0; color: #475569; font-size: 0.82rem; cursor: pointer; white-space: nowrap;
+    }
+    .pos-tab.active { background: #0f766e; color: #fff; font-weight: bold; }
+
+    /* 이름 목록 */
+    .name-list {
+      display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 1.25rem;
+    }
+    .name-chip {
+      padding: 0.4rem 0.65rem; border: 1px solid #e2e8f0; border-radius: 8px;
+      background: #fff; font-size: 0.85rem; cursor: pointer;
+    }
+    .name-chip:hover { border-color: #93c5fd; }
+    .name-chip.active { background: #ecfdf5; border-color: #a7f3d0; color: #047857; font-weight: bold; }
+    .name-chip .no { color: #cbd5e1; font-size: 0.75rem; margin-left: 3px; }
+    .list-empty { color: #94a3b8; font-size: 0.85rem; padding: 0.5rem 0; }
 
     .player-card {
       background: #fff; border-radius: 12px; padding: 1.5rem;
@@ -62,12 +96,12 @@
     .tl-team.current { background: #ecfdf5; border-color: #a7f3d0; color: #047857; font-weight: bold; }
     .tl-arrow { color: #cbd5e1; font-size: 0.8rem; }
     .career-raw { margin-top: 0.6rem; font-size: 0.8rem; color: #94a3b8; word-break: keep-all; }
-      .salary-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin-top: 0.3rem; }
+
+    .salary-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin-top: 0.3rem; }
     .salary-table th, .salary-table td { padding: 0.35rem 0.5rem; border-bottom: 1px solid #f1f5f9; text-align: left; }
     .salary-table th { color: #94a3b8; font-weight: normal; font-size: 0.8rem; }
     .salary-table td.amount { text-align: right; font-weight: bold; color: #0f766e; }
     .salary-table tr:last-child td { border-bottom: none; }
-
   </style>
 </head>
 <body>
@@ -82,8 +116,10 @@
   </header>
 
   <main>
-    <div id="resultContainer">
-    </div>
+    <div class="team-grid" id="teamGrid"></div>
+    <div class="pos-tabs" id="posTabs" style="display:none;"></div>
+    <div class="name-list" id="nameList"></div>
+    <div id="resultContainer"></div>
     <p class="info-text">
       명단·연봉·경력은 KBO 공식 홈페이지의 선수 등록 현황과 선수 상세 정보를 기준으로 합니다.<br>
       감독·코치의 연봉은 공개되지 않아 표시하지 않습니다.
@@ -91,11 +127,18 @@
   </main>
 
   <script>
-    let people = [];              // 명단
-    const detailMap = new Map();  // playerId -> 상세(연봉·경력)
-    const overrideMap = new Map();// playerId -> 수동 보정 연봉
-const historyMap = new Map(); // playerId -> 연도별 연봉
+    let people = [];
+    const detailMap = new Map();
+    const overrideMap = new Map();
+    const historyMap = new Map();
     const MILITARY = new Set(['상무', '경찰', '국군체육부대']);
+
+    const TEAMS = ['KIA', 'LG', 'NC', 'SSG', 'KT', '두산', '롯데', '삼성', '키움', '한화'];
+    const POSITIONS = ['투수', '포수', '내야수', '외야수', '감독·코치'];
+
+    let curTeam = null;
+    let curPos = '투수';
+    let curPid = null;
 
     async function loadJson(path, optional) {
       try {
@@ -127,19 +170,18 @@ const historyMap = new Map(); // playerId -> 연도별 연봉
         }
         if (!people.length) throw new Error('명단 파일을 읽지 못했습니다.');
 
-
         const detail = await loadJson('data/details.json', true);
         if (detail) {
           (detail.details || []).forEach(d => detailMap.set(String(d.playerId), d));
         }
 
-        // 수동 보정 파일(없어도 정상 동작)
         const hist = await loadJson('data/salary_history.json', true);
         if (hist && hist.players) {
           Object.entries(hist.players).forEach(([pid, v]) => {
             if (v && v.salaries && v.salaries.length) historyMap.set(String(pid), v.salaries);
           });
         }
+
         const manual = await loadJson('data/salary.json', true);
         if (manual) {
           const list = Array.isArray(manual) ? manual : (manual.items || []);
@@ -149,15 +191,95 @@ const historyMap = new Map(); // playerId -> 연도별 연봉
         const withSalary = people.filter(p => getSalary(p).amount != null).length;
         statLine.textContent =
           `총 ${people.length}명 · 연봉 확인 ${withSalary}명 · 경력 ${detailMap.size}명`;
+
+        buildTeamGrid();
       } catch (e) {
         console.error(e);
         statLine.textContent = '';
         document.getElementById('resultContainer').innerHTML =
-          '<p class="empty-msg" style="color:#ef4444;">데이터를 불러오지 못했습니다. data/players.json 경로를 확인하세요.</p>';
+          '<p class="empty-msg" style="color:#ef4444;">데이터를 불러오지 못했습니다. data 폴더 경로를 확인하세요.</p>';
       }
     }
 
-    // 연봉 결정 우선순위: 수동 보정 > 상세 수집 > 없음
+    // 보직 분류: 감독·코치 / 투수 / 포수 / 내야수 / 외야수
+    function posOf(person) {
+      if (person.role === 'coach') return '감독·코치';
+      const d = detailMap.get(String(person.playerId)) || {};
+      const raw = (person.position || d.position || person.job || '');
+      if (raw.includes('투수')) return '투수';
+      if (raw.includes('포수')) return '포수';
+      if (raw.includes('내야')) return '내야수';
+      if (raw.includes('외야')) return '외야수';
+      return '기타';
+    }
+
+    function buildTeamGrid() {
+      const grid = document.getElementById('teamGrid');
+      grid.innerHTML = TEAMS.map(t =>
+        `<button class="team-btn" data-team="${esc(t)}">${esc(t)}</button>`).join('');
+      grid.querySelectorAll('.team-btn').forEach(btn => {
+        btn.addEventListener('click', () => selectTeam(btn.dataset.team));
+      });
+    }
+
+    function selectTeam(team) {
+      curTeam = (curTeam === team) ? null : team;
+      curPid = null;
+      document.getElementById('resultContainer').innerHTML = '';
+
+      document.querySelectorAll('.team-btn').forEach(b =>
+        b.classList.toggle('active', b.dataset.team === curTeam));
+
+      const tabs = document.getElementById('posTabs');
+      if (!curTeam) {
+        tabs.style.display = 'none';
+        document.getElementById('nameList').innerHTML = '';
+        return;
+      }
+
+      tabs.style.display = 'flex';
+      tabs.innerHTML = POSITIONS.map(p =>
+        `<button class="pos-tab" data-pos="${esc(p)}">${esc(p)}</button>`).join('');
+      tabs.querySelectorAll('.pos-tab').forEach(btn => {
+        btn.addEventListener('click', () => { curPos = btn.dataset.pos; renderNames(); });
+      });
+
+      renderNames();
+    }
+
+    function renderNames() {
+      document.querySelectorAll('.pos-tab').forEach(b =>
+        b.classList.toggle('active', b.dataset.pos === curPos));
+
+      const box = document.getElementById('nameList');
+      const list = people
+        .filter(p => p.team === curTeam && posOf(p) === curPos)
+        .sort((a, b) => (a.name || '').localeCompare(b.name || '', 'ko'));
+
+      if (!list.length) {
+        box.innerHTML = '<div class="list-empty">해당하는 인원이 없습니다.</div>';
+        return;
+      }
+
+      box.innerHTML = list.map(p => {
+        const pid = esc(p.playerId);
+        const no = p.backNo ? `<span class="no">${esc(p.backNo)}</span>` : '';
+        const on = String(p.playerId) === curPid ? ' active' : '';
+        return `<button class="name-chip${on}" data-pid="${pid}">${esc(p.name)}${no}</button>`;
+      }).join('');
+
+      box.querySelectorAll('.name-chip').forEach(btn => {
+        btn.addEventListener('click', () => {
+          curPid = btn.dataset.pid;
+          renderNames();
+          const one = people.find(p => String(p.playerId) === curPid);
+          render(one ? [one] : []);
+          document.getElementById('resultContainer')
+            .scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      });
+    }
+
     function getSalary(person) {
       const pid = String(person.playerId || '');
       const isCoach = person.role === 'coach';
@@ -181,11 +303,11 @@ const historyMap = new Map(); // playerId -> 연도별 연봉
       if (eok) return `${eok}억원`;
       return `${rem.toLocaleString()}만원`;
     }
-    // "10000만원", "5억 3000만원", "800,000 달러" 같은 문자열을 통일된 형식으로
+
     function normalizeMoney(text) {
       if (!text) return text;
       const s = String(text).trim();
-      if (!/원\s*$/.test(s)) return s;          // 달러 등은 그대로 둔다
+      if (!/원\s*$/.test(s)) return s;
 
       const eok = (s.match(/([\d,.]+)\s*억/) || [])[1];
       const man = (s.match(/([\d,.]+)\s*만\s*원/) || [])[1];
@@ -205,27 +327,27 @@ const historyMap = new Map(); // playerId -> 연도별 연봉
 
     function search() {
       const input = document.getElementById('searchInput');
-      const box = document.getElementById('resultContainer');
       const kw = input.value.replace(/\s+/g, '').toLowerCase();
+      if (!kw) return;
 
-      if (!kw) {
-        box.innerHTML = '<p class="empty-msg">검색어를 입력해 주세요.</p>';
-        return;
-      }
-      // 이름만 대상으로 검색해 오탐을 막는다
+      curTeam = null; curPid = null;
+      document.querySelectorAll('.team-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById('posTabs').style.display = 'none';
+      document.getElementById('nameList').innerHTML = '';
+
       const hits = people.filter(p =>
         (p.name || '').replace(/\s+/g, '').toLowerCase().includes(kw));
-
       render(hits);
     }
+
     function salaryTable(person) {
       const rows = historyMap.get(String(person.playerId));
       if (!rows || !rows.length) return '';
 
       const body = rows.slice().sort((a, b) => b.year - a.year).map(r => {
-        const disp = r.display || (r.currency === 'USD'
-          ? `${Number(r.amount).toLocaleString()} 달러`
-          : formatKRW(r.amount));
+        const disp = r.currency === 'USD'
+          ? (r.display || `${Number(r.amount).toLocaleString()} 달러`)
+          : formatKRW(r.amount);
         const mark = r.source === 'manual'
           ? ' <span style="font-size:.7rem;color:#94a3b8;">직접입력</span>' : '';
         return `<tr><td>${esc(r.year)}</td><td>${esc(r.team || '-')}</td>` +
@@ -249,12 +371,11 @@ const historyMap = new Map(); // playerId -> 연도별 연봉
         return;
       }
 
-      const cards = list.map(p => {
+      box.innerHTML = list.map(p => {
         const d = detailMap.get(String(p.playerId)) || {};
         const sal = getSalary(p);
         const isCoach = p.role === 'coach';
 
-        // 포지션: "투수(우투우타)" 형태를 분리
         const rawPos = d.position || '';
         const posName = rawPos.split('(')[0].trim() || (isCoach ? p.job : (p.job || '선수'));
         const throwBat = (rawPos.match(/\(([^)]+)\)/) || [])[1] || p.throwBat || '';
@@ -263,7 +384,6 @@ const historyMap = new Map(); // playerId -> 연도별 연봉
           ? `<span class="salary-value">${esc(sal.display)}</span>`
           : `<span class="salary-none">${esc(sal.status)}</span>`;
 
-        // 이력 타임라인
         const hist = d.history || p.history || [];
         let histHtml = '<p class="salary-none" style="font-size:0.85rem;">이력 정보 없음</p>';
         if (hist.length) {
@@ -297,10 +417,8 @@ const historyMap = new Map(); // playerId -> 연도별 연봉
               <p><strong>보직:</strong> ${esc(posName)}${throwBat ? ` (${esc(throwBat)})` : ''}</p>
               <p><strong>생년월일:</strong> ${esc(d.birth || p.birth || '정보 없음')}</p>
               ${d.physique ? `<p><strong>신장/체중:</strong> ${esc(d.physique)}</p>` : ''}
-              <p><strong>연봉:</strong> ${salaryHtml}
-                ${sal.status === '수동 입력' ? '<span style="font-size:.75rem;color:#94a3b8;">(수동 보정)</span>' : ''}</p>
+              <p><strong>연봉:</strong> ${salaryHtml}</p>
               ${d.signingBonus ? `<p><strong>입단 계약금:</strong> ${esc(normalizeMoney(d.signingBonus))}</p>` : ''}
-
               ${d.draft ? `<p><strong>지명순위:</strong> ${esc(d.draft)}</p>` : ''}
             </div>
             <div class="history-section">
@@ -309,12 +427,8 @@ const historyMap = new Map(); // playerId -> 연도별 연봉
               ${careerLine}
             </div>
             ${salaryTable(p)}
-
           </div>`;
       }).join('');
-
-      box.innerHTML = cards;
-
     }
 
     document.addEventListener('DOMContentLoaded', () => {
