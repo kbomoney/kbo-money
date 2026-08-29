@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-08-28 12:39:24",
+  "updatedAt": "2026-08-29 03:09:38",
   "schemaVersion": 2,
-  "count": 443,
-  "salaryCount": 338,
-  "historyCount": 443,
+  "count": 517,
+  "salaryCount": 403,
+  "historyCount": 517,
   "details": [
     {
       "schemaVersion": 2,
@@ -18624,6 +18624,2761 @@
       "position": "외야수(우투우타)",
       "birth": "2004년 11월 20일",
       "physique": "185cm/86kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "67419",
+      "name": "문용익",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=67419",
+      "salary": {
+        "amount": 70000000,
+        "currency": "KRW",
+        "display": "7,000만원",
+        "status": "공시",
+        "raw": "7000만원"
+      },
+      "signingBonus": "5000만원",
+      "careerRaw": "덕양초-양천중-청원고-세계사이버대-삼성",
+      "careerTokens": [
+        "덕양초",
+        "양천중",
+        "청원고",
+        "세계사이버대",
+        "삼성"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "삼성",
+          "note": "입단",
+          "debut": "19삼성"
+        },
+        {
+          "order": 2,
+          "team": "KT",
+          "note": "현 소속"
+        }
+      ],
+      "draft": "17 삼성 2차 6라운드 59순위",
+      "debutYear": "19삼성",
+      "position": "투수(우투우타)",
+      "birth": "1995년 02월 04일",
+      "physique": "178cm/93kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "64793",
+      "name": "김민수",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=64793",
+      "salary": {
+        "amount": 46000000,
+        "currency": "KRW",
+        "display": "4,600만원",
+        "status": "공시",
+        "raw": "4600만원"
+      },
+      "signingBonus": "11000만원",
+      "careerRaw": "대구옥산초-경복중-대구상원고-영남대-한화-상무-삼성",
+      "careerTokens": [
+        "대구옥산초",
+        "경복중",
+        "대구상원고",
+        "영남대",
+        "한화",
+        "상무",
+        "삼성"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "한화",
+          "note": "입단",
+          "debut": "14한화"
+        },
+        {
+          "order": 2,
+          "team": "상무",
+          "note": "군 복무"
+        },
+        {
+          "order": 3,
+          "team": "삼성",
+          "note": "이적"
+        },
+        {
+          "order": 4,
+          "team": "LG",
+          "note": "현 소속"
+        }
+      ],
+      "draft": "14 한화 2차 2라운드 24순위",
+      "debutYear": "14한화",
+      "position": "포수(우투우타)",
+      "birth": "1991년 03월 02일",
+      "physique": "177cm/80kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "54166",
+      "name": "김현종",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=54166",
+      "salary": {
+        "amount": 33000000,
+        "currency": "KRW",
+        "display": "3,300만원",
+        "status": "공시",
+        "raw": "3300만원"
+      },
+      "signingBonus": "15000만원",
+      "careerRaw": "상인천초-동인천중-인천고",
+      "careerTokens": [
+        "상인천초",
+        "동인천중",
+        "인천고"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "LG",
+          "note": "현 소속",
+          "debut": "24LG"
+        }
+      ],
+      "draft": "24 LG 2라운드 18순위",
+      "debutYear": "24LG",
+      "position": "외야수(우투우타)",
+      "birth": "2004년 08월 04일",
+      "physique": "186cm/85kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "52765",
+      "name": "유민",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=52765",
+      "salary": {
+        "amount": 30000000,
+        "currency": "KRW",
+        "display": "3,000만원",
+        "status": "공시",
+        "raw": "3000만원"
+      },
+      "signingBonus": "9000만원",
+      "careerRaw": "역삼초-대치중-배명고",
+      "careerTokens": [
+        "역삼초",
+        "대치중",
+        "배명고"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "한화",
+          "note": "현 소속",
+          "debut": "22한화"
+        }
+      ],
+      "draft": "22 한화 2차 3라운드 21순위",
+      "debutYear": "22한화",
+      "position": "외야수(우투우타)",
+      "birth": "2003년 01월 20일",
+      "physique": "187cm/92kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "52844",
+      "name": "김도현",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=52844",
+      "salary": {
+        "amount": 30000000,
+        "currency": "KRW",
+        "display": "3,000만원",
+        "status": "공시",
+        "raw": "3000만원"
+      },
+      "signingBonus": "10000만원",
+      "careerRaw": "삼송초-연세중-백송고",
+      "careerTokens": [
+        "삼송초",
+        "연세중",
+        "백송고"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "SSG",
+          "note": "현 소속",
+          "debut": "22SSG"
+        }
+      ],
+      "draft": "22 SSG 2차 2라운드 12순위",
+      "debutYear": "22SSG",
+      "position": "투수(우투우타)",
+      "birth": "2003년 05월 24일",
+      "physique": "179cm/89kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "61404",
+      "name": "김헌곤",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=61404",
+      "salary": {
+        "amount": 100000000,
+        "currency": "KRW",
+        "display": "1억원",
+        "status": "공시",
+        "raw": "10000만원"
+      },
+      "signingBonus": "7000만원",
+      "careerRaw": "회원초-경복중-제주관광고-영남대-삼성-상무",
+      "careerTokens": [
+        "회원초",
+        "경복중",
+        "제주관광고",
+        "영남대",
+        "삼성",
+        "상무"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "삼성",
+          "note": "입단",
+          "debut": "11삼성"
+        },
+        {
+          "order": 2,
+          "team": "상무",
+          "note": "군 복무"
+        },
+        {
+          "order": 3,
+          "team": "삼성",
+          "note": "복귀"
+        }
+      ],
+      "draft": "11 삼성 5라운드 36순위",
+      "debutYear": "11삼성",
+      "position": "외야수(우투우타)",
+      "birth": "1988년 11월 09일",
+      "physique": "174cm/81kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "60263",
+      "name": "이재학",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=60263",
+      "salary": {
+        "amount": 131000000,
+        "currency": "KRW",
+        "display": "1억 3,100만원",
+        "status": "공시",
+        "raw": "13100만원"
+      },
+      "signingBonus": "10000만원",
+      "careerRaw": "대구옥산초-경복중-대구고-두산",
+      "careerTokens": [
+        "대구옥산초",
+        "경복중",
+        "대구고",
+        "두산"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "두산",
+          "note": "입단",
+          "debut": "10두산"
+        },
+        {
+          "order": 2,
+          "team": "NC",
+          "note": "현 소속"
+        }
+      ],
+      "draft": "10 두산 2라운드 10순위",
+      "debutYear": "10두산",
+      "position": "투수(우언우타)",
+      "birth": "1990년 10월 04일",
+      "physique": "181cm/84kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "54214",
+      "name": "전다민",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=54214",
+      "salary": {
+        "amount": 34000000,
+        "currency": "KRW",
+        "display": "3,400만원",
+        "status": "공시",
+        "raw": "3400만원"
+      },
+      "signingBonus": "6000만원",
+      "careerRaw": "길동초-청원중-설악고-강릉영동대",
+      "careerTokens": [
+        "길동초",
+        "청원중",
+        "설악고",
+        "강릉영동대"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "두산",
+          "note": "현 소속",
+          "debut": "24두산"
+        }
+      ],
+      "draft": "24 두산 6라운드 52순위",
+      "debutYear": "24두산",
+      "position": "외야수(우투좌타)",
+      "birth": "2001년 08월 21일",
+      "physique": "177cm/75kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "55382",
+      "name": "임진묵",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=55382",
+      "salary": {
+        "amount": 31000000,
+        "currency": "KRW",
+        "display": "3,100만원",
+        "status": "공시",
+        "raw": "3100만원"
+      },
+      "signingBonus": "4000만원",
+      "careerRaw": "천안청룡초-상명중-경기상고",
+      "careerTokens": [
+        "천안청룡초",
+        "상명중",
+        "경기상고"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "키움",
+          "note": "현 소속",
+          "debut": "25키움"
+        }
+      ],
+      "draft": "25 키움 9라운드 81순위",
+      "debutYear": "25키움",
+      "position": "투수(우투우타)",
+      "birth": "2006년 04월 23일",
+      "physique": "181cm/85kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "93626",
+      "name": "이대진",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/HitterDetail/Basic.aspx?playerId=93626",
+      "salary": {
+        "amount": null,
+        "currency": null,
+        "display": null,
+        "status": "비공개",
+        "raw": null
+      },
+      "signingBonus": null,
+      "careerRaw": "광주서림초-진흥중-진흥고-(한국사이버대)-해태-KIA-LG",
+      "careerTokens": [
+        "광주서림초",
+        "진흥중",
+        "진흥고",
+        "(한국사이버대)",
+        "해태",
+        "KIA",
+        "LG"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "해태",
+          "note": "입단",
+          "debut": "93해태"
+        },
+        {
+          "order": 2,
+          "team": "KIA",
+          "note": "이적"
+        },
+        {
+          "order": 3,
+          "team": "LG",
+          "note": "이적"
+        },
+        {
+          "order": 4,
+          "team": "한화",
+          "note": "현 소속"
+        }
+      ],
+      "draft": "93 해태 고졸신인",
+      "debutYear": "93해태",
+      "position": "(우투우타)",
+      "birth": "1974년 06월 09일",
+      "physique": "180cm/83kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "55770",
+      "name": "쓰루오카",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/HitterDetail/Basic.aspx?playerId=55770",
+      "salary": {
+        "amount": null,
+        "currency": null,
+        "display": null,
+        "status": "비공개",
+        "raw": null
+      },
+      "signingBonus": null,
+      "careerRaw": "일본 신코가쿠엔고",
+      "careerTokens": [
+        "일본 신코가쿠엔고"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "한화",
+          "note": "현 소속",
+          "debut": "25한화코치"
+        }
+      ],
+      "draft": null,
+      "debutYear": "25한화코치",
+      "position": "(우투우타)",
+      "birth": "1977년 05월 30일",
+      "physique": "183cm/87kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "60805",
+      "name": "최윤석",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/HitterDetail/Basic.aspx?playerId=60805",
+      "salary": {
+        "amount": null,
+        "currency": null,
+        "display": null,
+        "status": "비공개",
+        "raw": null
+      },
+      "signingBonus": null,
+      "careerRaw": "화곡초-덕수중-성남고-홍익대-SK-경찰-한화",
+      "careerTokens": [
+        "화곡초",
+        "덕수중",
+        "성남고",
+        "홍익대",
+        "SK",
+        "경찰",
+        "한화"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "SK",
+          "note": "입단",
+          "debut": "10SK"
+        },
+        {
+          "order": 2,
+          "team": "경찰",
+          "note": "군 복무"
+        },
+        {
+          "order": 3,
+          "team": "한화",
+          "note": "이적"
+        }
+      ],
+      "draft": "10 SK 5라운드 40순위",
+      "debutYear": "10SK",
+      "position": "(우투우타)",
+      "birth": "1987년 03월 28일",
+      "physique": "173cm/75kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "75668",
+      "name": "곽정철",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/HitterDetail/Basic.aspx?playerId=75668",
+      "salary": {
+        "amount": null,
+        "currency": null,
+        "display": null,
+        "status": "비공개",
+        "raw": null
+      },
+      "signingBonus": null,
+      "careerRaw": "송정동초-무등중-광주제일고-KIA",
+      "careerTokens": [
+        "송정동초",
+        "무등중",
+        "광주제일고",
+        "KIA"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "KIA",
+          "note": "입단",
+          "debut": "05KIA"
+        },
+        {
+          "order": 2,
+          "team": "한화",
+          "note": "현 소속"
+        }
+      ],
+      "draft": "05 KIA 1차",
+      "debutYear": "05KIA",
+      "position": "(우투우타)",
+      "birth": "1986년 03월 14일",
+      "physique": "186cm/97kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "74857",
+      "name": "정우람",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/HitterDetail/Basic.aspx?playerId=74857",
+      "salary": {
+        "amount": null,
+        "currency": null,
+        "display": null,
+        "status": "비공개",
+        "raw": null
+      },
+      "signingBonus": null,
+      "careerRaw": "하단초-대동중-경남상고-SK-한화",
+      "careerTokens": [
+        "하단초",
+        "대동중",
+        "경남상고",
+        "SK",
+        "한화"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "SK",
+          "note": "입단",
+          "debut": "04SK"
+        },
+        {
+          "order": 2,
+          "team": "한화",
+          "note": "이적"
+        }
+      ],
+      "draft": "04 SK 2차 2라운드 11순위",
+      "debutYear": "04SK",
+      "position": "(좌투좌타)",
+      "birth": "1985년 06월 01일",
+      "physique": "181cm/83kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "91465",
+      "name": "전상렬",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/HitterDetail/Basic.aspx?playerId=91465",
+      "salary": {
+        "amount": null,
+        "currency": null,
+        "display": null,
+        "status": "비공개",
+        "raw": null
+      },
+      "signingBonus": null,
+      "careerRaw": "칠성초-경복중-대구상고-삼성-한화-두산",
+      "careerTokens": [
+        "칠성초",
+        "경복중",
+        "대구상고",
+        "삼성",
+        "한화",
+        "두산"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "삼성",
+          "note": "입단",
+          "debut": "91삼성"
+        },
+        {
+          "order": 2,
+          "team": "한화",
+          "note": "이적"
+        },
+        {
+          "order": 3,
+          "team": "두산",
+          "note": "이적"
+        },
+        {
+          "order": 4,
+          "team": "한화",
+          "note": "현 소속"
+        }
+      ],
+      "draft": "91 삼성 고졸신인",
+      "debutYear": "91삼성",
+      "position": "(좌투좌타)",
+      "birth": "1972년 06월 12일",
+      "physique": "174cm/77kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "61463",
+      "name": "김정혁",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/HitterDetail/Basic.aspx?playerId=61463",
+      "salary": {
+        "amount": null,
+        "currency": null,
+        "display": null,
+        "status": "비공개",
+        "raw": null
+      },
+      "signingBonus": null,
+      "careerRaw": "포항초-포철중-포항제철고-동국대-상무-삼성",
+      "careerTokens": [
+        "포항초",
+        "포철중",
+        "포항제철고",
+        "동국대",
+        "상무",
+        "삼성"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "상무",
+          "note": "군 복무",
+          "debut": "09상무"
+        },
+        {
+          "order": 2,
+          "team": "삼성",
+          "note": "이적"
+        },
+        {
+          "order": 3,
+          "team": "한화",
+          "note": "현 소속"
+        }
+      ],
+      "draft": "11 삼성 육성선수",
+      "debutYear": "09상무",
+      "position": "(우투우타)",
+      "birth": "1985년 08월 03일",
+      "physique": "182cm/82kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "72860",
+      "name": "이대수",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/HitterDetail/Basic.aspx?playerId=72860",
+      "salary": {
+        "amount": null,
+        "currency": null,
+        "display": null,
+        "status": "비공개",
+        "raw": null
+      },
+      "signingBonus": null,
+      "careerRaw": "군산중앙초-군산중-군산상고-SK-두산-한화-SK",
+      "careerTokens": [
+        "군산중앙초",
+        "군산중",
+        "군산상고",
+        "SK",
+        "두산",
+        "한화",
+        "SK"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "SK",
+          "note": "입단",
+          "debut": "02SK"
+        },
+        {
+          "order": 2,
+          "team": "두산",
+          "note": "이적"
+        },
+        {
+          "order": 3,
+          "team": "한화",
+          "note": "이적"
+        },
+        {
+          "order": 4,
+          "team": "SK",
+          "note": "이적"
+        },
+        {
+          "order": 5,
+          "team": "한화",
+          "note": "현 소속"
+        }
+      ],
+      "draft": "01 SK 육성선수",
+      "debutYear": "02SK",
+      "position": "(우투우타)",
+      "birth": "1981년 08월 21일",
+      "physique": "175cm/75kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "56703",
+      "name": "여현승",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=56703",
+      "salary": {
+        "amount": 30000000,
+        "currency": "KRW",
+        "display": "3,000만원",
+        "status": "공시",
+        "raw": "3000만원"
+      },
+      "signingBonus": "5000만원",
+      "careerRaw": "율하초-대구중-대구고",
+      "careerTokens": [
+        "율하초",
+        "대구중",
+        "대구고"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "한화",
+          "note": "현 소속"
+        }
+      ],
+      "draft": "26 한화 7라운드 63순위",
+      "debutYear": null,
+      "position": "투수(우투우타)",
+      "birth": "2006년 02월 20일",
+      "physique": "185cm/95kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "69205",
+      "name": "이교훈",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=69205",
+      "salary": {
+        "amount": 38000000,
+        "currency": "KRW",
+        "display": "3,800만원",
+        "status": "공시",
+        "raw": "3800만원"
+      },
+      "signingBonus": "8000만원",
+      "careerRaw": "구리초(남양주리틀)-청원중-서울고-두산",
+      "careerTokens": [
+        "구리초(남양주리틀)",
+        "청원중",
+        "서울고",
+        "두산"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "두산",
+          "note": "입단",
+          "debut": "19두산"
+        },
+        {
+          "order": 2,
+          "team": "한화",
+          "note": "현 소속"
+        }
+      ],
+      "draft": "19 두산 2차 3라운드 29순위",
+      "debutYear": "19두산",
+      "position": "투수(좌투좌타)",
+      "birth": "2000년 05월 29일",
+      "physique": "181cm/83kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "69767",
+      "name": "정이황",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=69767",
+      "salary": {
+        "amount": 30000000,
+        "currency": "KRW",
+        "display": "3,000만원",
+        "status": "공시",
+        "raw": "3000만원"
+      },
+      "signingBonus": "8000만원",
+      "careerRaw": "부산수영초-경남중-부산고",
+      "careerTokens": [
+        "부산수영초",
+        "경남중",
+        "부산고"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "한화",
+          "note": "현 소속",
+          "debut": "19한화"
+        }
+      ],
+      "draft": "19 한화 2차 3라운드 23순위",
+      "debutYear": "19한화",
+      "position": "투수(우투우타)",
+      "birth": "2000년 03월 07일",
+      "physique": "190cm/89kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "63765",
+      "name": "김종수",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=63765",
+      "salary": {
+        "amount": 117000000,
+        "currency": "KRW",
+        "display": "1억 1,700만원",
+        "status": "공시",
+        "raw": "11700만원"
+      },
+      "signingBonus": "3000만원",
+      "careerRaw": "성동초-덕수중-울산공고",
+      "careerTokens": [
+        "성동초",
+        "덕수중",
+        "울산공고"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "한화",
+          "note": "현 소속",
+          "debut": "13한화"
+        }
+      ],
+      "draft": "13 한화 8라운드 74순위",
+      "debutYear": "13한화",
+      "position": "투수(우투우타)",
+      "birth": "1994년 06월 03일",
+      "physique": "180cm/88kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "53706",
+      "name": "박재규",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=53706",
+      "salary": {
+        "amount": 30000000,
+        "currency": "KRW",
+        "display": "3,000만원",
+        "status": "공시",
+        "raw": "3000만원"
+      },
+      "signingBonus": "4000만원",
+      "careerRaw": "울산대현초-신정중-개성고",
+      "careerTokens": [
+        "울산대현초",
+        "신정중",
+        "개성고"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "한화",
+          "note": "현 소속",
+          "debut": "26한화"
+        }
+      ],
+      "draft": "23 한화 9라운드 81순위",
+      "debutYear": "26한화",
+      "position": "투수(우투우타)",
+      "birth": "2003년 07월 03일",
+      "physique": "181cm/83kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "50710",
+      "name": "김범준",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=50710",
+      "salary": {
+        "amount": 30000000,
+        "currency": "KRW",
+        "display": "3,000만원",
+        "status": "공시",
+        "raw": "3000만원"
+      },
+      "signingBonus": "3000만원",
+      "careerRaw": "서울도곡초-글로벌선진중-충암고",
+      "careerTokens": [
+        "서울도곡초",
+        "글로벌선진중",
+        "충암고"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "한화",
+          "note": "현 소속",
+          "debut": "26한화"
+        }
+      ],
+      "draft": "20 한화 2차 9라운드 88순위",
+      "debutYear": "26한화",
+      "position": "투수(우투우타)",
+      "birth": "2000년 09월 30일",
+      "physique": "175cm/79kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "55659",
+      "name": "양수호",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=55659",
+      "salary": {
+        "amount": 30000000,
+        "currency": "KRW",
+        "display": "3,000만원",
+        "status": "공시",
+        "raw": "3000만원"
+      },
+      "signingBonus": "8000만원",
+      "careerRaw": "보성초(대전중구리틀)-공주중-공주고",
+      "careerTokens": [
+        "보성초(대전중구리틀)",
+        "공주중",
+        "공주고"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "한화",
+          "note": "현 소속",
+          "debut": "25KIA"
+        }
+      ],
+      "draft": "25 KIA 4라운드 35순위",
+      "debutYear": "25KIA",
+      "position": "투수(우투우타)",
+      "birth": "2006년 09월 09일",
+      "physique": "187cm/82kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "50705",
+      "name": "강재민",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=50705",
+      "salary": {
+        "amount": 145000000,
+        "currency": "KRW",
+        "display": "1억 4,500만원",
+        "status": "공시",
+        "raw": "14500만원"
+      },
+      "signingBonus": "8000만원",
+      "careerRaw": "양덕초-마산중-용마고-단국대",
+      "careerTokens": [
+        "양덕초",
+        "마산중",
+        "용마고",
+        "단국대"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "한화",
+          "note": "현 소속",
+          "debut": "20한화"
+        }
+      ],
+      "draft": "20 한화 2차 4라운드 38순위",
+      "debutYear": "20한화",
+      "position": "투수(우언우타)",
+      "birth": "1997년 04월 03일",
+      "physique": "180cm/89kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "56797",
+      "name": "하동준",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=56797",
+      "salary": {
+        "amount": 30000000,
+        "currency": "KRW",
+        "display": "3,000만원",
+        "status": "공시",
+        "raw": "3000만원"
+      },
+      "signingBonus": "6000만원",
+      "careerRaw": "평택청아초(경기평택안중유소년)-경기PB클럽-라온고",
+      "careerTokens": [
+        "평택청아초(경기평택안중유소년)",
+        "경기PB클럽",
+        "라온고"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "한화",
+          "note": "현 소속",
+          "debut": "26한화"
+        }
+      ],
+      "draft": "26 한화 6라운드 53순위",
+      "debutYear": "26한화",
+      "position": "투수(좌투좌타)",
+      "birth": "2007년 06월 11일",
+      "physique": "189cm/80kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "54701",
+      "name": "승지환",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=54701",
+      "salary": {
+        "amount": 30000000,
+        "currency": "KRW",
+        "display": "3,000만원",
+        "status": "공시",
+        "raw": "3000만원"
+      },
+      "signingBonus": "3000만원",
+      "careerRaw": "안흥초(이천시리틀)-모가중-유신고",
+      "careerTokens": [
+        "안흥초(이천시리틀)",
+        "모가중",
+        "유신고"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "한화",
+          "note": "현 소속"
+        }
+      ],
+      "draft": "24 한화 11라운드 101순위",
+      "debutYear": null,
+      "position": "투수(우투우타)",
+      "birth": "2005년 07월 25일",
+      "physique": "187cm/89kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "55708",
+      "name": "엄요셉",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=55708",
+      "salary": {
+        "amount": 30000000,
+        "currency": "KRW",
+        "display": "3,000만원",
+        "status": "공시",
+        "raw": "3000만원"
+      },
+      "signingBonus": "4000만원",
+      "careerRaw": "오산광성초(오산시리틀)-성일중-구리인창고",
+      "careerTokens": [
+        "오산광성초(오산시리틀)",
+        "성일중",
+        "구리인창고"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "한화",
+          "note": "현 소속"
+        }
+      ],
+      "draft": "25 한화 9라운드 82순위",
+      "debutYear": null,
+      "position": "투수(우투우타)",
+      "birth": "2006년 05월 29일",
+      "physique": "190cm/94kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "66707",
+      "name": "박상언",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=66707",
+      "salary": {
+        "amount": 40000000,
+        "currency": "KRW",
+        "display": "4,000만원",
+        "status": "공시",
+        "raw": "4000만원"
+      },
+      "signingBonus": "4000만원",
+      "careerRaw": "무원초-영남중-유신고-한화-상무",
+      "careerTokens": [
+        "무원초",
+        "영남중",
+        "유신고",
+        "한화",
+        "상무"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "한화",
+          "note": "입단",
+          "debut": "17한화"
+        },
+        {
+          "order": 2,
+          "team": "상무",
+          "note": "군 복무"
+        },
+        {
+          "order": 3,
+          "team": "한화",
+          "note": "복귀"
+        }
+      ],
+      "draft": "16 한화 2차 8라운드 79순위",
+      "debutYear": "17한화",
+      "position": "포수(우투우타)",
+      "birth": "1997년 03월 03일",
+      "physique": "185cm/90kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "53008",
+      "name": "정우성",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=53008",
+      "salary": {
+        "amount": 15000000,
+        "currency": "KRW",
+        "display": "1,500만원",
+        "status": "공시",
+        "raw": "1500만원"
+      },
+      "signingBonus": null,
+      "careerRaw": "김해삼성초-원동중-포항제철고-동원과학기술대-KT",
+      "careerTokens": [
+        "김해삼성초",
+        "원동중",
+        "포항제철고",
+        "동원과학기술대",
+        "KT"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "KT",
+          "note": "입단"
+        },
+        {
+          "order": 2,
+          "team": "한화",
+          "note": "현 소속"
+        }
+      ],
+      "draft": "23 KT 육성선수",
+      "debutYear": null,
+      "position": "포수(우투우타)",
+      "birth": "2002년 04월 11일",
+      "physique": "183cm/88kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "51764",
+      "name": "정민규",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=51764",
+      "salary": {
+        "amount": 31000000,
+        "currency": "KRW",
+        "display": "3,100만원",
+        "status": "공시",
+        "raw": "3100만원"
+      },
+      "signingBonus": "15000만원",
+      "careerRaw": "광일초(부산서구리틀)-경남중-부산고-한화-상무",
+      "careerTokens": [
+        "광일초(부산서구리틀)",
+        "경남중",
+        "부산고",
+        "한화",
+        "상무"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "한화",
+          "note": "입단",
+          "debut": "21한화"
+        },
+        {
+          "order": 2,
+          "team": "상무",
+          "note": "군 복무"
+        },
+        {
+          "order": 3,
+          "team": "한화",
+          "note": "복귀"
+        }
+      ],
+      "draft": "21 한화 1차",
+      "debutYear": "21한화",
+      "position": "내야수(우투우타)",
+      "birth": "2003년 01월 10일",
+      "physique": "183cm/101kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "53705",
+      "name": "최원준",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=53705",
+      "salary": {
+        "amount": 30000000,
+        "currency": "KRW",
+        "display": "3,000만원",
+        "status": "공시",
+        "raw": "3000만원"
+      },
+      "signingBonus": "4000만원",
+      "careerRaw": "청주남평초(청주시리틀)-세광중-청담고",
+      "careerTokens": [
+        "청주남평초(청주시리틀)",
+        "세광중",
+        "청담고"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "한화",
+          "note": "현 소속",
+          "debut": "26한화"
+        }
+      ],
+      "draft": "23 한화 8라운드 71순위",
+      "debutYear": "26한화",
+      "position": "내야수(우투좌타)",
+      "birth": "2004년 05월 01일",
+      "physique": "188cm/84kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "55706",
+      "name": "이지성",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=55706",
+      "salary": {
+        "amount": 30000000,
+        "currency": "KRW",
+        "display": "3,000만원",
+        "status": "공시",
+        "raw": "3000만원"
+      },
+      "signingBonus": null,
+      "careerRaw": "세류초(장안구리틀)-개군중-라온고",
+      "careerTokens": [
+        "세류초(장안구리틀)",
+        "개군중",
+        "라온고"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "한화",
+          "note": "현 소속",
+          "debut": "26한화"
+        }
+      ],
+      "draft": "25 한화 7라운드 62순위",
+      "debutYear": "26한화",
+      "position": "내야수(우투우타)",
+      "birth": "2005년 11월 29일",
+      "physique": "180cm/78kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "52710",
+      "name": "한경빈",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=52710",
+      "salary": {
+        "amount": 31000000,
+        "currency": "KRW",
+        "display": "3,100만원",
+        "status": "공시",
+        "raw": "3100만원"
+      },
+      "signingBonus": null,
+      "careerRaw": "인천서림초-상인천중-동산고-인천재능대",
+      "careerTokens": [
+        "인천서림초",
+        "상인천중",
+        "동산고",
+        "인천재능대"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "한화",
+          "note": "현 소속",
+          "debut": "24한화"
+        }
+      ],
+      "draft": "22 한화 육성선수",
+      "debutYear": "24한화",
+      "position": "내야수(우투좌타)",
+      "birth": "1998년 12월 11일",
+      "physique": "178cm/69kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "68743",
+      "name": "정은원",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=68743",
+      "salary": {
+        "amount": 135000000,
+        "currency": "KRW",
+        "display": "1억 3,500만원",
+        "status": "공시",
+        "raw": "13500만원"
+      },
+      "signingBonus": "9000만원",
+      "careerRaw": "상인천초-상인천중-인천고-한화-상무",
+      "careerTokens": [
+        "상인천초",
+        "상인천중",
+        "인천고",
+        "한화",
+        "상무"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "한화",
+          "note": "입단",
+          "debut": "18한화"
+        },
+        {
+          "order": 2,
+          "team": "상무",
+          "note": "군 복무"
+        },
+        {
+          "order": 3,
+          "team": "한화",
+          "note": "복귀"
+        }
+      ],
+      "draft": "18 한화 2차 3라운드 24순위",
+      "debutYear": "18한화",
+      "position": "내야수(우투좌타)",
+      "birth": "2000년 01월 17일",
+      "physique": "177cm/82kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "55798",
+      "name": "배승수",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=55798",
+      "salary": {
+        "amount": 30000000,
+        "currency": "KRW",
+        "display": "3,000만원",
+        "status": "공시",
+        "raw": "3000만원"
+      },
+      "signingBonus": "9000만원",
+      "careerRaw": "가동초-자양중-덕수고",
+      "careerTokens": [
+        "가동초",
+        "자양중",
+        "덕수고"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "한화",
+          "note": "현 소속",
+          "debut": "25한화"
+        }
+      ],
+      "draft": "25 한화 4라운드 32순위",
+      "debutYear": "25한화",
+      "position": "내야수(우투우타)",
+      "birth": "2006년 05월 15일",
+      "physique": "184cm/73kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "52769",
+      "name": "권광민",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=52769",
+      "salary": {
+        "amount": 36000000,
+        "currency": "KRW",
+        "display": "3,600만원",
+        "status": "공시",
+        "raw": "3600만원"
+      },
+      "signingBonus": null,
+      "careerRaw": "서울청구초-홍은중-장충고",
+      "careerTokens": [
+        "서울청구초",
+        "홍은중",
+        "장충고"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "한화",
+          "note": "현 소속",
+          "debut": "16시카고컵스"
+        }
+      ],
+      "draft": "22 한화 2차 5라운드 41순위",
+      "debutYear": "16시카고컵스",
+      "position": "외야수(좌투좌타)",
+      "birth": "1997년 12월 12일",
+      "physique": "189cm/102kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "69766",
+      "name": "유로결",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=69766",
+      "salary": {
+        "amount": 33000000,
+        "currency": "KRW",
+        "display": "3,300만원",
+        "status": "공시",
+        "raw": "3300만원"
+      },
+      "signingBonus": "11000만원",
+      "careerRaw": "광주서림초-광주동성중-광주제일고",
+      "careerTokens": [
+        "광주서림초",
+        "광주동성중",
+        "광주제일고"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "한화",
+          "note": "현 소속",
+          "debut": "19한화"
+        }
+      ],
+      "draft": "19 한화 2차 2라운드 13순위",
+      "debutYear": "19한화",
+      "position": "외야수(우투우타)",
+      "birth": "2000년 05월 30일",
+      "physique": "186cm/83kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "56702",
+      "name": "박상목",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=56702",
+      "salary": {
+        "amount": 30000000,
+        "currency": "KRW",
+        "display": "3,000만원",
+        "status": "공시",
+        "raw": "3000만원"
+      },
+      "signingBonus": null,
+      "careerRaw": "(덕양구리틀)-단월중-신일고-홍익대",
+      "careerTokens": [
+        "(덕양구리틀)",
+        "단월중",
+        "신일고",
+        "홍익대"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "한화",
+          "note": "현 소속"
+        }
+      ],
+      "draft": "26 한화 육성선수",
+      "debutYear": null,
+      "position": "외야수(좌투좌타)",
+      "birth": "2001년 03월 23일",
+      "physique": "170cm/73kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "56713",
+      "name": "김동휘",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=56713",
+      "salary": {
+        "amount": 15000000,
+        "currency": "KRW",
+        "display": "1,500만원",
+        "status": "공시",
+        "raw": "1500만원"
+      },
+      "signingBonus": null,
+      "careerRaw": "송정동초-충장중-진흥고-송원대",
+      "careerTokens": [
+        "송정동초",
+        "충장중",
+        "진흥고",
+        "송원대"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "한화",
+          "note": "현 소속"
+        }
+      ],
+      "draft": "26 한화 육성선수",
+      "debutYear": null,
+      "position": "외야수(우투좌타)",
+      "birth": "2000년 03월 30일",
+      "physique": "183cm/90kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "56714",
+      "name": "최윤호",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=56714",
+      "salary": {
+        "amount": 15000000,
+        "currency": "KRW",
+        "display": "1,500만원",
+        "status": "공시",
+        "raw": "1500만원"
+      },
+      "signingBonus": null,
+      "careerRaw": "상인천초-상인천중-동산고-한일장신대",
+      "careerTokens": [
+        "상인천초",
+        "상인천중",
+        "동산고",
+        "한일장신대"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "한화",
+          "note": "현 소속"
+        }
+      ],
+      "draft": "26 한화 육성선수",
+      "debutYear": null,
+      "position": "외야수(우투좌타)",
+      "birth": "2000년 03월 06일",
+      "physique": "175cm/76kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "55534",
+      "name": "조민영",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=55534",
+      "salary": {
+        "amount": 30000000,
+        "currency": "KRW",
+        "display": "3,000만원",
+        "status": "공시",
+        "raw": "3000만원"
+      },
+      "signingBonus": null,
+      "careerRaw": "서울중대초-건대부중-신일고",
+      "careerTokens": [
+        "서울중대초",
+        "건대부중",
+        "신일고"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "롯데",
+          "note": "현 소속",
+          "debut": "26롯데"
+        }
+      ],
+      "draft": "25 롯데 육성선수",
+      "debutYear": "26롯데",
+      "position": "외야수(우투우타)",
+      "birth": "2005년 03월 24일",
+      "physique": "186cm/92kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "52105",
+      "name": "김성우",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=52105",
+      "salary": {
+        "amount": 32000000,
+        "currency": "KRW",
+        "display": "3,200만원",
+        "status": "공시",
+        "raw": "3200만원"
+      },
+      "signingBonus": "5000만원",
+      "careerRaw": "성동초-건대부중-배재고-LG-상무",
+      "careerTokens": [
+        "성동초",
+        "건대부중",
+        "배재고",
+        "LG",
+        "상무"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "LG",
+          "note": "입단",
+          "debut": "24LG"
+        },
+        {
+          "order": 2,
+          "team": "상무",
+          "note": "군 복무"
+        }
+      ],
+      "draft": "22 LG 2차 7라운드 67순위",
+      "debutYear": "24LG",
+      "position": "포수(우투우타)",
+      "birth": "2003년 11월 15일",
+      "physique": "180cm/85kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "56443",
+      "name": "이한민",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=56443",
+      "salary": {
+        "amount": 30000000,
+        "currency": "KRW",
+        "display": "3,000만원",
+        "status": "공시",
+        "raw": "3000만원"
+      },
+      "signingBonus": null,
+      "careerRaw": "대전유천초-온양중-포항제철고-동의대",
+      "careerTokens": [
+        "대전유천초",
+        "온양중",
+        "포항제철고",
+        "동의대"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "삼성",
+          "note": "현 소속"
+        }
+      ],
+      "draft": "26 삼성 육성선수",
+      "debutYear": null,
+      "position": "내야수(우투우타)",
+      "birth": "2002년 06월 04일",
+      "physique": "185cm/87kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "55502",
+      "name": "김동현",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=55502",
+      "salary": {
+        "amount": 31000000,
+        "currency": "KRW",
+        "display": "3,100만원",
+        "status": "공시",
+        "raw": "3100만원"
+      },
+      "signingBonus": "6000만원",
+      "careerRaw": "인천병방초(인천서구리틀)-재능중-제물포고-부산과학기술대",
+      "careerTokens": [
+        "인천병방초(인천서구리틀)",
+        "재능중",
+        "제물포고",
+        "부산과학기술대"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "롯데",
+          "note": "현 소속",
+          "debut": "25롯데"
+        }
+      ],
+      "draft": "25 롯데 6라운드 54순위",
+      "debutYear": "25롯데",
+      "position": "외야수(우투좌타)",
+      "birth": "2004년 12월 30일",
+      "physique": "185cm/100kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "69105",
+      "name": "김성진",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=69105",
+      "salary": {
+        "amount": 33000000,
+        "currency": "KRW",
+        "display": "3,300만원",
+        "status": "공시",
+        "raw": "3300만원"
+      },
+      "signingBonus": "5000만원",
+      "careerRaw": "수원신곡초-매향중-야탑고",
+      "careerTokens": [
+        "수원신곡초",
+        "매향중",
+        "야탑고"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "LG",
+          "note": "현 소속",
+          "debut": "20LG"
+        }
+      ],
+      "draft": "19 LG 2차 7라운드 65순위",
+      "debutYear": "20LG",
+      "position": "내야수(우투우타)",
+      "birth": "2000년 03월 17일",
+      "physique": "183cm/100kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "69064",
+      "name": "강민성",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=69064",
+      "salary": {
+        "amount": 42000000,
+        "currency": "KRW",
+        "display": "4,200만원",
+        "status": "공시",
+        "raw": "4200만원"
+      },
+      "signingBonus": "6000만원",
+      "careerRaw": "대구옥산초-경상중-경북고",
+      "careerTokens": [
+        "대구옥산초",
+        "경상중",
+        "경북고"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "KT",
+          "note": "현 소속",
+          "debut": "23KT"
+        }
+      ],
+      "draft": "19 KT 2차 6라운드 51순위",
+      "debutYear": "23KT",
+      "position": "내야수(우투우타)",
+      "birth": "1999년 12월 08일",
+      "physique": "180cm/85kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "54567",
+      "name": "강성우",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=54567",
+      "salary": {
+        "amount": 31000000,
+        "currency": "KRW",
+        "display": "3,100만원",
+        "status": "공시",
+        "raw": "3100만원"
+      },
+      "signingBonus": "7000만원",
+      "careerRaw": "대전유천초-한밭중-청주고-롯데-상무",
+      "careerTokens": [
+        "대전유천초",
+        "한밭중",
+        "청주고",
+        "롯데",
+        "상무"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "롯데",
+          "note": "입단",
+          "debut": "24롯데"
+        },
+        {
+          "order": 2,
+          "team": "상무",
+          "note": "군 복무"
+        }
+      ],
+      "draft": "24 롯데 5라운드 43순위",
+      "debutYear": "24롯데",
+      "position": "내야수(우투우타)",
+      "birth": "2005년 04월 12일",
+      "physique": "182cm/77kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "55164",
+      "name": "박관우",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=55164",
+      "salary": {
+        "amount": 40000000,
+        "currency": "KRW",
+        "display": "4,000만원",
+        "status": "공시",
+        "raw": "4000만원"
+      },
+      "signingBonus": "7000만원",
+      "careerRaw": "욱수초(경산시리틀)-경운중-경북고-LG-상무",
+      "careerTokens": [
+        "욱수초(경산시리틀)",
+        "경운중",
+        "경북고",
+        "LG",
+        "상무"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "LG",
+          "note": "입단",
+          "debut": "25LG"
+        },
+        {
+          "order": 2,
+          "team": "상무",
+          "note": "군 복무"
+        }
+      ],
+      "draft": "25 LG 5라운드 50순위",
+      "debutYear": "25LG",
+      "position": "외야수(좌투좌타)",
+      "birth": "2006년 03월 22일",
+      "physique": "174cm/82kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "52402",
+      "name": "김상민",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=52402",
+      "salary": {
+        "amount": 35000000,
+        "currency": "KRW",
+        "display": "3,500만원",
+        "status": "공시",
+        "raw": "3500만원"
+      },
+      "signingBonus": "4000만원",
+      "careerRaw": "부산대연초-부산중-부산고",
+      "careerTokens": [
+        "부산대연초",
+        "부산중",
+        "부산고"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "삼성",
+          "note": "현 소속",
+          "debut": "23삼성"
+        }
+      ],
+      "draft": "22 삼성 2차 8라운드 73순위",
+      "debutYear": "23삼성",
+      "position": "외야수(우투좌타)",
+      "birth": "2003년 12월 06일",
+      "physique": "183cm/83kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "69332",
+      "name": "주성원",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=69332",
+      "salary": {
+        "amount": 50000000,
+        "currency": "KRW",
+        "display": "5,000만원",
+        "status": "공시",
+        "raw": "5000만원"
+      },
+      "signingBonus": "8000만원",
+      "careerRaw": "부산대연초(남구리틀)-부산신정중-개성고",
+      "careerTokens": [
+        "부산대연초(남구리틀)",
+        "부산신정중",
+        "개성고"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "고양",
+          "note": "현 소속",
+          "debut": "19키움"
+        }
+      ],
+      "draft": "19 넥센 2차 3라운드 24순위",
+      "debutYear": "19키움",
+      "position": "외야수(우투우타)",
+      "birth": "2000년 08월 30일",
+      "physique": "182cm/95kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "31003",
+      "name": "김서원",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=31003",
+      "salary": {
+        "amount": null,
+        "currency": null,
+        "display": null,
+        "status": "미공시",
+        "raw": null
+      },
+      "signingBonus": null,
+      "careerRaw": "서울효제초-선린중-충훈고-인하대",
+      "careerTokens": [
+        "서울효제초",
+        "선린중",
+        "충훈고",
+        "인하대"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "울산",
+          "note": "현 소속",
+          "debut": "26울산"
+        }
+      ],
+      "draft": "26 울산 자유선발",
+      "debutYear": "26울산",
+      "position": "외야수(우투좌타)",
+      "birth": "2000년 10월 08일",
+      "physique": "183cm/81kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "55631",
+      "name": "엄준현",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=55631",
+      "salary": {
+        "amount": 30000000,
+        "currency": "KRW",
+        "display": "3,000만원",
+        "status": "공시",
+        "raw": "3000만원"
+      },
+      "signingBonus": "4000만원",
+      "careerRaw": "서울이수초-언북중-전주고",
+      "careerTokens": [
+        "서울이수초",
+        "언북중",
+        "전주고"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "KIA",
+          "note": "현 소속",
+          "debut": "26KIA"
+        }
+      ],
+      "draft": "25 KIA 9라운드 85순위",
+      "debutYear": "26KIA",
+      "position": "내야수(우투우타)",
+      "birth": "2006년 04월 20일",
+      "physique": "174cm/75kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "52124",
+      "name": "엄태경",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=52124",
+      "salary": {
+        "amount": 31000000,
+        "currency": "KRW",
+        "display": "3,100만원",
+        "status": "공시",
+        "raw": "3100만원"
+      },
+      "signingBonus": "3000만원",
+      "careerRaw": "광명광덕초(광명시리틀)-휘문중-휘문고",
+      "careerTokens": [
+        "광명광덕초(광명시리틀)",
+        "휘문중",
+        "휘문고"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "LG",
+          "note": "현 소속"
+        }
+      ],
+      "draft": "22 LG 2차 10라운드 97순위",
+      "debutYear": null,
+      "position": "외야수(우투좌타)",
+      "birth": "2003년 05월 03일",
+      "physique": "184cm/83kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "68330",
+      "name": "예진원",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=68330",
+      "salary": {
+        "amount": 30000000,
+        "currency": "KRW",
+        "display": "3,000만원",
+        "status": "공시",
+        "raw": "3000만원"
+      },
+      "signingBonus": "9000만원",
+      "careerRaw": "양정초-부산중-경남고-넥센-키움-상무-키움-KIA",
+      "careerTokens": [
+        "양정초",
+        "부산중",
+        "경남고",
+        "넥센",
+        "키움",
+        "상무",
+        "키움",
+        "KIA"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "넥센",
+          "note": "입단",
+          "debut": "18넥센"
+        },
+        {
+          "order": 2,
+          "team": "키움",
+          "note": "이적"
+        },
+        {
+          "order": 3,
+          "team": "상무",
+          "note": "군 복무"
+        },
+        {
+          "order": 4,
+          "team": "키움",
+          "note": "이적"
+        },
+        {
+          "order": 5,
+          "team": "KIA",
+          "note": "이적"
+        },
+        {
+          "order": 6,
+          "team": "울산",
+          "note": "현 소속"
+        }
+      ],
+      "draft": "18 넥센 2차 2라운드 18순위",
+      "debutYear": "18넥센",
+      "position": "외야수(좌투좌타)",
+      "birth": "1999년 03월 16일",
+      "physique": "172cm/84kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "31012",
+      "name": "홀",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=31012",
+      "salary": {
+        "amount": 130000000,
+        "currency": "KRW",
+        "display": "1억 3,000만원",
+        "status": "공시",
+        "raw": "13000만원"
+      },
+      "signingBonus": null,
+      "careerRaw": "호주 Darling Range Sports(고)",
+      "careerTokens": [
+        "호주 Darling Range Sports(고)"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "울산",
+          "note": "현 소속",
+          "debut": "26울산"
+        }
+      ],
+      "draft": "26 울산 자유선발",
+      "debutYear": "26울산",
+      "position": "포수(우투양타)",
+      "birth": "1999년 06월 08일",
+      "physique": "180cm/92kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "50901",
+      "name": "안인산",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=50901",
+      "salary": {
+        "amount": 30000000,
+        "currency": "KRW",
+        "display": "3,000만원",
+        "status": "공시",
+        "raw": "3000만원"
+      },
+      "signingBonus": "10000만원",
+      "careerRaw": "군포오금초(안양시리틀)-평촌중-야탑고-NC",
+      "careerTokens": [
+        "군포오금초(안양시리틀)",
+        "평촌중",
+        "야탑고",
+        "NC"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "NC",
+          "note": "입단",
+          "debut": "20NC"
+        },
+        {
+          "order": 2,
+          "team": "KT",
+          "note": "현 소속"
+        }
+      ],
+      "draft": "20 NC 2차 3라운드 21순위",
+      "debutYear": "20NC",
+      "position": "내야수(우투우타)",
+      "birth": "2001년 02월 27일",
+      "physique": "181cm/95kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "53992",
+      "name": "박한결",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=53992",
+      "salary": {
+        "amount": 35000000,
+        "currency": "KRW",
+        "display": "3,500만원",
+        "status": "공시",
+        "raw": "3500만원"
+      },
+      "signingBonus": "15000만원",
+      "careerRaw": "본리초-경복중-경북고-NC-상무",
+      "careerTokens": [
+        "본리초",
+        "경복중",
+        "경북고",
+        "NC",
+        "상무"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "NC",
+          "note": "입단",
+          "debut": "23NC"
+        },
+        {
+          "order": 2,
+          "team": "상무",
+          "note": "군 복무"
+        }
+      ],
+      "draft": "23 NC 2라운드 14순위",
+      "debutYear": "23NC",
+      "position": "외야수(우투우타)",
+      "birth": "2004년 04월 26일",
+      "physique": "181cm/90kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "56009",
+      "name": "김경환",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=56009",
+      "salary": {
+        "amount": 30000000,
+        "currency": "KRW",
+        "display": "3,000만원",
+        "status": "공시",
+        "raw": "3000만원"
+      },
+      "signingBonus": "5000만원",
+      "careerRaw": "백운초-덕수중-배재고",
+      "careerTokens": [
+        "백운초",
+        "덕수중",
+        "배재고"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "KT",
+          "note": "현 소속"
+        }
+      ],
+      "draft": "26 KT 7라운드 66순위",
+      "debutYear": null,
+      "position": "외야수(우투좌타)",
+      "birth": "2007년 01월 04일",
+      "physique": "181cm/78kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "51302",
+      "name": "이주형",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=51302",
+      "salary": {
+        "amount": 38000000,
+        "currency": "KRW",
+        "display": "3,800만원",
+        "status": "공시",
+        "raw": "3800만원"
+      },
+      "signingBonus": "6000만원",
+      "careerRaw": "이매초-매송중-야탑고-키움-상무",
+      "careerTokens": [
+        "이매초",
+        "매송중",
+        "야탑고",
+        "키움",
+        "상무"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "키움",
+          "note": "입단",
+          "debut": "21키움"
+        },
+        {
+          "order": 2,
+          "team": "상무",
+          "note": "군 복무"
+        },
+        {
+          "order": 3,
+          "team": "고양",
+          "note": "복귀"
+        }
+      ],
+      "draft": "21 키움 2차 4라운드 39순위",
+      "debutYear": "21키움",
+      "position": "내야수(좌투좌타)",
+      "birth": "2002년 07월 05일",
+      "physique": "183cm/105kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "52704",
+      "name": "이상혁",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=52704",
+      "salary": {
+        "amount": 35000000,
+        "currency": "KRW",
+        "display": "3,500만원",
+        "status": "공시",
+        "raw": "3500만원"
+      },
+      "signingBonus": null,
+      "careerRaw": "수원영화초(군포시리틀)-수원북중-장안고-강릉영동대-한화-상무",
+      "careerTokens": [
+        "수원영화초(군포시리틀)",
+        "수원북중",
+        "장안고",
+        "강릉영동대",
+        "한화",
+        "상무"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "한화",
+          "note": "입단",
+          "debut": "23한화"
+        },
+        {
+          "order": 2,
+          "team": "상무",
+          "note": "군 복무"
+        }
+      ],
+      "draft": "22 한화 육성선수",
+      "debutYear": "23한화",
+      "position": "외야수(우투좌타)",
+      "birth": "2001년 09월 14일",
+      "physique": "174cm/65kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "66838",
+      "name": "김동엽",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=66838",
+      "salary": {
+        "amount": 30000000,
+        "currency": "KRW",
+        "display": "3,000만원",
+        "status": "공시",
+        "raw": "3000만원"
+      },
+      "signingBonus": null,
+      "careerRaw": "천안남산초-천안북중-북일고-SK-삼성-키움",
+      "careerTokens": [
+        "천안남산초",
+        "천안북중",
+        "북일고",
+        "SK",
+        "삼성",
+        "키움"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "SK",
+          "note": "입단",
+          "debut": "09시카고컵스"
+        },
+        {
+          "order": 2,
+          "team": "삼성",
+          "note": "이적"
+        },
+        {
+          "order": 3,
+          "team": "키움",
+          "note": "이적"
+        },
+        {
+          "order": 4,
+          "team": "울산",
+          "note": "현 소속"
+        }
+      ],
+      "draft": "16 SK 2차 9라운드 86순위",
+      "debutYear": "09시카고컵스",
+      "position": "외야수(우투우타)",
+      "birth": "1990년 07월 24일",
+      "physique": "186cm/101kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "53659",
+      "name": "정해원",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=53659",
+      "salary": {
+        "amount": 50000000,
+        "currency": "KRW",
+        "display": "5,000만원",
+        "status": "공시",
+        "raw": "5000만원"
+      },
+      "signingBonus": "10000만원",
+      "careerRaw": "제주신광초-덕수중-휘문고",
+      "careerTokens": [
+        "제주신광초",
+        "덕수중",
+        "휘문고"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "KIA",
+          "note": "현 소속",
+          "debut": "23KIA"
+        }
+      ],
+      "draft": "23 KIA 3라운드 22순위",
+      "debutYear": "23KIA",
+      "position": "외야수(우투우타)",
+      "birth": "2004년 05월 21일",
+      "physique": "185cm/87kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "66047",
+      "name": "박세진",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=66047",
+      "salary": {
+        "amount": 37000000,
+        "currency": "KRW",
+        "display": "3,700만원",
+        "status": "공시",
+        "raw": "3700만원"
+      },
+      "signingBonus": "23000만원",
+      "careerRaw": "본리초-경운중-경북고-KT",
+      "careerTokens": [
+        "본리초",
+        "경운중",
+        "경북고",
+        "KT"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "KT",
+          "note": "입단",
+          "debut": "16KT"
+        },
+        {
+          "order": 2,
+          "team": "롯데",
+          "note": "현 소속"
+        }
+      ],
+      "draft": "16 KT 1차",
+      "debutYear": "16KT",
+      "position": "투수(좌투좌타)",
+      "birth": "1997년 06월 27일",
+      "physique": "178cm/93kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "51058",
+      "name": "한차현",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=51058",
+      "salary": {
+        "amount": 40000000,
+        "currency": "KRW",
+        "display": "4,000만원",
+        "status": "공시",
+        "raw": "4000만원"
+      },
+      "signingBonus": "10000만원",
+      "careerRaw": "사능초(남양주리틀)-청원중-포항제철고-성균관대",
+      "careerTokens": [
+        "사능초(남양주리틀)",
+        "청원중",
+        "포항제철고",
+        "성균관대"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "KT",
+          "note": "현 소속",
+          "debut": "21KT"
+        }
+      ],
+      "draft": "21 KT 2차 2라운드 15순위",
+      "debutYear": "21KT",
+      "position": "투수(우투우타)",
+      "birth": "1998년 11월 30일",
+      "physique": "180cm/80kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "31017",
+      "name": "오카다",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=31017",
+      "salary": {
+        "amount": 120000000,
+        "currency": "KRW",
+        "display": "1억 2,000만원",
+        "status": "공시",
+        "raw": "12000만원"
+      },
+      "signingBonus": null,
+      "careerRaw": "일본 오사카쇼고대고",
+      "careerTokens": [
+        "일본 오사카쇼고대고"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "울산",
+          "note": "현 소속",
+          "debut": "26울산"
+        }
+      ],
+      "draft": "26 울산 자유선발",
+      "debutYear": "26울산",
+      "position": "투수(우투좌타)",
+      "birth": "1993년 10월 18일",
+      "physique": "183cm/100kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "31048",
+      "name": "나가",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=31048",
+      "salary": {
+        "amount": 100000000,
+        "currency": "KRW",
+        "display": "1억원",
+        "status": "공시",
+        "raw": "10000만원"
+      },
+      "signingBonus": null,
+      "careerRaw": "일본 홋카이도대",
+      "careerTokens": [
+        "일본 홋카이도대"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "울산",
+          "note": "현 소속",
+          "debut": "26울산"
+        }
+      ],
+      "draft": "26 울산 자유선발",
+      "debutYear": "26울산",
+      "position": "투수(우투우타)",
+      "birth": "1999년 09월 15일",
+      "physique": "188cm/86kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "31011",
+      "name": "고바야시",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=31011",
+      "salary": {
+        "amount": 120000000,
+        "currency": "KRW",
+        "display": "1억 2,000만원",
+        "status": "공시",
+        "raw": "12000만원"
+      },
+      "signingBonus": null,
+      "careerRaw": "일본 도카이대부속삿포로고",
+      "careerTokens": [
+        "일본 도카이대부속삿포로고"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "울산",
+          "note": "현 소속",
+          "debut": "26울산"
+        }
+      ],
+      "draft": "26 울산 자유선발",
+      "debutYear": "26울산",
+      "position": "투수(우투우타)",
+      "birth": "2001년 05월 07일",
+      "physique": "184cm/90kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "54608",
+      "name": "김민재",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=54608",
+      "salary": {
+        "amount": 31000000,
+        "currency": "KRW",
+        "display": "3,100만원",
+        "status": "공시",
+        "raw": "3100만원"
+      },
+      "signingBonus": "4000만원",
+      "careerRaw": "효제초-청량중-신일고-동원과학기술대-KIA-상무",
+      "careerTokens": [
+        "효제초",
+        "청량중",
+        "신일고",
+        "동원과학기술대",
+        "KIA",
+        "상무"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "KIA",
+          "note": "입단",
+          "debut": "24KIA"
+        },
+        {
+          "order": 2,
+          "team": "상무",
+          "note": "군 복무"
+        }
+      ],
+      "draft": "24 KIA 8라운드 76순위",
+      "debutYear": "24KIA",
+      "position": "투수(우투우타)",
+      "birth": "2003년 07월 08일",
+      "physique": "188cm/85kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "50262",
+      "name": "이주엽",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=50262",
+      "salary": {
+        "amount": 30000000,
+        "currency": "KRW",
+        "display": "3,000만원",
+        "status": "공시",
+        "raw": "3000만원"
+      },
+      "signingBonus": "20000만원",
+      "careerRaw": "서울이수초-성남중-성남고",
+      "careerTokens": [
+        "서울이수초",
+        "성남중",
+        "성남고"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "두산",
+          "note": "현 소속",
+          "debut": "20두산"
+        }
+      ],
+      "draft": "20 두산 1차",
+      "debutYear": "20두산",
+      "position": "투수(우투우타)",
+      "birth": "2001년 03월 26일",
+      "physique": "188cm/90kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "68703",
+      "name": "박성웅",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=68703",
+      "salary": {
+        "amount": 30000000,
+        "currency": "KRW",
+        "display": "3,000만원",
+        "status": "공시",
+        "raw": "3000만원"
+      },
+      "signingBonus": "10000만원",
+      "careerRaw": "광주서석초-충장중-광주제일고-한화",
+      "careerTokens": [
+        "광주서석초",
+        "충장중",
+        "광주제일고",
+        "한화"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "한화",
+          "note": "입단",
+          "debut": "18한화"
+        },
+        {
+          "order": 2,
+          "team": "울산",
+          "note": "현 소속"
+        }
+      ],
+      "draft": "18 한화 2차 2라운드 14순위",
+      "debutYear": "18한화",
+      "position": "투수(좌투좌타)",
+      "birth": "1999년 08월 20일",
+      "physique": "178cm/100kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "51715",
+      "name": "김기중",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=51715",
+      "salary": {
+        "amount": 60000000,
+        "currency": "KRW",
+        "display": "6,000만원",
+        "status": "공시",
+        "raw": "6000만원"
+      },
+      "signingBonus": "15000만원",
+      "careerRaw": "의왕부곡초-매송중-유신고-한화-상무",
+      "careerTokens": [
+        "의왕부곡초",
+        "매송중",
+        "유신고",
+        "한화",
+        "상무"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "한화",
+          "note": "입단",
+          "debut": "21한화"
+        },
+        {
+          "order": 2,
+          "team": "상무",
+          "note": "군 복무"
+        }
+      ],
+      "draft": "21 한화 2차 1라운드 2순위",
+      "debutYear": "21한화",
+      "position": "투수(좌투좌타)",
+      "birth": "2002년 11월 16일",
+      "physique": "186cm/96kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "55419",
+      "name": "최예한",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=55419",
+      "salary": {
+        "amount": 31000000,
+        "currency": "KRW",
+        "display": "3,100만원",
+        "status": "공시",
+        "raw": "3100만원"
+      },
+      "signingBonus": null,
+      "careerRaw": "양정초-포항제철중-포항제철고-성균관대",
+      "careerTokens": [
+        "양정초",
+        "포항제철중",
+        "포항제철고",
+        "성균관대"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "삼성",
+          "note": "현 소속"
+        }
+      ],
+      "draft": "25 삼성 육성선수",
+      "debutYear": null,
+      "position": "투수(우투우타)",
+      "birth": "2002년 06월 02일",
+      "physique": "183cm/90kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "55896",
+      "name": "이도우",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=55896",
+      "salary": {
+        "amount": 30000000,
+        "currency": "KRW",
+        "display": "3,000만원",
+        "status": "공시",
+        "raw": "3000만원"
+      },
+      "signingBonus": "4000만원",
+      "careerRaw": "길동초-배명중-서울컨벤션고",
+      "careerTokens": [
+        "길동초",
+        "배명중",
+        "서울컨벤션고"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "SSG",
+          "note": "현 소속"
+        }
+      ],
+      "draft": "25 SSG 8라운드 78순위",
+      "debutYear": null,
+      "position": "투수(우투우타)",
+      "birth": "2006년 05월 13일",
+      "physique": "191cm/96kg"
     }
   ]
 }
