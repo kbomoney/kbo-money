@@ -12,15 +12,17 @@
     }
     header { background-color: #1e293b; color: #fff; text-align: center; padding: 2rem 1rem; }
     header h1 { font-size: 1.5rem; margin-bottom: 1rem; }
-    .search-box { max-width: 500px; margin: 0 auto; display: flex; gap: 8px; }
+    .search-box { max-width: 500px; margin: 0 auto; position: relative; }
     .search-box input {
-      flex: 1; padding: 0.75rem 1rem; border-radius: 20px;
+      width: 100%; padding: 0.75rem 5.5rem 0.75rem 1rem; border-radius: 24px;
       border: 2px solid #3b82f6; font-size: 1rem; outline: none;
     }
     .search-box button {
-      padding: 0.75rem 1.25rem; border-radius: 20px; border: none;
+      position: absolute; top: 5px; right: 5px; bottom: 5px;
+      padding: 0 1.1rem; border-radius: 20px; border: none;
       background-color: #3b82f6; color: #fff; font-weight: bold; cursor: pointer;
     }
+
     .search-box button:hover { background-color: #2563eb; }
     .stat-line { margin-top: 0.75rem; font-size: 0.8rem; color: #94a3b8; }
     main { max-width: 516px; margin: 2rem auto; padding: 0 1rem; }
