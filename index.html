@@ -313,7 +313,8 @@ const historyMap = new Map(); // playerId -> 연도별 연봉
           </div>`;
       }).join('');
 
-      box.innerHTML = `<div class="result-count">${list.length}명 검색됨</div>` + cards;
+      box.innerHTML = cards;
+
     }
 
     document.addEventListener('DOMContentLoaded', () => {
