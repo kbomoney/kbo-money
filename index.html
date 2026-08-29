@@ -105,8 +105,21 @@
     async function loadAll() {
       const statLine = document.getElementById('statLine');
       try {
-        const base = await loadJson('data/players.json', false);
-        people = Array.isArray(base) ? base : (base.people || []);
+        const seen = new Set();
+        people = [];
+        for (const path of ['data/players.json', 'data/players_all.json']) {
+          const base = await loadJson(path, true);
+          if (!base) continue;
+          const rows = Array.isArray(base) ? base : (base.people || []);
+          for (const p of rows) {
+            const pid = String(p.playerId || '');
+            if (!pid || seen.has(pid)) continue;
+            seen.add(pid);
+            people.push(p);
+          }
+        }
+        if (!people.length) throw new Error('명단 파일을 읽지 못했습니다.');
+
 
         const detail = await loadJson('data/details.json', true);
         if (detail) {
