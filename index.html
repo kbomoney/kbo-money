@@ -93,7 +93,7 @@
     let people = [];              // 명단
     const detailMap = new Map();  // playerId -> 상세(연봉·경력)
     const overrideMap = new Map();// playerId -> 수동 보정 연봉
-
+const historyMap = new Map(); // playerId -> 연도별 연봉
     const MILITARY = new Set(['상무', '경찰', '국군체육부대']);
 
     async function loadJson(path, optional) {
@@ -133,7 +133,13 @@
         }
 
         // 수동 보정 파일(없어도 정상 동작)
-        const manual = await loadJson('data/salary.json', true);
+        const hist = await loadJson('data/salary_history.json', true);
+        if (hist && hist.players) {
+          Object.entries(hist.players).forEach(([pid, v]) => {
+            if (v && v.salaries && v.salaries.length) historyMap.set(String(pid), v.salaries);
+          });
+        }
+
         if (manual) {
           const list = Array.isArray(manual) ? manual : (manual.items || []);
           list.forEach(m => overrideMap.set(String(m.playerId), m));
@@ -194,6 +200,29 @@
         (p.name || '').replace(/\s+/g, '').toLowerCase().includes(kw));
 
       render(hits);
+    }
+    function salaryTable(person) {
+      const rows = historyMap.get(String(person.playerId));
+      if (!rows || !rows.length) return '';
+
+      const body = rows.slice().sort((a, b) => b.year - a.year).map(r => {
+        const disp = r.display || (r.currency === 'USD'
+          ? `${Number(r.amount).toLocaleString()} 달러`
+          : formatKRW(r.amount));
+        const mark = r.source === 'manual'
+          ? ' <span style="font-size:.7rem;color:#94a3b8;">직접입력</span>' : '';
+        return `<tr><td>${esc(r.year)}</td><td>${esc(r.team || '-')}</td>` +
+               `<td class="amount">${esc(disp)}${mark}</td></tr>`;
+      }).join('');
+
+      return `
+        <div class="history-section">
+          <div class="history-title">연도별 연봉</div>
+          <table class="salary-table">
+            <tr><th>연도</th><th>구단</th><th style="text-align:right;">연봉</th></tr>
+            ${body}
+          </table>
+        </div>`;
     }
 
     function render(list) {
@@ -261,6 +290,8 @@
               ${histHtml}
               ${careerLine}
             </div>
+            ${salaryTable(p)}
+
           </div>`;
       }).join('');
 
