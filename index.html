@@ -275,8 +275,14 @@
       tabs.innerHTML = POSITIONS.map(p =>
         `<button class="pos-tab" data-pos="${esc(p)}">${esc(p)}</button>`).join('');
       tabs.querySelectorAll('.pos-tab').forEach(btn => {
-        btn.addEventListener('click', () => { curPos = btn.dataset.pos; renderNames(); });
+        btn.addEventListener('click', () => {
+          curPos = btn.dataset.pos;
+          curPid = null;
+          document.getElementById('resultContainer').innerHTML = '';
+          renderNames();
+        });
       });
+
 
       renderNames();
     }
@@ -522,8 +528,8 @@
         .sort((a, b) => b.amt - a.amt)
         .slice(0, 20);
 
-      document.getElementById('nameList').innerHTML = '';
       const box = document.getElementById('resultContainer');
+
       if (!list.length) {
         box.innerHTML = '<p class="empty-msg">연봉 정보가 없습니다.</p>';
         return;
