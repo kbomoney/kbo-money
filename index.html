@@ -40,6 +40,8 @@
       background: #dc2626; color: #fff; font-size: 0.8rem; font-weight: bold; cursor: pointer;
     }
     .rank-btn:hover { background: #b91c1c; }
+    .pos-tabs .rank-btn { margin-left: auto; flex: 0 0 auto; }
+
     .rank-box { background: #fff; border-radius: 12px; padding: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
     .rank-head { font-weight: bold; color: #dc2626; margin-bottom: 0.6rem; font-size: 0.95rem; }
     .rank-row { display: flex; align-items: center; gap: 0.5rem; padding: 0.35rem 0; border-top: 1px solid #f1f5f9; font-size: 0.88rem; }
@@ -490,8 +492,45 @@
       box.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
 
+    function showRanking() {
+      const team = curTeam || '';
+      const list = people
+        .filter(p => p.role !== 'coach')
+        .filter(p => !team || p.team === team)
+        .map(p => ({ p, amt: (getSalary(p) || {}).amount }))
+        .filter(x => typeof x.amt === 'number')
+        .sort((a, b) => b.amt - a.amt)
+        .slice(0, 20);
 
-  </script>
+      document.getElementById('nameList').innerHTML = '';
+      const box = document.getElementById('resultContainer');
+      if (!list.length) {
+        box.innerHTML = '<p class="empty-msg">연봉 정보가 없습니다.</p>';
+        return;
+      }
+      box.innerHTML = '<div class="rank-box">'
+        + `<div class="rank-head">${esc(team || '전체')} 연봉 상위 ${list.length}명</div>`
+        + list.map((x, i) =>
+            `<div class="rank-row"><span class="rank-no">${i + 1}</span>`
+            + `<span class="rank-name">${esc(x.p.name)}`
+            + (team ? '' : ` <span class="rank-team">${esc(x.p.team || '')}</span>`)
+            + `</span><span class="rank-amt">${formatKRW(x.amt)}</span></div>`
+          ).join('')
+        + '</div>';
+    }
+
+    const posTabsEl = document.getElementById('posTabs');
+    new MutationObserver(() => {
+      if (!posTabsEl.children.length) return;
+      if (posTabsEl.querySelector('.rank-btn')) return;
+      const b = document.createElement('button');
+      b.className = 'rank-btn';
+      b.textContent = '연봉 랭킹';
+      b.addEventListener('click', showRanking);
+      posTabsEl.appendChild(b);
+    }).observe(posTabsEl, { childList: true });
+
+
 
   </script>
 </body>
