@@ -30,7 +30,11 @@
     .empty-msg { text-align: center; color: #94a3b8; margin-top: 2rem; }
 
     /* 구단 선택 */
+    .section-title {
+      font-size: 0.95rem; font-weight: bold; color: #475569; margin-bottom: 0.6rem;
+    }
     .team-grid {
+
       display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; margin-bottom: 1rem;
     }
     .team-btn {
@@ -116,7 +120,9 @@
   </header>
 
   <main>
+    <h2 class="section-title">구단별 보기</h2>
     <div class="team-grid" id="teamGrid"></div>
+
     <div class="pos-tabs" id="posTabs" style="display:none;"></div>
     <div class="name-list" id="nameList"></div>
     <div id="resultContainer"></div>
