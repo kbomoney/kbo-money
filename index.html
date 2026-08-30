@@ -40,7 +40,8 @@
       background: #dc2626; color: #fff; font-size: 0.8rem; font-weight: bold; cursor: pointer;
     }
     .rank-btn:hover { background: #b91c1c; }
-    .pos-tabs .rank-btn { margin-left: auto; flex: 0 0 auto; }
+    .pos-tabs .rank-btn { flex: 0 0 auto; }
+
 
     .rank-box { background: #fff; border-radius: 12px; padding: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
     .rank-head { font-weight: bold; color: #dc2626; margin-bottom: 0.6rem; font-size: 0.95rem; }
@@ -64,9 +65,10 @@
 
     /* 보직 탭 */
     .pos-tabs {
-      display: flex; gap: 4px; margin-bottom: 0.75rem;
-      overflow-x: auto; padding-bottom: 2px;
+      display: flex; flex-wrap: wrap; align-items: center;
+      gap: 4px; margin-bottom: 0.75rem;
     }
+
     .pos-tab {
       flex: 0 0 auto; padding: 0.4rem 0.7rem; border: none; border-radius: 16px;
       background: #e2e8f0; color: #475569; font-size: 0.82rem; cursor: pointer; white-space: nowrap;
