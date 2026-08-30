@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-08-29 23:05:20",
+  "updatedAt": "2026-08-30 23:05:08",
   "source": [
     "https://web1.koreabaseball.com/Player/Register.aspx",
     "https://web1.koreabaseball.com/Futures/Player/Register.aspx"
   ],
   "note": "연봉·이력은 enrich.py가 상세 페이지에서 채웁니다.",
-  "totalCount": 513,
-  "playerCount": 399,
+  "totalCount": 512,
+  "playerCount": 398,
   "coachCount": 114,
   "people": [
     {
@@ -2131,27 +2131,6 @@
       "history": []
     },
     {
-      "playerId": "62951",
-      "name": "이형범",
-      "team": "한화",
-      "league": "1군",
-      "job": "선수",
-      "role": "player",
-      "backNo": "16",
-      "throwBat": "",
-      "birth": "",
-      "physique": "",
-      "detailUrl": null,
-      "isRetiredRecord": false,
-      "salary": {
-        "amount": null,
-        "status": "미확인",
-        "season": null,
-        "source": null
-      },
-      "history": []
-    },
-    {
       "playerId": "65117",
       "name": "이상규",
       "team": "한화",
@@ -2264,6 +2243,27 @@
       "job": "선수",
       "role": "player",
       "backNo": "44",
+      "throwBat": "",
+      "birth": "",
+      "physique": "",
+      "detailUrl": null,
+      "isRetiredRecord": false,
+      "salary": {
+        "amount": null,
+        "status": "미확인",
+        "season": null,
+        "source": null
+      },
+      "history": []
+    },
+    {
+      "playerId": "50705",
+      "name": "강재민",
+      "team": "한화",
+      "league": "1군",
+      "job": "선수",
+      "role": "player",
+      "backNo": "55",
       "throwBat": "",
       "birth": "",
       "physique": "",
@@ -6142,13 +6142,13 @@
       "history": []
     },
     {
-      "playerId": "50556",
-      "name": "최준용",
+      "playerId": "53540",
+      "name": "김기준",
       "team": "롯데",
       "league": "1군",
       "job": "선수",
       "role": "player",
-      "backNo": "56",
+      "backNo": "47",
       "throwBat": "",
       "birth": "",
       "physique": "",
@@ -6163,13 +6163,13 @@
       "history": []
     },
     {
-      "playerId": "54537",
-      "name": "정현수",
+      "playerId": "50556",
+      "name": "최준용",
       "team": "롯데",
       "league": "1군",
       "job": "선수",
       "role": "player",
-      "backNo": "57",
+      "backNo": "56",
       "throwBat": "",
       "birth": "",
       "physique": "",
@@ -9523,6 +9523,48 @@
       "history": []
     },
     {
+      "playerId": "56707",
+      "name": "황희성",
+      "team": "한화",
+      "league": "퓨처스",
+      "job": "투수",
+      "role": "player",
+      "backNo": "07",
+      "throwBat": "우투우타",
+      "birth": "2007-02-05",
+      "physique": "178cm, 74kg",
+      "detailUrl": "https://web1.koreabaseball.com/Futures/Player/PitcherDetail.aspx?playerId=56707",
+      "isRetiredRecord": false,
+      "salary": {
+        "amount": null,
+        "status": "미확인",
+        "season": null,
+        "source": null
+      },
+      "history": []
+    },
+    {
+      "playerId": "50711",
+      "name": "김승일",
+      "team": "한화",
+      "league": "퓨처스",
+      "job": "투수",
+      "role": "player",
+      "backNo": "14",
+      "throwBat": "우언우타",
+      "birth": "2001-07-07",
+      "physique": "183cm, 85kg",
+      "detailUrl": "https://web1.koreabaseball.com/Futures/Player/PitcherDetail.aspx?playerId=50711",
+      "isRetiredRecord": false,
+      "salary": {
+        "amount": null,
+        "status": "미확인",
+        "season": null,
+        "source": null
+      },
+      "history": []
+    },
+    {
       "playerId": "69767",
       "name": "정이황",
       "team": "한화",
@@ -9555,27 +9597,6 @@
       "birth": "1994-06-03",
       "physique": "180cm, 88kg",
       "detailUrl": "https://web1.koreabaseball.com/Futures/Player/PitcherDetail.aspx?playerId=63765",
-      "isRetiredRecord": false,
-      "salary": {
-        "amount": null,
-        "status": "미확인",
-        "season": null,
-        "source": null
-      },
-      "history": []
-    },
-    {
-      "playerId": "53706",
-      "name": "박재규",
-      "team": "한화",
-      "league": "퓨처스",
-      "job": "투수",
-      "role": "player",
-      "backNo": "39",
-      "throwBat": "우투우타",
-      "birth": "2003-07-03",
-      "physique": "181cm, 83kg",
-      "detailUrl": "https://web1.koreabaseball.com/Futures/Player/PitcherDetail.aspx?playerId=53706",
       "isRetiredRecord": false,
       "salary": {
         "amount": null,
@@ -9628,59 +9649,17 @@
       "history": []
     },
     {
-      "playerId": "50705",
-      "name": "강재민",
+      "playerId": "54701",
+      "name": "승지환",
       "team": "한화",
       "league": "퓨처스",
       "job": "투수",
       "role": "player",
-      "backNo": "55",
-      "throwBat": "우언우타",
-      "birth": "1997-04-03",
-      "physique": "180cm, 89kg",
-      "detailUrl": "https://web1.koreabaseball.com/Futures/Player/PitcherDetail.aspx?playerId=50705",
-      "isRetiredRecord": false,
-      "salary": {
-        "amount": null,
-        "status": "미확인",
-        "season": null,
-        "source": null
-      },
-      "history": []
-    },
-    {
-      "playerId": "56709",
-      "name": "박준영",
-      "team": "한화",
-      "league": "퓨처스",
-      "job": "투수",
-      "role": "player",
-      "backNo": "68",
+      "backNo": "106",
       "throwBat": "우투우타",
-      "birth": "2002-06-03",
-      "physique": "184cm, 87kg",
-      "detailUrl": "https://web1.koreabaseball.com/Futures/Player/PitcherDetail.aspx?playerId=56709",
-      "isRetiredRecord": false,
-      "salary": {
-        "amount": null,
-        "status": "미확인",
-        "season": null,
-        "source": null
-      },
-      "history": []
-    },
-    {
-      "playerId": "56797",
-      "name": "하동준",
-      "team": "한화",
-      "league": "퓨처스",
-      "job": "투수",
-      "role": "player",
-      "backNo": "97",
-      "throwBat": "좌투좌타",
-      "birth": "2007-06-11",
-      "physique": "189cm, 80kg",
-      "detailUrl": "https://web1.koreabaseball.com/Futures/Player/PitcherDetail.aspx?playerId=56797",
+      "birth": "2005-07-25",
+      "physique": "187cm, 89kg",
+      "detailUrl": "https://web1.koreabaseball.com/Futures/Player/PitcherDetail.aspx?playerId=54701",
       "isRetiredRecord": false,
       "salary": {
         "amount": null,
