@@ -348,7 +348,17 @@
       return formatKRW(totalMan * 10000);
     }
 
+    // 초·중·고·대로 끝나는 토큰만 남겨 학교 정보만 표시
+    function schoolsOnly(raw) {
+      return String(raw || '')
+        .split('-')
+        .map(s => s.trim())
+        .filter(s => /(초|중|고|대)$/.test(s.split('(')[0].trim()))
+        .join('-');
+    }
+
     function esc(s) {
+
       return String(s == null ? '' : s).replace(/[&<>"']/g,
         c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c]));
     }
@@ -425,8 +435,10 @@
           histHtml = `<div class="timeline">${items}</div>`;
         }
 
-        const careerLine = d.careerRaw
-          ? `<div class="career-raw">전체 경력: ${esc(d.careerRaw)}</div>` : '';
+        const schools = schoolsOnly(d.careerRaw);
+        const careerLine = schools
+          ? `<div class="career-raw">학교 정보: ${esc(schools)}</div>` : '';
+
 
         return `
           <div class="player-card">
