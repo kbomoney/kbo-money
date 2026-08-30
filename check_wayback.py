@@ -1,4 +1,5 @@
-import json, time, urllib.request
+import json, time, urllib.request, urllib.parse
+
 
 DETAIL_PATH = "data/details.json"
 SAMPLE = 20
@@ -41,5 +42,4 @@ def main():
     print(f"\n표본 {len(targets)}명 중 {hit}명 스냅샷 존재 ({hit*100//max(len(targets),1)}%)")
 
 if __name__ == "__main__":
-    import urllib.parse
     main()
