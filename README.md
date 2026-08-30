@@ -2,7 +2,7 @@
 
 > KBO 프로야구 10개 구단 선수들의 연봉·이적 히스토리와 감독/코치진의 선수·지도자 경력을 한눈에 볼 수 있는 웹 서비스입니다.
 
-🔗 **웹사이트 바로가기:** [https://kbomoney.github.io/kbo-money/](https://kbomoney.github.io/kbo-money/)
+🔗 **웹사이트 바로가기:** kbomoney.github.io
 
 ---
 
