@@ -33,6 +33,22 @@
     .section-title {
       font-size: 0.95rem; font-weight: bold; color: #475569; margin-bottom: 0.6rem;
     }
+    .title-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.6rem; }
+    .title-row .section-title { margin-bottom: 0; }
+    .rank-btn {
+      padding: 0.35rem 0.75rem; border: none; border-radius: 16px;
+      background: #dc2626; color: #fff; font-size: 0.8rem; font-weight: bold; cursor: pointer;
+    }
+    .rank-btn:hover { background: #b91c1c; }
+    .rank-box { background: #fff; border-radius: 12px; padding: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+    .rank-head { font-weight: bold; color: #dc2626; margin-bottom: 0.6rem; font-size: 0.95rem; }
+    .rank-row { display: flex; align-items: center; gap: 0.5rem; padding: 0.35rem 0; border-top: 1px solid #f1f5f9; font-size: 0.88rem; }
+    .rank-row:first-of-type { border-top: none; }
+    .rank-no { width: 1.6rem; color: #94a3b8; font-size: 0.8rem; }
+    .rank-name { flex: 1; }
+    .rank-team { color: #94a3b8; font-size: 0.78rem; }
+    .rank-amt { font-weight: bold; color: #0f766e; }
+
     .team-grid {
 
       display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; margin-bottom: 1rem;
@@ -120,7 +136,11 @@
   </header>
 
   <main>
-    <h2 class="section-title">구단별 보기</h2>
+    <div class="title-row">
+      <h2 class="section-title">구단별 보기</h2>
+      <button class="rank-btn" id="rankBtn">연봉 랭킹</button>
+    </div>
+
     <div class="team-grid" id="teamGrid"></div>
 
     <div class="pos-tabs" id="posTabs" style="display:none;"></div>
@@ -444,6 +464,37 @@
         if (e.key === 'Enter') search();
       });
     });
+        function showRanking() {
+      const active = document.querySelector('.team-btn.active');
+      const team = active ? active.dataset.team : '';
+      const list = people
+        .filter(p => p.role !== 'coach')
+        .filter(p => !team || p.team === team)
+        .map(p => ({ p, amt: (getSalary(p) || {}).amount }))
+        .filter(x => typeof x.amt === 'number')
+        .sort((a, b) => b.amt - a.amt)
+        .slice(0, 20);
+
+      const box = document.getElementById('resultContainer');
+      if (!list.length) {
+        box.innerHTML = '<p class="empty-msg">연봉 정보가 없습니다.</p>';
+        return;
+      }
+      box.innerHTML = '<div class="rank-box">'
+        + `<div class="rank-head">${esc(team || '전체')} 연봉 상위 ${list.length}명</div>`
+        + list.map((x, i) =>
+            `<div class="rank-row"><span class="rank-no">${i + 1}</span>`
+            + `<span class="rank-name">${esc(x.p.name)}`
+            + (team ? '' : ` <span class="rank-team">${esc(x.p.team || '')}</span>`)
+            + `</span><span class="rank-amt">${formatKRW(x.amt)}</span></div>`
+          ).join('')
+        + '</div>';
+      box.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    document.getElementById('rankBtn').addEventListener('click', showRanking);
+  </script>
+
   </script>
 </body>
 </html>
