@@ -517,8 +517,9 @@
             + `</span><span class="rank-amt">${formatKRW(x.amt)}</span></div>`
           ).join('')
         + '</div>';
-      box.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      box.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
+
 
     function showRanking() {
       const team = curTeam || '';
