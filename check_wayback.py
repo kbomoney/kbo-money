@@ -22,8 +22,10 @@ def fetch(url, timeout=30, tries=2):
 def find_salary(html):
     text = re.sub(r"<[^>]+>", "|", html)
     text = re.sub(r"\s+", " ", text)
-    m = re.search(r"연봉[^|]*\|+\s*([^|]{1,30})", text)
-    return m.group(1).strip() if m else None
+    i = text.find("연봉")
+    if i < 0:
+        return "'연봉' 문자열 없음"
+    return "주변: " + text[i:i + 120]
 
 
 def main():
@@ -32,16 +34,16 @@ def main():
 
     targets = []
     for p in items:
-        pos = str(p.get("position") or "")
         url = str(p.get("sourceUrl") or "")
-        if "감독" in pos or "코치" in pos or "Retire" in url:
+        sal = p.get("salary") or {}
+        if "koreabaseball" not in url or sal.get("amount") is None:
             continue
-        if "koreabaseball" not in url:
-            continue
-        cur = (p.get("salary") or {}).get("display") or (p.get("salary") or {}).get("amount")
+        cur = sal.get("display") or sal.get("amount")
         targets.append((p.get("name"), url.replace("web1.", "www."), cur))
         if len(targets) >= SAMPLE:
             break
+
+    print("조회 대상:", len(targets), "명")
 
     for i, (name, url, cur) in enumerate(targets, 1):
         src = url.split("://", 1)[-1]
@@ -57,7 +59,7 @@ def main():
             arch = snap["url"].replace("http://", "https://")
             html = fetch(arch, timeout=45)
             print("   HTML 길이:", len(html))
-            print("   추출된 연봉:", find_salary(html))
+            print("   추출:", find_salary(html))
         except Exception as e:
             print("   실패:", type(e).__name__, e)
         time.sleep(3)
