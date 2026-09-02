@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01 23:04:43",
+  "updatedAt": "2026-09-02 23:05:38",
   "source": [
     "https://web1.koreabaseball.com/Player/Register.aspx",
     "https://web1.koreabaseball.com/Futures/Player/Register.aspx"
@@ -4000,6 +4000,27 @@
       "history": []
     },
     {
+      "playerId": "54910",
+      "name": "김준원",
+      "team": "NC",
+      "league": "1군",
+      "job": "선수",
+      "role": "player",
+      "backNo": "15",
+      "throwBat": "",
+      "birth": "",
+      "physique": "",
+      "detailUrl": null,
+      "isRetiredRecord": false,
+      "salary": {
+        "amount": null,
+        "status": "미확인",
+        "season": null,
+        "source": null
+      },
+      "history": []
+    },
+    {
       "playerId": "55903",
       "name": "라일리",
       "team": "NC",
@@ -4259,27 +4280,6 @@
       "job": "선수",
       "role": "player",
       "backNo": "61",
-      "throwBat": "",
-      "birth": "",
-      "physique": "",
-      "detailUrl": null,
-      "isRetiredRecord": false,
-      "salary": {
-        "amount": null,
-        "status": "미확인",
-        "season": null,
-        "source": null
-      },
-      "history": []
-    },
-    {
-      "playerId": "56966",
-      "name": "테일러",
-      "team": "NC",
-      "league": "1군",
-      "job": "선수",
-      "role": "player",
-      "backNo": "66",
       "throwBat": "",
       "birth": "",
       "physique": "",
@@ -6506,6 +6506,27 @@
       "job": "선수",
       "role": "player",
       "backNo": "50",
+      "throwBat": "",
+      "birth": "",
+      "physique": "",
+      "detailUrl": null,
+      "isRetiredRecord": false,
+      "salary": {
+        "amount": null,
+        "status": "미확인",
+        "season": null,
+        "source": null
+      },
+      "history": []
+    },
+    {
+      "playerId": "55502",
+      "name": "김동현",
+      "team": "롯데",
+      "league": "1군",
+      "job": "선수",
+      "role": "player",
+      "backNo": "64",
       "throwBat": "",
       "birth": "",
       "physique": "",
@@ -10006,27 +10027,6 @@
       "history": []
     },
     {
-      "playerId": "55534",
-      "name": "조민영",
-      "team": "롯데",
-      "league": "퓨처스",
-      "job": "타자",
-      "role": "player",
-      "backNo": "",
-      "throwBat": "",
-      "birth": "",
-      "physique": "",
-      "detailUrl": "https://web1.koreabaseball.comHitterDetail.aspx?playerId=55534",
-      "isRetiredRecord": false,
-      "salary": {
-        "amount": null,
-        "status": "미확인",
-        "season": null,
-        "source": null
-      },
-      "history": []
-    },
-    {
       "playerId": "52105",
       "name": "김성우",
       "team": "상무",
@@ -10069,8 +10069,8 @@
       "history": []
     },
     {
-      "playerId": "55502",
-      "name": "김동현",
+      "playerId": "55534",
+      "name": "조민영",
       "team": "롯데",
       "league": "퓨처스",
       "job": "타자",
@@ -10079,7 +10079,7 @@
       "throwBat": "",
       "birth": "",
       "physique": "",
-      "detailUrl": "https://web1.koreabaseball.comHitterDetail.aspx?playerId=55502",
+      "detailUrl": "https://web1.koreabaseball.comHitterDetail.aspx?playerId=55534",
       "isRetiredRecord": false,
       "salary": {
         "amount": null,
@@ -10174,6 +10174,27 @@
       "history": []
     },
     {
+      "playerId": "31003",
+      "name": "김서원",
+      "team": "울산",
+      "league": "퓨처스",
+      "job": "타자",
+      "role": "player",
+      "backNo": "",
+      "throwBat": "",
+      "birth": "",
+      "physique": "",
+      "detailUrl": "https://web1.koreabaseball.comHitterDetail.aspx?playerId=31003",
+      "isRetiredRecord": false,
+      "salary": {
+        "amount": null,
+        "status": "미확인",
+        "season": null,
+        "source": null
+      },
+      "history": []
+    },
+    {
       "playerId": "55164",
       "name": "박관우",
       "team": "상무",
@@ -10216,8 +10237,8 @@
       "history": []
     },
     {
-      "playerId": "31003",
-      "name": "김서원",
+      "playerId": "68330",
+      "name": "예진원",
       "team": "울산",
       "league": "퓨처스",
       "job": "타자",
@@ -10226,7 +10247,7 @@
       "throwBat": "",
       "birth": "",
       "physique": "",
-      "detailUrl": "https://web1.koreabaseball.comHitterDetail.aspx?playerId=31003",
+      "detailUrl": "https://web1.koreabaseball.comHitterDetail.aspx?playerId=68330",
       "isRetiredRecord": false,
       "salary": {
         "amount": null,
@@ -10279,27 +10300,6 @@
       "history": []
     },
     {
-      "playerId": "68330",
-      "name": "예진원",
-      "team": "울산",
-      "league": "퓨처스",
-      "job": "타자",
-      "role": "player",
-      "backNo": "",
-      "throwBat": "",
-      "birth": "",
-      "physique": "",
-      "detailUrl": "https://web1.koreabaseball.comHitterDetail.aspx?playerId=68330",
-      "isRetiredRecord": false,
-      "salary": {
-        "amount": null,
-        "status": "미확인",
-        "season": null,
-        "source": null
-      },
-      "history": []
-    },
-    {
       "playerId": "53992",
       "name": "박한결",
       "team": "상무",
@@ -10311,27 +10311,6 @@
       "birth": "",
       "physique": "",
       "detailUrl": "https://web1.koreabaseball.comHitterDetail.aspx?playerId=53992",
-      "isRetiredRecord": false,
-      "salary": {
-        "amount": null,
-        "status": "미확인",
-        "season": null,
-        "source": null
-      },
-      "history": []
-    },
-    {
-      "playerId": "31012",
-      "name": "홀",
-      "team": "울산",
-      "league": "퓨처스",
-      "job": "타자",
-      "role": "player",
-      "backNo": "",
-      "throwBat": "",
-      "birth": "",
-      "physique": "",
-      "detailUrl": "https://web1.koreabaseball.comHitterDetail.aspx?playerId=31012",
       "isRetiredRecord": false,
       "salary": {
         "amount": null,
@@ -10395,6 +10374,27 @@
       "birth": "",
       "physique": "",
       "detailUrl": "https://web1.koreabaseball.comHitterDetail.aspx?playerId=51302",
+      "isRetiredRecord": false,
+      "salary": {
+        "amount": null,
+        "status": "미확인",
+        "season": null,
+        "source": null
+      },
+      "history": []
+    },
+    {
+      "playerId": "31012",
+      "name": "홀",
+      "team": "울산",
+      "league": "퓨처스",
+      "job": "타자",
+      "role": "player",
+      "backNo": "",
+      "throwBat": "",
+      "birth": "",
+      "physique": "",
+      "detailUrl": "https://web1.koreabaseball.comHitterDetail.aspx?playerId=31012",
       "isRetiredRecord": false,
       "salary": {
         "amount": null,
