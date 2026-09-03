@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-09-02 23:05:38",
+  "updatedAt": "2026-09-03 23:05:54",
   "schemaVersion": 2,
-  "count": 1092,
-  "salaryCount": 959,
-  "historyCount": 1092,
+  "count": 1093,
+  "salaryCount": 960,
+  "historyCount": 1093,
   "details": [
     {
       "schemaVersion": 2,
@@ -42203,6 +42203,44 @@
       "position": "투수(우투우타)",
       "birth": "2007년 02월 05일",
       "physique": "178cm/74kg"
+    },
+    {
+      "schemaVersion": 2,
+      "playerId": "67119",
+      "name": "고우석",
+      "sourceUrl": "https://web1.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId=67119",
+      "salary": {
+        "amount": 500000000,
+        "currency": "KRW",
+        "display": "5억원",
+        "status": "공시",
+        "raw": "50000만원"
+      },
+      "signingBonus": "30000만원",
+      "careerRaw": "갈산초-양천중-충암고-LG-샌디에이고-마이애미-디트로이트-미네소타",
+      "careerTokens": [
+        "갈산초",
+        "양천중",
+        "충암고",
+        "LG",
+        "샌디에이고",
+        "마이애미",
+        "디트로이트",
+        "미네소타"
+      ],
+      "history": [
+        {
+          "order": 1,
+          "team": "LG",
+          "note": "입단",
+          "debut": "17LG"
+        }
+      ],
+      "draft": "17 LG 1차",
+      "debutYear": "17LG",
+      "position": "투수(우투우타)",
+      "birth": "1998년 08월 06일",
+      "physique": "182cm/90kg"
     }
   ]
 }
