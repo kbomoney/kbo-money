@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-09-03 23:05:52",
+  "updatedAt": "2026-09-04 23:04:43",
   "source": [
     "https://web1.koreabaseball.com/Player/Register.aspx",
     "https://web1.koreabaseball.com/Futures/Player/Register.aspx"
   ],
   "note": "연봉·이력은 enrich.py가 상세 페이지에서 채웁니다.",
-  "totalCount": 515,
-  "playerCount": 401,
+  "totalCount": 514,
+  "playerCount": 400,
   "coachCount": 114,
   "people": [
     {
@@ -3076,6 +3076,27 @@
       "history": []
     },
     {
+      "playerId": "52867",
+      "name": "윤태현",
+      "team": "SSG",
+      "league": "1군",
+      "job": "선수",
+      "role": "player",
+      "backNo": "12",
+      "throwBat": "",
+      "birth": "",
+      "physique": "",
+      "detailUrl": null,
+      "isRetiredRecord": false,
+      "salary": {
+        "amount": null,
+        "status": "미확인",
+        "season": null,
+        "source": null
+      },
+      "history": []
+    },
+    {
       "playerId": "64861",
       "name": "이건욱",
       "team": "SSG",
@@ -3104,27 +3125,6 @@
       "job": "선수",
       "role": "player",
       "backNo": "19",
-      "throwBat": "",
-      "birth": "",
-      "physique": "",
-      "detailUrl": null,
-      "isRetiredRecord": false,
-      "salary": {
-        "amount": null,
-        "status": "미확인",
-        "season": null,
-        "source": null
-      },
-      "history": []
-    },
-    {
-      "playerId": "61895",
-      "name": "서진용",
-      "team": "SSG",
-      "league": "1군",
-      "job": "선수",
-      "role": "player",
-      "backNo": "22",
       "throwBat": "",
       "birth": "",
       "physique": "",
@@ -8137,27 +8137,6 @@
       "history": []
     },
     {
-      "playerId": "54219",
-      "name": "류현준",
-      "team": "두산",
-      "league": "1군",
-      "job": "선수",
-      "role": "player",
-      "backNo": "67",
-      "throwBat": "",
-      "birth": "",
-      "physique": "",
-      "detailUrl": null,
-      "isRetiredRecord": false,
-      "salary": {
-        "amount": null,
-        "status": "미확인",
-        "season": null,
-        "source": null
-      },
-      "history": []
-    },
-    {
       "playerId": "67207",
       "name": "이유찬",
       "team": "두산",
@@ -8284,6 +8263,27 @@
       "history": []
     },
     {
+      "playerId": "64153",
+      "name": "양석환",
+      "team": "두산",
+      "league": "1군",
+      "job": "선수",
+      "role": "player",
+      "backNo": "53",
+      "throwBat": "",
+      "birth": "",
+      "physique": "",
+      "detailUrl": null,
+      "isRetiredRecord": false,
+      "salary": {
+        "amount": null,
+        "status": "미확인",
+        "season": null,
+        "source": null
+      },
+      "history": []
+    },
+    {
       "playerId": "50208",
       "name": "오명진",
       "team": "두산",
@@ -8389,6 +8389,27 @@
       "history": []
     },
     {
+      "playerId": "77532",
+      "name": "손아섭",
+      "team": "두산",
+      "league": "1군",
+      "job": "선수",
+      "role": "player",
+      "backNo": "24",
+      "throwBat": "",
+      "birth": "",
+      "physique": "",
+      "detailUrl": null,
+      "isRetiredRecord": false,
+      "salary": {
+        "amount": null,
+        "status": "미확인",
+        "season": null,
+        "source": null
+      },
+      "history": []
+    },
+    {
       "playerId": "79231",
       "name": "정수빈",
       "team": "두산",
@@ -8438,27 +8459,6 @@
       "job": "선수",
       "role": "player",
       "backNo": "51",
-      "throwBat": "",
-      "birth": "",
-      "physique": "",
-      "detailUrl": null,
-      "isRetiredRecord": false,
-      "salary": {
-        "amount": null,
-        "status": "미확인",
-        "season": null,
-        "source": null
-      },
-      "history": []
-    },
-    {
-      "playerId": "54214",
-      "name": "전다민",
-      "team": "두산",
-      "league": "1군",
-      "job": "선수",
-      "role": "player",
-      "backNo": "9",
       "throwBat": "",
       "birth": "",
       "physique": "",
@@ -9544,48 +9544,6 @@
       "history": []
     },
     {
-      "playerId": "62951",
-      "name": "이형범",
-      "team": "한화",
-      "league": "퓨처스",
-      "job": "투수",
-      "role": "player",
-      "backNo": "16",
-      "throwBat": "우투우타",
-      "birth": "1994-02-27",
-      "physique": "181cm, 80kg",
-      "detailUrl": "https://web1.koreabaseball.com/Futures/Player/PitcherDetail.aspx?playerId=62951",
-      "isRetiredRecord": false,
-      "salary": {
-        "amount": null,
-        "status": "미확인",
-        "season": null,
-        "source": null
-      },
-      "history": []
-    },
-    {
-      "playerId": "69205",
-      "name": "이교훈",
-      "team": "한화",
-      "league": "퓨처스",
-      "job": "투수",
-      "role": "player",
-      "backNo": "31",
-      "throwBat": "좌투좌타",
-      "birth": "2000-05-29",
-      "physique": "181cm, 83kg",
-      "detailUrl": "https://web1.koreabaseball.com/Futures/Player/PitcherDetail.aspx?playerId=69205",
-      "isRetiredRecord": false,
-      "salary": {
-        "amount": null,
-        "status": "미확인",
-        "season": null,
-        "source": null
-      },
-      "history": []
-    },
-    {
       "playerId": "69767",
       "name": "정이황",
       "team": "한화",
@@ -9691,6 +9649,48 @@
       "history": []
     },
     {
+      "playerId": "56709",
+      "name": "박준영",
+      "team": "한화",
+      "league": "퓨처스",
+      "job": "투수",
+      "role": "player",
+      "backNo": "68",
+      "throwBat": "우투우타",
+      "birth": "2002-06-03",
+      "physique": "184cm, 87kg",
+      "detailUrl": "https://web1.koreabaseball.com/Futures/Player/PitcherDetail.aspx?playerId=56709",
+      "isRetiredRecord": false,
+      "salary": {
+        "amount": null,
+        "status": "미확인",
+        "season": null,
+        "source": null
+      },
+      "history": []
+    },
+    {
+      "playerId": "56797",
+      "name": "하동준",
+      "team": "한화",
+      "league": "퓨처스",
+      "job": "투수",
+      "role": "player",
+      "backNo": "97",
+      "throwBat": "좌투좌타",
+      "birth": "2007-06-11",
+      "physique": "189cm, 80kg",
+      "detailUrl": "https://web1.koreabaseball.com/Futures/Player/PitcherDetail.aspx?playerId=56797",
+      "isRetiredRecord": false,
+      "salary": {
+        "amount": null,
+        "status": "미확인",
+        "season": null,
+        "source": null
+      },
+      "history": []
+    },
+    {
       "playerId": "54701",
       "name": "승지환",
       "team": "한화",
@@ -9712,17 +9712,17 @@
       "history": []
     },
     {
-      "playerId": "55708",
-      "name": "엄요셉",
+      "playerId": "53701",
+      "name": "김관우",
       "team": "한화",
       "league": "퓨처스",
       "job": "투수",
       "role": "player",
-      "backNo": "108",
-      "throwBat": "우투우타",
-      "birth": "2006-05-29",
-      "physique": "190cm, 94kg",
-      "detailUrl": "https://web1.koreabaseball.com/Futures/Player/PitcherDetail.aspx?playerId=55708",
+      "backNo": "112",
+      "throwBat": "우언우타",
+      "birth": "2003-09-07",
+      "physique": "182cm, 97kg",
+      "detailUrl": "https://web1.koreabaseball.com/Futures/Player/PitcherDetail.aspx?playerId=53701",
       "isRetiredRecord": false,
       "salary": {
         "amount": null,
@@ -10384,27 +10384,6 @@
       "history": []
     },
     {
-      "playerId": "31012",
-      "name": "홀",
-      "team": "울산",
-      "league": "퓨처스",
-      "job": "타자",
-      "role": "player",
-      "backNo": "",
-      "throwBat": "",
-      "birth": "",
-      "physique": "",
-      "detailUrl": "https://web1.koreabaseball.comHitterDetail.aspx?playerId=31012",
-      "isRetiredRecord": false,
-      "salary": {
-        "amount": null,
-        "status": "미확인",
-        "season": null,
-        "source": null
-      },
-      "history": []
-    },
-    {
       "playerId": "50901",
       "name": "안인산",
       "team": "KT",
@@ -10416,6 +10395,27 @@
       "birth": "",
       "physique": "",
       "detailUrl": "https://web1.koreabaseball.comHitterDetail.aspx?playerId=50901",
+      "isRetiredRecord": false,
+      "salary": {
+        "amount": null,
+        "status": "미확인",
+        "season": null,
+        "source": null
+      },
+      "history": []
+    },
+    {
+      "playerId": "31012",
+      "name": "홀",
+      "team": "울산",
+      "league": "퓨처스",
+      "job": "타자",
+      "role": "player",
+      "backNo": "",
+      "throwBat": "",
+      "birth": "",
+      "physique": "",
+      "detailUrl": "https://web1.koreabaseball.comHitterDetail.aspx?playerId=31012",
       "isRetiredRecord": false,
       "salary": {
         "amount": null,
@@ -10720,27 +10720,6 @@
       "history": []
     },
     {
-      "playerId": "50262",
-      "name": "이주엽",
-      "team": "두산",
-      "league": "퓨처스",
-      "job": "투수",
-      "role": "player",
-      "backNo": "",
-      "throwBat": "",
-      "birth": "",
-      "physique": "",
-      "detailUrl": "https://web1.koreabaseball.com/Futures/Player/PitcherDetail.aspx?playerId=50262",
-      "isRetiredRecord": false,
-      "salary": {
-        "amount": null,
-        "status": "미확인",
-        "season": null,
-        "source": null
-      },
-      "history": []
-    },
-    {
       "playerId": "68703",
       "name": "박성웅",
       "team": "울산",
@@ -10752,6 +10731,27 @@
       "birth": "",
       "physique": "",
       "detailUrl": "https://web1.koreabaseball.com/Futures/Player/PitcherDetail.aspx?playerId=68703",
+      "isRetiredRecord": false,
+      "salary": {
+        "amount": null,
+        "status": "미확인",
+        "season": null,
+        "source": null
+      },
+      "history": []
+    },
+    {
+      "playerId": "50262",
+      "name": "이주엽",
+      "team": "두산",
+      "league": "퓨처스",
+      "job": "투수",
+      "role": "player",
+      "backNo": "",
+      "throwBat": "",
+      "birth": "",
+      "physique": "",
+      "detailUrl": "https://web1.koreabaseball.com/Futures/Player/PitcherDetail.aspx?playerId=50262",
       "isRetiredRecord": false,
       "salary": {
         "amount": null,
@@ -10794,27 +10794,6 @@
       "birth": "",
       "physique": "",
       "detailUrl": "https://web1.koreabaseball.com/Futures/Player/PitcherDetail.aspx?playerId=55419",
-      "isRetiredRecord": false,
-      "salary": {
-        "amount": null,
-        "status": "미확인",
-        "season": null,
-        "source": null
-      },
-      "history": []
-    },
-    {
-      "playerId": "55896",
-      "name": "이도우",
-      "team": "SSG",
-      "league": "퓨처스",
-      "job": "투수",
-      "role": "player",
-      "backNo": "",
-      "throwBat": "",
-      "birth": "",
-      "physique": "",
-      "detailUrl": "https://web1.koreabaseball.com/Futures/Player/PitcherDetail.aspx?playerId=55896",
       "isRetiredRecord": false,
       "salary": {
         "amount": null,
